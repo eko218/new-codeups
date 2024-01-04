@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.pc-nav {
+    height: inherit;
+    display: none;
+    @include mq("md") {
+        display: block;
+    }
+}
+
+.pc-nav__items {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pc-nav__item {
+    height: inherit;
+}
+
+.pc-nav__item  a span {
+    flex-direction: column;
+    font-size: rem(10);
+    line-height: 1.5;
+}
+
+.pc-nav__item a {
+    height: inherit;
+    color: $white;
+    font-weight: $regular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: rem(18);
+    padding: 0 rem(20);
+    flex-direction: column;
+}
+

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: rem(80);
+    z-index: 99999;
+    background-color: rgba(13,41,51,0.68);
+    width: 100%;
+    max-width: 100%;
+    @include mq("md") {
+        height: rem(90);
+    }
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit;
+    padding: 0  rem(15);
+    max-width: 100%;
+    @include mq("md") {
+        padding: 0 rem(40);
+    }
+}
+
+.header__logo {
+    position: relative;
+    width: rem(102);
+    z-index: 99999;
+    color: $white;
+    @include mq("md") {
+        width: rem(133);
+    }
+}
