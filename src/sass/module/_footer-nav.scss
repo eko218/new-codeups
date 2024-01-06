@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.footer-nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+    padding-top: rem(10);
+    padding-bottom: rem(25);
+    padding-left: rem(15);
+    padding-right: rem(15);
+}
+
+
+.footer-nav__body {
+    display: flex;
+    justify-content: center;
+    gap: rem(27);
+    @include mq("md") {
+        gap: rem(120);
+    }
+}
+
+.footer-nav__left {
+    @include mq("md") {
+        display: flex;
+        gap: rem(120);
+    }
+}
+
+.footer-nav__right {
+    @include mq("md") {
+        display: flex;
+        gap: rem(120);
+    }
+}
+
+.footer-nav__wrap {
+    margin-top: rem(15);
+}
+
+.footer-nav__item a {
+    display: block;
+    width: 100%;
+    font-weight: $regular;
+    font-family: $third-font-family;
+    font-size: rem(16);
+    line-height: 1.125;
+    padding: rem(12) 0;
+}
+
+.footer-nav__item.footer-nav__item--title a {
+    font-weight: $bold;
+}
+
+.footer-nav__item.footer-nav__item--title {
+    margin-left: rem(-25);
+}
+
+.footer-nav__item.footer-nav__item--title a:before {
+    content: url(/src/images/common/hitode.svg);
+    width: rem(18);
+    height: rem(18);
+    margin-right: rem(4);
+}
+
+// .footer-nav__right {
+//     margin-left: rem(38);
+// }
+
+.footer-nav__copyright {
+    font-size: rem(14);
+    line-height: calc(18 / 12);
+    font-weight: $regular;
+    // margin-top: rem(40);
+    text-align: center;
+    @include mq("md") {
+        font-size: rem(14);
+        line-height: calc(18 / 14);
+        margin-top: rem(80);
+    }
+}
