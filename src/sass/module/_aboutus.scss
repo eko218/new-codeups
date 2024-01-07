@@ -1,0 +1,114 @@
+@use "global" as *;
+
+.aboutus {
+    position: relative;
+}
+
+.aboutus__inner {
+    position: relative;
+}
+
+.aboutus__inner::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(/dist/assets/images/common/aboutus-sango.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: rem(194);
+        height: rem(181);
+        // right: -8%;
+        right: calc(50% - min(48vw, 40rem));
+        bottom: -13%;
+    }
+}
+
+.aboutus__img {
+    margin-top: rem(24);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.aboutus__img-left {
+    top: 0;
+    left: 0;
+    width: 37.1%;
+    z-index: 2;
+}
+
+.aboutus__img-left img {
+    aspect-ratio: 128 / 194;
+    width: 100%;
+    object-fit: cover;
+    @include mq("md") {
+        aspect-ratio: 400 / 606;
+    }
+}
+
+.aboutus__img-right {
+    margin-left: -10%;
+    margin-top: 5%;
+     width: 81.45%;
+}
+
+.aboutus__img-right img {
+    aspect-ratio: 281 / 186;
+    width: 100%;
+    object-fit: cover;
+    @include mq("md") {
+        aspect-ratio: 880 / 581;
+    }
+}
+.aboutus__text-body {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: 0;
+        display: flex;
+        position: absolute;
+        top: 50%;
+    }
+}
+
+.aboutus__title-main {
+    font-size: rem(40);
+    line-height: 1;
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $green;
+    z-index: 100;
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1.25;
+        color: $white;
+    }
+}
+
+.aboutus__text {
+    @include mq("md") {
+        max-width: rem(400);
+        width: 100%;
+    }
+}
+
+.aboutus__text-sub {
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: $regular;
+    margin-top: rem(16);
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+.aboutus__btn {
+    text-align: center;
+    margin-top: rem(50);
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}

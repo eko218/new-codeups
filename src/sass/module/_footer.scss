@@ -6,14 +6,14 @@
     background-color: $green;
     padding-top: rem(48);
     padding-bottom: rem(56);
-    padding-left: rem(15);
-    padding-right: rem(15);
+    // padding-left: rem(15);
+    // padding-right: rem(15);
     display: inline-block;
     @include mq("md") {
         padding-top: rem(80);
         padding-bottom: rem(80);
-        padding-left: rem(180);
-        padding-right: rem(252);
+        // padding-left: rem(180);
+        // padding-right: rem(252);
     }
 }
 
@@ -49,6 +49,6 @@
     }
 }
 
-.footer__bottom {
-    
-}
+// .footer__bottom {
+
+// }
