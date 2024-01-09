@@ -31,14 +31,19 @@
     }
 }
 
-.section-header__engtitle--blog {
+.section-header__engtitle.section-header__engtitle--blog {
     @include mq("md") {
         color: $white;
     }
 }
 
-.section-header__engtitle--blog span {
+.section-header__engtitle.section-header__engtitle--blog span {
     @include mq("md") {
         color: $lightblue;
     }
 }
+
+.section-header__engtitle.section-header__engtitle--contact {
+    font-size: rem(80);
+}
+

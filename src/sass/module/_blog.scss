@@ -1,11 +1,50 @@
 @use "global" as *;
 
+.blog {
+    @include mq("md") {
+        position: relative;
+        z-index: 2;
+        padding-top: rem(100);
+    }
+}
+
+.blog::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(/dist/assets/images/common/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: rem(500);
+        z-index: -1;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.blog__inner::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(/dist/assets/images/common/blog-fish.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: rem(437);
+        height: rem(201);
+        top: -10%;
+        left: -5%;
+    }
+}
+
 .blog__items {
     margin-top: rem(24);
     @include mq("md") {
         margin-top: rem(80);
         display: flex;
-        
+    
 }
 }
 

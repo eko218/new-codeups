@@ -20,7 +20,8 @@
 }
 
 .pc-nav__item  a span {
-    flex-direction: column;
+    // flex-direction: column;
+    display: block;
     font-size: rem(10);
     line-height: 1.5;
 }
@@ -36,5 +37,23 @@
     font-size: rem(18);
     padding: 0 rem(20);
     flex-direction: column;
+    position: relative;
+    // display: inline-block;
+}
+
+.pc-nav__item a::after {
+    position: absolute;
+    content: '';
+    bottom: rem(16);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: rem(1);
+    background: $white;
+    transition: all .3s ease 0s;
+}
+
+.pc-nav__item a:hover::after {
+    width: 80%;
 }
 

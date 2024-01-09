@@ -1,9 +1,8 @@
 @use "global" as *;
 
-.top-aboutus {
-    margin-top: rem(75);
+.top-contact {
+    margin-top: rem(54);
     @include mq("md") {
         margin-top: rem(140);
     }
 }
-

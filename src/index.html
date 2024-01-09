@@ -28,6 +28,7 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -187,7 +188,7 @@
 
   <!-- campaign -->
   <section id="campaign" class="campaign top-campaign">
-    <div class="campaign__inner">
+    <div class="campaign__inner inner">
       <div class="campaign__title section-header">
         <h2 class="section-header__engtitle"><span>c</span>ampaign</h2>
         <div class="section-header__jatitle">キャンペーン</div>
@@ -321,12 +322,10 @@
         <div class="section-header__jatitle">ダイビング情報</div>
       </div>
       <div class="information__container">
-        <div class="information__img">
-          <picture>
+          <picture class="information__img js-colorbox">
             <source srcset="/dist/assets/images/common/info-pc.jpg">
-          <img src="/dist/assets/images/common/info-sp.jpg" alt="">
+            <img src="/dist/assets/images/common/info-sp.jpg" alt="">
         </picture>
-        </div>
         <div class="information__text-body">
           <div class="information__text-block">
             <h3 class="information__category">ライセンス講習</h3>
@@ -348,8 +347,9 @@
         <h2 class="section-header__engtitle section-header__engtitle--blog"><span>B</span>log</h2>
         <div class="section-header__jatitle section-header__jatitle--blog">ブログ</div>
       </div>
-      <div class="blog__items card-content">
-        <a href="#" class="card-content__item blog-card">
+      <div class="blog__items blog-cards">
+        <div class="blog-cards__item blog-card">
+        <a href="#" class="blog-card__item">
           <figure class="blog-card__img">
             <img src="/dist/assets/images/common/blog1.jpg" alt="珊瑚礁の画像">
           </figure>
@@ -358,11 +358,13 @@
             <h3 class="blog-card__title">ライセンス取得</h3>
           </div>
           <div class="blog-card__body">
-            <div class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-              ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</div>
+            <div class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</div>
           </div>
         </a>
-        <a href="#" class="card-content__item blog-card">
+      </div>
+      <div class="blog-cards__item blog-card">
+        <a href="#" class="blog-card__item">
           <figure class="blog-card__img">
             <img src="/dist/assets/images/common/blog2.jpg" alt="ウミガメの画像">
           </figure>
@@ -371,11 +373,13 @@
             <h3 class="blog-card__title">ウミガメと泳ぐ</h3>
           </div>
           <div class="blog-card__body">
-            <div class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-              ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</div>
+            <div class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</div>
           </div>
         </a>
-        <a href="#" class="card-content__item blog-card">
+      </div>
+      <div class="blog-cards__item blog-card">
+        <a href="#" class="blog-card__item">
           <figure class="blog-card__img">
             <img src="/dist/assets/images/common/blog3.jpg" alt="カクレクマノミと珊瑚礁の画像">
           </figure>
@@ -384,10 +388,11 @@
             <h3 class="blog-card__title">カクレクマノミ</h3>
           </div>
           <div class="blog-card__body">
-            <div class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-              ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</div>
+            <div class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</div>
           </div>
         </a>
+      </div>
       </div>
       <div class="blog__btn">
         <a href="#" class="common-btn">View&nbsp;more</a>
@@ -395,8 +400,191 @@
     </div>
   </section>
 
-</main>
+  <!-- voice -->
+  <section id="voice" class="voice top-voice">
+    <div class="voice__inner inner">
+      <div class="voice__title section-header">
+        <h2 class="section-header__engtitle"><span>V</span>oice</h2>
+        <div class="section-header__jatitle">お客様の声</div>
+      </div>
+      <div class="voice__items voice-cards">
+        <div class="voice-cards__item voice-card">
+          <a href="#" class="voice-card__item">
+            <div class="voice-card__wrapper">
+              <div class="voice-card__top">
+                <div class="voice-card__content">
+            <div class="voice-card__info">
+              <p class="voice-card__age">&lpar;20代女性&rpar;</p>
+              <p class="voice-card__category">ライセンス講習</p>
+            </div>
+            <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+          </div>
+          <picture class="voice-card__img">
+            <source srcset="/dist/assets/images/common/voice-pc1.jpg">
+            <img src="/dist/assets/images/common/voice-sp1.jpg" alt="麦わら帽子を被った笑顔の女性">
+          </picture>
+        </div>
+        <p class="voice-card__text">
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+          ここにテキストが入ります。ここにテキストが入ります。
+        </p>
+      </div>
+      </a>
+    </div>
+    <div class="voice-cards__item voice-card">
+      <a href="#" class="voice-card__item">
+        <div class="voice-card__wrapper">
+          <div class="voice-card__top">
+            <div class="voice-card__content">
+        <div class="voice-card__info">
+          <p class="voice-card__age">&lpar;20代男性&rpar;</p>
+          <p class="voice-card__category">ファンダイビング</p>
+        </div>
+        <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+      </div>
+      <picture class="voice-card__img">
+        <source srcset="/dist/assets/images/common/voice-pc2.jpg">
+        <img src="/dist/assets/images/common/voice-sp2.jpg" alt="グッドポーズをしている男性">
+      </picture>
+    </div>
+    <p class="voice-card__text">
+      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+      ここにテキストが入ります。ここにテキストが入ります。
+    </p>
+  </div>
+  </a>
+</div>
 
+      </div>
+      <div class="voice__btn">
+        <a href="#" class="common-btn">View&nbsp;more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- price -->
+  <section id="price" class="price top-price">
+    <div class="price__inner inner">
+      <div class="voice__title section-header">
+        <h2 class="section-header__engtitle"><span>P</span>rice</h2>
+        <div class="section-header__jatitle">料金一覧</div>
+      </div>
+      <div class="price__body">
+        <picture class="price__img">
+          <source srcset="/dist/assets/images/common/price-pc.jpg" media="(min-width: 768px)" />
+            <img src="/dist/assets/images/common/price-sp.jpg" alt="ウミガメの画像" />
+        </picture>
+        <div class="price__list">
+          <div class="price__item price-item">
+            <div class="price-item__title">ライセンス講習</div>
+              <dl class="price-item__text">
+                <dt>オープンウォーターダイバーコース</dt>
+                <dd>¥50,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>アドバンスドオープンウォーターコース</dt>
+                <dd>¥60,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>レスキュー＋EFRコース</dt>
+                <dd>¥70,000</dd>
+              </dl>
+          </div>
+          <div class="price__item price-item">
+            <div class="price-item__title">体験ダイビング</div>
+              <dl class="price-item__text">
+                <dt>ビーチ体験ダイビング(半日)</dt>
+                <dd>¥7,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>ビーチ体験ダイビング(1日)</dt>
+                <dd>¥14,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>ボート体験ダイビング(半日)</dt>
+                <dd>¥10,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>ボート体験ダイビング(1日)</dt>
+                <dd>¥18,000</dd>
+              </dl>
+          </div>
+          <div class="price__item price-item">
+            <div class="price-item__title">ファンダイビング</div>
+              <dl class="price-item__text">
+                <dt>ビーチダイビング(2ダイブ)</dt>
+                <dd>¥14,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>ボートダイビング(2ダイブ)</dt>
+                <dd>¥18,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>スペシャルダイビング(2ダイブ)</dt>
+                <dd>¥24,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>ナイトダイビング(2ダイブ)</dt>
+                <dd>¥10,000</dd>
+              </dl>
+          </div>
+          <div class="price__item price-item">
+            <div class="price-item__title">スペシャルダイビング</div>
+              <dl class="price-item__text">
+                <dt>貸切ダイビング(2ダイブ)</dt>
+                <dd>¥24,000</dd>
+              </dl>
+              <dl class="price-item__text">
+                <dt>1日ダイビング(3ダイブ)</dt>
+                <dd>¥32,000</dd>
+              </dl>
+          </div>
+        </div>
+        </div>
+        <div class="price__btn">
+          <a href="#" class="common-btn">View&nbsp;more</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="contact top-contact">
+    <div class="contact__inner inner">
+      <div class="contact__container">
+        <div class="contact__access">
+          <div class="contact-logo">
+            <a href="" class="contact-logo__link">
+             <img src="/dist/assets/images/common/contact-logo.svg" alt="コンタクトロゴ">
+            </a>
+          </div>
+          <div class="contact__info">
+            <div class="contact__address">
+             <p class="contact__address-text">沖縄県那覇市1-1</p>
+             <p class="contact__address-text">TEL:0120-000-0000</p>
+             <p class="contact__address-text">営業時間:8:30-19:00</p>
+             <p class="contact__address-text">定休日:毎週火曜日</p>
+            </div>
+            <div class="contact__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29742.2409384461!2d-157.85334081501577!3d21.280169682241162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2z44Ki44Oh44Oq44Kr5ZCI6KGG5Zu9IOOAkjk2ODE1IOODj-ODr-OCpOW3niDjg5vjg47jg6vjg6sg44Ov44Kk44Kt44Kt!5e0!3m2!1sja!2sjp!4v1700851904771!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+      </div>
+      <div class="contact__content">
+        <div class="contact__title section-header">
+          <h2 class="section-header__engtitle section-header__engtitle--contact"><span>C</span>ontact</h2>
+          <div class="section-header__jatitle section-header__jatitle--contact">お問い合わせ</div>
+          <p class="contact__text">ご予約・お問い合わせはコチラ</p>
+        </div>
+        <div class="contact__btn">
+          <a href="#" class="common-btn">Contact&nbsp;us</a>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+  </main>
 
 
   <!-- footer -->

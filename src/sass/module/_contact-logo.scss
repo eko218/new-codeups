@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.contact-logo {
+    display: inline-block;
+    width: rem(174);
+    border-bottom: rem(1) solid $green;
+    padding-bottom: rem(6);
+    margin: auto;
+    @include mq("md") {
+        width: rem(200);
+        padding-bottom: rem(8);
+    }
+}
