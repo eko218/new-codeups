@@ -22,6 +22,8 @@
 
 .information__img { 
     position: relative;
+    width: 80%;
+    margin: rem(30) auto rem(30);
     @include mq("md") {
         width: 50%;
     }
@@ -93,3 +95,6 @@
 //     display: block;
 //     width: 100%;
 // }
+
+
+test
