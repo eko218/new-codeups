@@ -2,7 +2,7 @@
 
 .blog-card {
     padding-top: rem(16);
-    padding-bottom: rem(24);
+    padding-bottom: rem(21);
     padding-left: rem(16);
     padding-right: rem(16);
     box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
@@ -31,7 +31,7 @@
 }
 
 .blog-card__info {
-    margin-top: rem(24);
+    margin-top: rem(22);
 }
 
 .blog-card__date {
@@ -45,18 +45,23 @@
 .blog-card__title {
     font-size: rem(16);
     line-height: 1.5;
+    font-family: $third-font-family;
     font-weight: $medium;
     color: $darkgreen;
     border-bottom: rem(1) solid $green;
-    padding-bottom: rem(4);
+    padding-bottom: rem(2);
 }
 
 .blog-card__body {
     margin-top: rem(16);
+}
+
+.blog-card__text {
+    font-size: rem(16);
+    font-family: $third-font-family;
     line-height: 1.5;
     font-weight: $regular;
     color: $darkgreen;
     width: 100%;
 }
-
 

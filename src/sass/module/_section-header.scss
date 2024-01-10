@@ -43,6 +43,12 @@
     }
 }
 
+.section-header__jatitle.section-header__jatitle--blog {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
 .section-header__engtitle.section-header__engtitle--contact {
     font-size: rem(80);
 }

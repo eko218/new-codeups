@@ -12,7 +12,7 @@
     @include mq("md") {
         position: absolute;
         content: '';
-        background-image: url(/dist/assets/images/common/blog-bg.jpg);
+        background-image: url(/assets/images/common/blog-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -24,11 +24,20 @@
     }
 }
 
+.blog__inner.inner {
+        padding-left: rem(21);
+        padding-right: rem(21);
+        @include mq("md") {
+            padding-left: rem(25);
+            padding-right: rem(25);
+        }
+}
+
 .blog__inner::after {
     @include mq("md") {
         position: absolute;
         content: '';
-        background-image: url(/dist/assets/images/common/blog-fish.png);
+        background-image: url(/assets/images/common/blog-fish.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;

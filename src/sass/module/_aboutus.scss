@@ -12,7 +12,7 @@
     @include mq("md") {
         position: absolute;
         content: '';
-        background-image: url(/dist/assets/images/common/aboutus-sango.png);
+        background-image: url(/assets/images/common/aboutus-sango.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -64,13 +64,23 @@
         aspect-ratio: 880 / 581;
     }
 }
-.aboutus__text-body {
+.aboutus__content {
     margin-top: rem(40);
     @include mq("md") {
         margin-top: 0;
         display: flex;
+        align-items: center;
         position: absolute;
-        top: 50%;
+        top: 36%;
+        left: 19%;
+        gap: rem(40);
+        padding: 0 rem(15);
+    }
+}
+
+.aboutus__title {
+    @include mq("md") {
+        z-index: 50;
     }
 }
 
@@ -80,11 +90,11 @@
     font-weight: $regular;
     font-family: $base-font-family;
     color: $green;
-    z-index: 100;
     @include mq("md") {
         font-size: rem(80);
         line-height: 1.25;
         color: $white;
+        z-index: 5000;
     }
 }
 
@@ -92,6 +102,7 @@
     @include mq("md") {
         max-width: rem(400);
         width: 100%;
+        margin-top: rem(16);
     }
 }
 
