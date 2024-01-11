@@ -1,16 +1,80 @@
 @use "global" as *;
 
+.campaign {
+    overflow: hidden;
+}
+
 .campaign__inner.inner {
     @include mq("md") {
         width: 100%;
         max-width: rem(1130);
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+    }
+}
+
+.campaign__button-wrap {
+    @include mq("md") {
+        position: absolute;
+        display: flex;
+        gap: rem(80);
+        top: rem(7);
+        right: rem(26);
+        z-index: 999;
+    }
+}
+
+.campaign__button-prev {
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+        cursor: pointer;
+    }
+}
+
+.campaign__button-prev::after {
+    @include mq("md") {
+        background-image: url(/assets/images/common/campaign-button-prev.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: '';
+        width: rem(80);
+        height: rem(80);
+        display: block;
+    }
+}
+
+.campaign__button-next {
+    @include mq("md") {
+        background: none;
+        width: rem(80);
+        height: rem(80);
+        cursor: pointer;
+    }
+}
+
+.campaign__button-next::after {
+    @include mq("md") {
+        background-image: url(/assets/images/common/campaign-button-next.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        content: '';
+        width: rem(80);
+        height: rem(80);
+        display: block;
     }
 }
 
 .campaign__swiper-container {
     margin-top: rem(24);
+    overflow-x: hidden;
+    background-color: transparent;
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+    height: auto;
     @include mq("md") {
         margin-top: rem(40);
     }
