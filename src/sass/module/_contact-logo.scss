@@ -1,13 +1,30 @@
 @use "global" as *;
 
 .contact-logo {
-    display: inline-block;
-    width: rem(174);
+    // display: inline-block;
+    // width: rem(174);
     border-bottom: rem(1) solid $green;
-    padding-bottom: rem(6);
-    margin: auto;
+    // padding-bottom: rem(6);
+    text-align: center;
+    @include mq("md") {
+        // width: rem(200);
+        // padding-bottom: rem(8);
+    }
+}
+
+// .contact__logo img {
+//     width: rem(174);
+//     display: inline-block;
+//     padding-bottom: rem(0);
+//     @include mq('md') {
+//       width: rem(200);
+//     }
+//   }
+
+.contact-logo__link img {
+    width: rem(174);
+    display: inline-block;
     @include mq("md") {
         width: rem(200);
-        padding-bottom: rem(8);
     }
 }

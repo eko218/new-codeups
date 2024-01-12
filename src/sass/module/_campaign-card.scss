@@ -55,6 +55,7 @@
  .campaign-card__category {
     color: $green;
     font-size: rem(12);
+    font-family: $third-font-family;
     line-height: 1.8333;
     font-weight: $regular;
     border: 1px solid $green;
@@ -68,6 +69,7 @@
  .campaign-card__title {
     color: $darkgreen;
     font-size: rem(16);
+    font-family: $third-font-family;
     line-height: 1.5;
     font-weight: $medium;
     margin-top: rem(4);
@@ -80,6 +82,18 @@
     text-align: center;
     padding-top: rem(8);
     padding-bottom: rem(24);
+}
+
+.campaign-card__name {
+    font-size: rem(14);
+    line-height: 1.7143;
+    font-weight: $regular;
+    font-family: $third-font-family;
+    color: $darkgreen;
+    @include mq("md") {
+        font-size: rem(16);
+        line-height: 1.5;
+    }
 }
 
 .campaign-card__price {

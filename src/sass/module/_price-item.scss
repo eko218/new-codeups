@@ -20,6 +20,8 @@
     justify-content: space-between;
     margin-top: rem(8);
     @include mq("md") {
+        font-size: rem(16);
+        line-height: 1.5;
         letter-spacing: 0.05;
     }
 

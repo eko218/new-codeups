@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.footer-logo {
+    width: rem(120);
+    @include mq("md") {
+        width: rem(200);
+    }
+}

@@ -36,6 +36,7 @@
     font-size: rem(40);
     font-family: $second-font-family;
     font-weight: $regular;
+    line-height: 1.25;
     letter-spacing: rem(20);
     white-space: nowrap;
     @include mq("md") {
@@ -46,11 +47,12 @@
 
 .mv__subtitle {
     font-size: rem(20);
-    font-family: $second-font-family;
+    font-family: $base-font-family;
     font-weight: $regular;
+    line-height: 1;
     white-space: nowrap;
     text-align: center;
-    @include mq("md") {
-        margin-top: rem(-15);
-    }
+    // @include mq("md") {
+    //     margin-top: rem(-15);
+    // }
 }

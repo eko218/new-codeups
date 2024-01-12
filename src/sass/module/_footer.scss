@@ -23,13 +23,6 @@
     }
 }
 
-.footer__logo {
-    width: rem(120);
-    @include mq("md") {
-        width: rem(200);
-    }
-}
-
 .footer__sns {
     display: flex;
     margin-top: rem(16);

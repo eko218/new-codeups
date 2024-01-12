@@ -28,7 +28,7 @@
     margin-top: rem(24);
     display: flex;
     justify-content: center;
-    position: relative;
+    // position: relative;
     @include mq("md") {
         margin-top: rem(40);
     }
@@ -72,7 +72,8 @@
         align-items: center;
         position: absolute;
         top: 36%;
-        left: 19%;
+        // left: 17%;
+        right: 5%;
         gap: rem(40);
         padding: 0 rem(15);
     }
@@ -110,7 +111,9 @@
     font-size: rem(16);
     line-height: 1.5;
     font-weight: $regular;
+    font-family: $third-font-family;
     margin-top: rem(16);
+    color: $darkgreen;
     @include mq("md") {
         color: $white;
     }

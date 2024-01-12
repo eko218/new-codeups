@@ -60,8 +60,9 @@
 
 .information__category {
     font-size: rem(20);
+    font-family: $third-font-family;
     font-weight: $bold;
-    line-height: 1.2;
+    line-height: 1;
     color: $darkgreen;
     border-bottom: rem(1) solid $green;
     padding-bottom: rem(4);
@@ -73,6 +74,8 @@
 
 .information__text {
     font-size: rem(16);
+    font-family: $third-font-family;
+    font-weight: $bold;
     font-weight: $regular;
     line-height: 1.5;
     color: $darkgreen;
