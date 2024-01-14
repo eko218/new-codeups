@@ -34,53 +34,53 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   
 
     //  キャンペーンスライダー
-    // jQuery(function ($) {
+    jQuery(function ($) {
       // リサイズ処理（PC時のみ矢印表示）
-      // const service_slideLength = document.querySelectorAll(
-      //   '.js-campaign-swiper .swiper-slide'
-      // ).length;
-      // $(window).resize(function () {
-      //   service_arrow();
-      // });
-      // service_arrow();
-      // function service_arrow() {
-      //   if (
-      //     window.matchMedia('(max-width: 767px)').matches ||
-      //     service_slideLength <= 2
-      //   ) {
-      //     $('.js-campaign-arrow').hide();
-      //   } else {
-      //     $('.js-campaign-arrow').show();
-      //   }
-      // }
+      const service_slideLength = document.querySelectorAll(
+        '.js-campaign-swiper .swiper-slide'
+      ).length;
+      $(window).resize(function () {
+        service_arrow();
+      });
+      service_arrow();
+      function service_arrow() {
+        if (
+          window.matchMedia('(max-width: 767px)').matches ||
+          service_slideLength <= 2
+        ) {
+          $('.js-campaign-arrow').hide();
+        } else {
+          $('.js-campaign-arrow').show();
+        }
+      }
     
        // Swiper
-      // const service_swiper = new Swiper('.js-campaign-swiper', {
-      //   loop: true,
-      //   speed: 3000,
-      //   slidesPerView: 'auto',
-      //   spaceBetween: 24,
-      //   width: 280,
-      //   autoplay: {
-      //     delay: 1500,
-      //     disableOnInteraction: false,
-      //   },
-      //   breakpoints: {
-      //     768: {
-      //       spaceBetween: 40,
-      //     },
-      //     // 1920: {
-      //     //   slidesPerView: "5",
-      //     //   spaceBetween: 40,
-      //     // },
-      //   },
+      const service_swiper = new Swiper('.js-campaign-swiper', {
+        loop: true,
+        speed: 3000,
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        width: 280,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          768: {
+            spaceBetween: 40,
+          },
+          // 1920: {
+          //   slidesPerView: "5",
+          //   spaceBetween: 40,
+          // },
+        },
     
-      //   navigation: {
-      //     nextEl: '.campaign__button-next',
-      //     prevEl: '.campaign__button-prev',
-      //     clickable: true,
-      //   },
-      // });
+        navigation: {
+          nextEl: '.campaign__button-next',
+          prevEl: '.campaign__button-prev',
+          clickable: true,
+        },
+      });
 
       // const campaignSwiper = new Swiper(".js-campaign-swiper", {
       //   loop: true,
@@ -236,7 +236,4 @@ $(function () {
     return false;
   });
 });
-
-
-
-
+});

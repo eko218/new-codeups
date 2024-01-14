@@ -2,7 +2,6 @@
 
 .campaign-card {
     background-color: $white;
-    box-shadow: 0 rem(4) rem(4) rgba(0,0,0,0.25);
     display: flex;
     // justify-content: center;
     // align-items: center;
@@ -15,6 +14,10 @@
         max-width: rem(333);
         // gap: rem(40);
     }
+}
+
+.campaign-card__item {
+    box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
 }
 
 // .campaign-cards {
@@ -74,14 +77,14 @@
     font-weight: $medium;
     margin-top: rem(4);
     border-bottom: 1px solid $green;
-    padding-bottom: rem(8);
+    padding-bottom: rem(6);
     // display: inline-block;
  }
 
 .campaign-card__text {
     text-align: center;
     padding-top: rem(8);
-    padding-bottom: rem(24);
+    // padding-bottom: rem(24);
 }
 
 .campaign-card__name {

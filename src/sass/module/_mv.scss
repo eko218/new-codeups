@@ -2,12 +2,25 @@
 
 .mv {
     position: relative;
+    width: 100%;
+    min-height: rem(350);
     height: 100vh;
+    @include mq("md") {
+        min-height: rem(400);
+    }
 }
 
 .mv__inner {
+    position: relative;
     width: 100%;
     height: inherit;
+    min-height: inherit;
+}
+
+.swiper-container,
+.swiper-slide picture,
+.mv__slide img {
+      height: inherit;
 }
 
 .mv__slide-img img {

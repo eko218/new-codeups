@@ -112,6 +112,7 @@
 .voice-card__top {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     gap: rem(13);
     @include mq("md") {
         gap: rem(16);

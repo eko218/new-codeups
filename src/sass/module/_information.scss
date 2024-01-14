@@ -2,8 +2,8 @@
 
 .information {
     background-color: $lightblue;
-    padding-top: rem(80);
-    padding-bottom: rem(80);
+    padding-top: rem(84);
+    padding-bottom: rem(84);
     @include mq("md") {
         padding-top: rem(100);
         padding-bottom: rem(76);
@@ -11,7 +11,7 @@
 }
 
 .information__container {
-    margin-top: rem(24);
+    margin-top: rem(29);
     @include mq("md") {
         margin-top: rem(40);
         display: flex;
@@ -65,7 +65,7 @@
     line-height: 1;
     color: $darkgreen;
     border-bottom: rem(1) solid $green;
-    padding-bottom: rem(4);
+    padding-bottom: rem(6);
     @include mq("md") {
         font-size: rem(24);
         padding-bottom: rem(8);

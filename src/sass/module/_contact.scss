@@ -35,12 +35,13 @@
         padding-top: rem(80);
         padding-bottom: rem(60);
         padding-left: rem(50);
-        padding-right: rem(40);
+        padding-right: rem(50);
     }
 }
 
 .contact__access {
     @include mq("md") {
+        width: 40.74074%;
         // padding-right: rem(82);
         // padding-left: rem(50);
         // border-right: rem(1) solid $green;
@@ -50,9 +51,9 @@
 
 .contact__info {
     margin-top: rem(16);
-    margin-left: auto;
-    margin-right: auto;
-    width: 85.507%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // width: 85.507%;
     @include mq("md") {
         display: flex;
         margin-top: rem(24);
@@ -69,6 +70,9 @@
     font-family: $third-font-family;
     text-align: center;
     // width: 100%;
+    @include mq("md") {
+        text-align: left;
+    }
 }
 
 .contact__map {
