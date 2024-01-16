@@ -8,14 +8,14 @@
     @include mq("md") {
         position: absolute;
         content: '';
-        background-image: url(/dist/assets/images/common/voice-fish.png);
+        background-image: url(/assets/images/common/voice-fish.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         width: rem(301);
         height: rem(138);
-        top: -15%;
-        left: -8%;
+        top: -19%;
+        left: -5%;
     }
 }
 
@@ -23,13 +23,13 @@
     @include mq("md") {
         position: absolute;
         content: '';
-        background-image: url(/dist/assets/images/common/voice-tatu.png);
+        background-image: url(/assets/images/common/voice-tatu.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         width: rem(71);
         height: rem(1162);
-        top: 3%;
+        top: 5%;
         right: 2%;
     }
 }

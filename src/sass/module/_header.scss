@@ -24,7 +24,7 @@
     padding-right: rem(8);
     max-width: 100%;
     @include mq("md") {
-        padding: 0 rem(40);
+        padding: 0 rem(20) 0 rem(40);
     }
 }
 

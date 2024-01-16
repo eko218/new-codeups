@@ -17,12 +17,6 @@
     min-height: inherit;
 }
 
-.swiper-container,
-.swiper-slide picture,
-.mv__slide img {
-      height: inherit;
-}
-
 .mv__slide-img img {
     display: block;
     height: 100vh;
@@ -38,7 +32,7 @@
     z-index: 100;
     color: $white;
     @include mq("md") {
-        width: 100%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -50,11 +44,12 @@
     font-family: $second-font-family;
     font-weight: $regular;
     line-height: 1.25;
-    letter-spacing: rem(20);
+    letter-spacing: 0.54em;
     white-space: nowrap;
+    text-align: center;
+    text-indent: 0.5em;
     @include mq("md") {
         font-size: rem(80);
-        letter-spacing: rem(40);
     }
 }
 
@@ -62,7 +57,7 @@
     font-size: rem(20);
     font-family: $base-font-family;
     font-weight: $regular;
-    line-height: 1;
+    line-height: 1.65;
     white-space: nowrap;
     text-align: center;
     // @include mq("md") {

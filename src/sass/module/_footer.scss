@@ -4,7 +4,7 @@
     width: 100%;
     color: $white;
     background-color: $green;
-    padding-top: rem(48);
+    padding-top: rem(50);
     padding-bottom: rem(56);
     // padding-left: rem(15);
     // padding-right: rem(15);
@@ -42,6 +42,9 @@
     }
 }
 
-// .footer__bottom {
-
-// }
+.footer__bottom {
+    margin-top: rem(10);
+    @include mq("md") {
+        margin-top: rem(-10);
+    }
+}

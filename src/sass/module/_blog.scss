@@ -43,13 +43,13 @@
         background-position: center;
         width: rem(437);
         height: rem(201);
-        top: -10%;
-        left: -5%;
+        top: 3%;
+        left: 7%;
     }
 }
 
 .blog__items {
-    margin-top: rem(28);
+    margin-top: rem(24);
     @include mq("md") {
         margin-top: rem(80);
         display: flex;
