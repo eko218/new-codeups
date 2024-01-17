@@ -20,7 +20,6 @@
 }
 
 .pc-nav__item  a span {
-    // flex-direction: column;
     display: block;
     font-size: rem(10);
     font-family: $third-font-family;
@@ -40,7 +39,6 @@
     padding: 0 rem(20);
     flex-direction: column;
     position: relative;
-    // display: inline-block;
 }
 
 .pc-nav__item a::after {

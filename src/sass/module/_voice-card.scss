@@ -32,6 +32,7 @@
     font-weight: $regular;
     font-family: $third-font-family;
     color: $darkgreen;
+    margin-top: rem(18);
 }
 
 .voice-card__category {
@@ -63,22 +64,6 @@
         line-height: 1.458;
     }
 }
-
-// .voice-card__img {
-//     margin-left: rem(13);
-//     @include mq("md") {
-//         margin-left: rem(16);
-//     };
-// }
-
-// .voice-card__img img {
-//     aspect-ratio: 151 / 117;
-//     width: 100%;
-//     object-fit: cover;
-//     @include mq("md") {
-//         aspect-ratio: 180 / 140;
-//     }
-// }
 
 .voice-card__img {
     position: relative;

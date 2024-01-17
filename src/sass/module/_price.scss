@@ -6,7 +6,7 @@
     padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(100);
-        padding-bottom: rem(100);
+        padding-bottom: rem(105);
     }
 }
 
@@ -26,8 +26,8 @@
         background-position: center;
         width: rem(437);
         height: rem(201);
-        bottom: -4%;
-        left: -5%;
+        left: calc(50% - min(48vw, 38.75rem));
+        bottom: -5%;
     }
 }
 

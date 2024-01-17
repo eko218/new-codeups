@@ -30,12 +30,8 @@
 
 .header__logo {
     position: relative;
-    // width: rem(102);
     z-index: 99999;
     color: $white;
-    // @include mq("md") {
-    //     width: rem(133);
-    // }
 }
 
 .header-logo img {

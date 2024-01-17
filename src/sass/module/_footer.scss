@@ -6,14 +6,17 @@
     background-color: $green;
     padding-top: rem(50);
     padding-bottom: rem(56);
-    // padding-left: rem(15);
-    // padding-right: rem(15);
     display: inline-block;
     @include mq("md") {
         padding-top: rem(80);
         padding-bottom: rem(80);
-        // padding-left: rem(180);
-        // padding-right: rem(252);
+    }
+}
+
+.footer__inner {
+    @include mq("md") {
+        max-width: rem(1058);
+        width: 100%;
     }
 }
 

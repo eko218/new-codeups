@@ -28,16 +28,13 @@
     display: flex;
     justify-content: center;
     gap: rem(27);
-    // margin-top: rem(24);
 }
 
 .sp-nav__item.sp-nav__item--title a {
     font-weight: $bold;
-    // padding-bottom: rem(25);
 }
 
 .sp-nav__item.sp-nav__item--title {
-    // padding-left: rem(-15);
     margin-left: rem(-20);
 }
 
@@ -58,10 +55,6 @@
     line-height: 1.125;
     padding: rem(12) 0;
 }
-
-// .sp-nav__item a:not(:first-child) {
-//     padding: rem(12) 0;
-// }
 
 .sp-nav__wrap {
     margin-top: rem(15);

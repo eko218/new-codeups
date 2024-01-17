@@ -20,7 +20,6 @@
 }
 
 .footer-nav__left {
-    // margin-left: rem(10);
     @include mq("md") {
         display: flex;
         gap: rem(140);
@@ -68,10 +67,6 @@
     height: rem(18);
     margin-right: rem(4);
 }
-
-// .footer-nav__right {
-//     margin-left: rem(38);
-// }
 
 .footer-nav__copyright {
     font-size: rem(14);

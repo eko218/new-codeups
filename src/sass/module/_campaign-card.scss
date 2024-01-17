@@ -3,17 +3,13 @@
 .campaign-card {
     background-color: $white;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
     height: 100%;
     width: 100%;
-    // gap: rem(24);
     flex-direction: column;
     max-width: rem(280);
     box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
     @include mq("md") {
         max-width: rem(333);
-        // gap: rem(40);
     }
 }
 
@@ -68,13 +64,11 @@
     margin-top: rem(3);
     border-bottom: 1px solid $green;
     padding-bottom: rem(6);
-    // display: inline-block;
  }
 
 .campaign-card__text {
     text-align: center;
     margin-top: rem(8);
-    // padding-bottom: rem(24);
     @include mq("md") {
         margin-top: rem(16);
     }

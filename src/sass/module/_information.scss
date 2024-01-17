@@ -5,13 +5,13 @@
     padding-top: rem(84);
     padding-bottom: rem(84);
     @include mq("md") {
-        padding-top: rem(100);
+        padding-top: rem(94);
         padding-bottom: rem(76);
     }
 }
 
 .information__container {
-    margin-top: rem(32);
+    margin-top: rem(28);
     @include mq("md") {
         margin-top: rem(40);
         display: flex;
@@ -22,8 +22,6 @@
 
 .information__img { 
     position: relative;
-    // width: 80%;
-    // margin: auto rem(30);
     @include mq("md") {
         width: 50%;
     }
@@ -87,17 +85,4 @@
     text-align: center;
 }
 
-// アニメーション
-// .information__img {
-//     position: relative;
-//     width: 80%;
-//     margin: rem(30) auto rem(30);
-// }
-
-
-
-// .information__img img {
-//     display: block;
-//     width: 100%;
-// }
 

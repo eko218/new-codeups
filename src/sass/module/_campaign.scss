@@ -81,10 +81,10 @@
 }
 
 .campaign__btn {
-    margin-top: rem(40);
+    margin-top: rem(35);
     text-align: center;
+    margin-bottom: rem(5);
     @include mq("md") {
-        margin-top: rem(80);
-        margin-bottom: rem(5);
+        margin-top: rem(74);
     }
 }

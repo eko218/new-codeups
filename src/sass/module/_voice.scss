@@ -14,8 +14,8 @@
         background-position: center;
         width: rem(301);
         height: rem(138);
+        left: calc(50% - min(48vw, 38.75rem));
         top: -19%;
-        left: -5%;
     }
 }
 
@@ -29,7 +29,7 @@
         background-position: center;
         width: rem(71);
         height: rem(1162);
-        top: 5%;
+        top: 6%;
         right: 2%;
     }
 }

@@ -82,25 +82,12 @@
 .common-btn:hover::after {
     width: 100%;
 }
-
-// .btn__arrow:hover::after {
-//     background-color: $green;
-// }
-
-// .btn__arrow:hover::before {
-//     background-color: $green;
-// }
-
-
-// .common-btn:hover .btn__arrow {
-//     background-color: $green; // ここでホバー時の背景色を白に設定
-//   }
   
   .common-btn:hover .btn__arrow::after {
-    background-color: $green; // ここでホバー時の矢印の部分の背景色も白に設定
+    background-color: $green; 
   }
 
   .common-btn:hover .btn__arrow::before {
-    background-color: $green; // ここでホバー時の矢印の部分の背景色も白に設定
+    background-color: $green; 
   }
 
