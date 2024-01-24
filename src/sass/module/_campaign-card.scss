@@ -6,11 +6,16 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
-    max-width: rem(280);
+    // max-width: rem(280);
     box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
     @include mq("md") {
-        max-width: rem(333);
+        // max-width: rem(333);
     }
+}
+
+.campaign-card__item {
+    display: flex;
+    flex-direction: column;
 }
 
 .campaign-card__img {
@@ -35,6 +40,7 @@
     padding-right: rem(16);
     padding-left: rem(16);
     padding-bottom: rem(24);
+    margin-top: auto;
     @include mq("md") {
         padding-top: rem(22);
         padding-bottom: rem(42);

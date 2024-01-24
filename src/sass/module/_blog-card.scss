@@ -1,13 +1,13 @@
 @use "global" as *;
 
 .blog-card {
-    padding-top: rem(16);
-    padding-bottom: rem(24);
-    padding-left: rem(16);
-    padding-right: rem(16);
-    box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
-    background-color: $white;
-}
+// //     padding-top: rem(16);
+// //     padding-bottom: rem(24);
+// //     padding-left: rem(16);
+// //     padding-right: rem(16);
+//     // box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
+          background-color: $white;
+  }
 
 .blog-card:not(:first-child) {
     margin-top: rem(37);
@@ -15,6 +15,24 @@
         margin-top: 0;
         margin-left: rem(40);
     }
+}
+
+.blog-card__item {
+    transition : opacity .3s;
+    padding-top: rem(16);
+    padding-bottom: rem(24);
+    padding-left: rem(16);
+    padding-right: rem(16);
+    display: inline-block;
+    box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
+    @include mq("md") {
+        max-width: rem(333);
+        width: 100%;
+    }
+}
+
+.blog-card__item:hover {
+    opacity: 0.7;
 }
 
 .blog-card__img {

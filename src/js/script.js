@@ -79,7 +79,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       const service_swiper = new Swiper('.js-campaign-swiper', {
         loop: true,
         speed: 3000,
-        slidesPerView: 'auto',
+        // slidesPerView: 'auto',
         spaceBetween: 24,
         width: 280,
         autoplay: {
@@ -89,6 +89,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         breakpoints: {
           768: {
             spaceBetween: 40,
+            width: 333,
           }
         },
         
