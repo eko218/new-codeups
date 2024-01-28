@@ -6,11 +6,13 @@
 
 // .campaign__inner.inner {
 //     @include mq("md") {
-//         width: 100%;
-//         max-width: rem(1130);
-//         margin-left: auto;
-//         margin-right: auto;
+//         // width: 100%;
+//         // max-width: rem(1130);
+//         // margin-left: auto;
+//         // margin-right: auto;
+//         // position: relative;
 //         position: relative;
+//     overflow-x: hidden;
 //     }
 // }
 
@@ -89,7 +91,9 @@
     // background-color: transparent;
     // margin-right: calc(50% - 50vw);
     // width: 100vw;
-    overflow-x: hidden;
+    // width: 100%; 
+    // box-sizing: border-box; 
+    // overflow-x: hidden;
     height: auto;
     @include mq("md") {
         margin-top: rem(40);
@@ -104,10 +108,12 @@
 //     }
 // }
 
-// .campaign__slider {
-//     margin-right: calc(50% - 50vw);
-//     width: 100vw;
-// }
+.campaign__slider {
+    // margin-right: calc(50% - 50vw);
+    // width: 100vw;
+    // white-space: nowrap;
+    // overflow-x: hidden;
+}
 
 .campaign__btn {
     margin-top: rem(35);
