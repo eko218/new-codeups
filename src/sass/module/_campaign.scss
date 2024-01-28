@@ -1,17 +1,31 @@
 @use "global" as *;
 
+// .campaign {
+//     overflow: hidden;
+// }
+
+// .campaign__inner.inner {
+//     @include mq("md") {
+//         width: 100%;
+//         max-width: rem(1130);
+//         margin-left: auto;
+//         margin-right: auto;
+//         position: relative;
+//     }
+// }
+
 .campaign {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
-.campaign__inner.inner {
-    @include mq("md") {
-        width: 100%;
-        max-width: rem(1130);
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-    }
+.campaign__inner {
+    position: relative;
+}
+
+.campaign::-webkit-scrollbar {
+    display: none;
 }
 
 .campaign__button-wrap {
@@ -70,15 +84,30 @@
 
 .campaign__swiper-container {
     margin-top: rem(28);
+    // overflow-x: hidden;
+    // overflow-x: auto;
+    // background-color: transparent;
+    // margin-right: calc(50% - 50vw);
+    // width: 100vw;
     overflow-x: hidden;
-    background-color: transparent;
-    margin-right: calc(50% - 50vw);
-    width: 100vw;
     height: auto;
     @include mq("md") {
         margin-top: rem(40);
     }
 }
+
+// .campaign__swiper-container {
+//     margin-top: rem(28);
+//     height: auto;
+//     @include mq("md") {
+//         margin-top: rem(40);
+//     }
+// }
+
+// .campaign__slider {
+//     margin-right: calc(50% - 50vw);
+//     width: 100vw;
+// }
 
 .campaign__btn {
     margin-top: rem(35);

@@ -80,11 +80,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         loop: true,
         speed: 3000,
         // slidesPerView: 'auto',
+        loopedSlides: 4,
         spaceBetween: 24,
         width: 280,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false,
+          direction: 'horizontal', 
         },
         breakpoints: {
           768: {
