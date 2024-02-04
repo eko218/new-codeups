@@ -22,6 +22,7 @@
 
 .sp-nav.is-active {
     transform: translateX(0);
+    overflow-y: scroll;
 }
 
 .sp-nav__body {

@@ -62,12 +62,12 @@
     margin-left: rem(6);
     margin-right: rem(6);
     display: grid;
-    // grid-template-columns: repeat(1, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
+    grid-template-columns: repeat(1, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
     column-gap: rem(40);
     row-gap: rem(40);
     @include mq(md){
-        // grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         // grid-template-columns: repeat(auto-fit, minmax(rem(333), 1fr));
         margin-top: rem(80);
         margin-left: 0;
