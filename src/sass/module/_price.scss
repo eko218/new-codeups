@@ -42,6 +42,7 @@
 
 .price__img {
     position: relative;
+    display: block;
     @include mq("md") {
         width: 45.555%;
         margin-left: rem(93);

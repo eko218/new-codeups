@@ -43,16 +43,36 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       //   });
       // });
 
-      $(".js-hamburger,.js-drawer-menu").click(function () {
-        $(this).toggleClass('is-active');
-          $(".js-drawer-menu").toggleClass('is-active');
-      });
+    //   $(".js-hamburger,.js-drawer-menu").click(function () {
+    //     $(this).toggleClass('is-active');
+    //       $(".js-drawer-menu").toggleClass('is-active');
+    //   });
       
-      $(".js-drawer-menu").click(function () {
-          $(".js-hamburger").removeClass('is-active');
-          $(".js-drawer-menu").removeClass('is-active');
-      });
+    //   $(".js-drawer-menu").click(function () {
+    //       $(".js-hamburger").removeClass('is-active');
+    //       $(".js-drawer-menu").removeClass('is-active');
+    //   });
+    // });
+
+  //   $(".js-hamburger,.js-drawer-menu").click(function () {
+  //     $(".js-hamburger").toggleClass("is-active");
+  //     $(".js-drawer-menu").fadeToggle();
+  //     // $(".js-drawer-menu").toggleClass("is-active");
+  //   });
+  // });
+
+
+    $(".js-hamburger").click(function () {
+      $(".js-hamburger").toggleClass("is-active");
+      $(".js-drawer-menu").toggleClass("is-active"); // ドロワーメニューにis-activeクラスを追加
+      if ($(".js-drawer-menu").hasClass("is-active")) {
+        $(".js-drawer-menu").fadeIn(); // ドロワーメニューをフェードイン
+      } else {
+        $(".js-drawer-menu").fadeOut(); // ドロワーメニューをフェードアウト
+      }
     });
+  });
+  
 
     // mvスライダー
      var swiper = new Swiper(".js-mv-swiper", {
@@ -165,5 +185,4 @@ $(function () {
   });
 });
 });
-
 

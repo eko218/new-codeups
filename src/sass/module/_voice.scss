@@ -36,16 +36,8 @@
 
 .voice__items {
     margin-top: rem(45);
-    // grid-template-columns: repeat(auto-fit, minmax(rem(345), 1fr));
-    grid-template-columns: repeat(1, 1fr);
     @include mq("md") {
         margin-top: rem(30);
-        // display: flex;
-        display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(rem(520), 1fr));
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: rem(40);
-        row-gap: rem(40);
     }
 }
 
