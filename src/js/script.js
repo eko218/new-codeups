@@ -66,8 +66,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-hamburger").toggleClass("is-active");
       $(".js-drawer-menu").toggleClass("is-active"); // ドロワーメニューにis-activeクラスを追加
       if ($(".js-drawer-menu").hasClass("is-active")) {
+        $("body, html").css("overflow", "hidden");
         $(".js-drawer-menu").fadeIn(); // ドロワーメニューをフェードイン
       } else {
+        $("body, html").css("overflow", "auto");
         $(".js-drawer-menu").fadeOut(); // ドロワーメニューをフェードアウト
       }
     });
