@@ -52,6 +52,7 @@
     padding-left: rem(12);
     white-space: nowrap;
     transition: opacity .3s;
+    position: relative;
 }
 
 .footer-nav__item a:hover {
@@ -60,10 +61,11 @@
 
 .footer-nav__item.footer-nav__item--title a {
     font-weight: $bold;
+    padding-left: rem(20);
 }
 
 .footer-nav__item.footer-nav__item--title {
-    margin-left: rem(-25);
+    margin-left: rem(-9);
 }
 
 .footer-nav__item.footer-nav__item--title a:before {
@@ -71,6 +73,9 @@
     width: rem(18);
     height: rem(18);
     margin-right: rem(4);
+    position: absolute;
+    left: 0;
+    top: rem(12);
 }
 
 .footer-nav__copyright {

@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: rem(8);
-    gap: rem(92);
+    gap: rem(24);
     @include mq("md") {
         font-size: rem(16);
         line-height: 1.5;
