@@ -1,11 +1,6 @@
 @use "global" as *;
 
-.contact-logo {
-    border-bottom: rem(1) solid $green;
-    text-align: center;
-}
-
-.contact-logo__link img {
+.contact-logo img {
     width: rem(174);
     display: inline-block;
     @include mq("md") {

@@ -1,11 +1,8 @@
 @use "global" as *;
 
-.campaign-card {
-    display: flex;
-    height: auto;
-}
 
-.campaign-card__item {
+
+.campaign-card {
     display: flex;
     flex-direction: column;
     height: 100%;

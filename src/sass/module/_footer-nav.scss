@@ -78,19 +78,6 @@
     top: rem(12);
 }
 
-.footer-nav__copyright {
-    font-size: rem(14);
-    line-height: calc(18 / 12);
-    font-weight: $regular;
-    margin-top: rem(22);
-    text-align: center;
-    @include mq("md") {
-        font-size: rem(17);
-        line-height: 1.2857;
-        margin-top: rem(66);
-    }
-}
-
 .footer-nav__item-indent {
     display: block;
     @include mq("md") {

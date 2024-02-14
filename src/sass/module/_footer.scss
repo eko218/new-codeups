@@ -26,6 +26,13 @@
     }
 }
 
+.footer__logo {
+    width: rem(120);
+    @include mq("md") {
+        width: rem(200);
+    }
+}
+
 .footer__sns {
     display: flex;
     margin-top: rem(16);
@@ -46,8 +53,21 @@
 }
 
 .footer__bottom {
-    margin-top: rem(10);
+    margin-top: rem(16);
     @include mq("md") {
         margin-top: rem(-10);
+    }
+}
+
+.footer__copyright {
+    font-size: rem(14);
+    line-height: calc(18 / 12);
+    font-weight: $regular;
+    margin-top: rem(22);
+    text-align: center;
+    @include mq("md") {
+        font-size: rem(17);
+        line-height: 1.2857;
+        margin-top: rem(66);
     }
 }

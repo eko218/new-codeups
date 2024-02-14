@@ -17,6 +17,7 @@
     font-family: $third-font-family;
     color: $darkgreen;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: rem(8);
     gap: rem(24);

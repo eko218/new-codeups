@@ -36,6 +36,7 @@
 
 .voice__items {
     margin-top: rem(45);
+    gap: rem(40);
     @include mq("md") {
         margin-top: rem(30);
     }
