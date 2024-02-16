@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.blog-list-contents-main__cards {
+    margin-top: rem(52);
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.blog-list-contents-main__wp-pagenavi {
+    margin-top: rem(80);
+}
