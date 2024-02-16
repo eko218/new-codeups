@@ -1,7 +1,5 @@
 @use "global" as *;
 
-
-
 .campaign-card {
     display: flex;
     flex-direction: column;
@@ -9,6 +7,20 @@
     width: 100%;
     background-color: $white;
     box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
+}
+
+.campaign-card__container {
+    display: grid;
+    row-gap: rem(40);
+    @include mq("md") {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: rem(80);
+        column-gap: rem(40);
+    }
+}
+
+.campaign-card__item {
+    box-shadow: rem(2) rem(2) rem(10) 0 rgba(0,0,0,0.25);
 }
 
 .campaign-card__img {
@@ -134,3 +146,53 @@
         margin-left: rem(24);
     }
 }
+
+
+
+
+.campaign-card__text-wrap {
+    display: none;
+    @include mq("md") {
+        display: block;
+        margin-top: rem(24);
+    }
+}
+
+.campaign-card__sub-text {
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    color: $darkgreen;
+    line-height: 1.5;
+}
+
+.campaign-card__date {
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $second-font-family;
+    color: $green;
+    line-height: 1.125;
+    text-align: center;
+    margin-top: rem(32);
+}
+
+.campaign-card__sub-text2 {
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    color: $green;
+    line-height: 1.2857;
+    text-align: center;
+    margin-top: rem(7);
+}
+
+.campaign-card__btn {
+    margin-top: rem(16);
+    text-align: center;
+}
+
+.campaign-card__wp-pagenavi {
+    margin-top: rem(80);
+}
+
+

@@ -1,0 +1,129 @@
+@use "global" as *;
+
+.aboutus-sub {
+    position: relative;
+}
+
+.aboutus-sub__inner {
+    position: relative;
+}
+
+.aboutus-sub__inner::after {
+    @include mq("md") {
+        position: absolute;
+        content: '';
+        background-image: url(/assets/images/common/aboutus-sango.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: rem(194);
+        height: rem(181);
+        right: calc(50% - min(48vw, 40rem));
+        bottom: -12%;
+    }
+}
+
+.aboutus-sub__img {
+    margin-top: rem(30);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.aboutus-sub__img-left {
+    display: none;
+    @include mq("md") {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 37.1%;
+        z-index: 2;
+    }
+}
+
+.aboutus-sub__img-left img {
+    @include mq("md") {
+        aspect-ratio: 400 / 606;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.aboutus-sub__img-right {
+
+    @include mq("md") {
+        margin-left: -18.5%;
+        margin-top: 7.25%;
+        width: 81.45%;
+    }
+}
+
+.aboutus-sub__img-right img {
+    aspect-ratio:  345 / 228;
+    width: 100%;
+    object-fit: cover;
+    @include mq("md") {
+        aspect-ratio: 880 / 581;
+    }
+}
+.aboutus-sub__content {
+    @include mq("md") {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+        gap: rem(40);
+        padding: 0 rem(15);
+    }
+}
+
+.aboutus-sub__title {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    z-index: 50;
+    @include mq("md") {
+        position: static;
+    }
+}
+
+.aboutus-sub__title-main {
+    font-size: rem(40);
+    line-height: 1;
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $white;
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1.25;
+        color: $white;
+        z-index: 5000;
+    }
+}
+
+.aboutus-sub__text {
+    margin-top: rem(40);
+    @include mq("md") {
+        max-width: rem(400);
+        width: 100%;
+        margin-top: rem(16);
+    }
+}
+
+.aboutus-sub__text-sub {
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: $regular;
+    font-family: $third-font-family;
+    margin-top: rem(16);
+    color: $darkgreen;
+    @include mq("md") {
+        color: $white;
+        margin-top: rem(21);
+    }
+}

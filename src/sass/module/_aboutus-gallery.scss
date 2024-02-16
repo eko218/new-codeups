@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.aboutus-gallery__container {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.aboutus-gallery__img-items {
+    display: grid;
+    gap: rem(8);/* 画像間の余白 */
+    grid-auto-flow: dense; /* 隙間を埋めながら配置 */
+    grid-template-columns: repeat(1, 1fr); /* カラム数を設定 */
+    @include mq("md") {
+        grid-template-columns: repeat(11, 1fr);
+    }
+}
+
+.aboutus-gallery__img-item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.aboutus-gallery__img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutus-gallery__img-item:nth-child(6n+1) {
+    aspect-ratio: 345 / 523;
+    @include mq("md") {
+        grid-row: span 2;
+        grid-column: span 5;
+        aspect-ratio: 492 / 746;
+    }
+}
+
+.aboutus-gallery__img-item:nth-child(6n+2) {
+    aspect-ratio: 345 / 219;
+    @include mq("md") {
+        grid-row: span 1;
+        grid-column: span 6;
+        aspect-ratio: 580 / 369;
+    }
+}
+
+.aboutus-gallery__img-item:nth-child(6n+3) {
+    aspect-ratio: 345 / 219;
+    @include mq("md") {
+        grid-row: span 1;
+        grid-column: span 6;
+        aspect-ratio: 580 / 369;
+    }
+}
+
+.aboutus-gallery__img-item:nth-child(6n+4) {
+    aspect-ratio: 345 / 219;
+    @include mq("md") {
+        grid-row: span 1;
+        grid-column: span 6;
+        aspect-ratio: 580 / 369;
+    }
+}
+
+.aboutus-gallery__img-item:nth-child(6n+5) {
+    aspect-ratio: 345 / 219;
+    @include mq("md") {
+        grid-row: span 1;
+        grid-column: span 6;
+        aspect-ratio: 580 / 369;
+    }
+}
+
+.aboutus-gallery__img-item:nth-child(6n+6) {
+    aspect-ratio: 345 / 524;
+    @include mq("md") {
+        grid-row: span 2;
+        grid-column: span 5;
+        aspect-ratio: 492 / 746;
+    }
+}
+

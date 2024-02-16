@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.information-sub__tab {
+    margin-top: rem(121);
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.information-sub__tab-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.information-sub__tab-btn:not(:first-child) {
+    margin-left: rem(20);
+}
+
+.information-sub__tab-content {
+    margin-top: rem(16);
+    padding: rem(24);
+    border: rem(1) solid $green;
+    @include mq("md") {
+        margin-top: rem(24);
+    }
+}
+
+.information-sub__tab-box {
+    @include mq("md") {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.information-sub__tab-body {
+    @include mq("md") {
+        max-width: rem(492);
+        width: 47.5%;
+
+    }
+}
+
+.information-sub__tab-title {
+    font-size: rem(24);
+    font-weight: $bold;
+    font-family: $third-font-family;
+    line-height: 1;
+    color: $darkgreen;
+    border-bottom: rem(1) solid $green;
+    padding-bottom: rem(8);
+}
+
+.information-sub__tab-text {
+    margin-top: rem(8);
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.5;
+    color: $darkgreen;
+}
+
+.information-sub__tab-img {
+    margin-top: rem(8);
+    width: 100%;
+    height: 100%;
+    @include mq("md") {
+        margin-top: 0;
+        margin-left: rem(48);
+        width: 47.8%;
+    }
+}
+
+.information-sub__tab-img img {
+    aspect-ratio:  297 / 189;
+    object-fit: cover;
+    @include mq("md") {
+        aspect-ratio: 492 / 313;
+    }
+}
