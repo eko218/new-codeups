@@ -15,9 +15,9 @@
     }
 }
 
-.section-header__engtitle span {
+.section-header__engtitle::first-letter {
     color: $green;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .section-header__jatitle {
@@ -32,13 +32,13 @@
     }
 }
 
-.section-header__engtitle.section-header__engtitle--blog {
+.section-header__engtitle.section-header__engtitle--blog::first-letter {
     @include mq("md") {
         color: $white;
     }
 }
 
-.section-header__engtitle.section-header__engtitle--blog span {
+.section-header__engtitle.section-header__engtitle--blog::first-letter {
     @include mq("md") {
         color: $lightblue;
     }

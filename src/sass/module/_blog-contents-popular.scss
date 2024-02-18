@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.blog-list-contents__side {
+    margin-left: rem(25);
+    margin-right: rem(25);
+}
+
+.blog-contents-popular__title {
+    font-size: rem(24);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.4583;
+    color: $darkgreen;
+}
+
+.blog-contents-popular__items {
+    margin-top: rem(24);
+}
+
+.blog-contents-popular__item:not(:first-child) {
+    margin-top: rem(24);
+}
