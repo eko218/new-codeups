@@ -41,14 +41,12 @@
          <img src="assets/images/common/header-logo.svg" alt="CodeUps">
         </a>
       </h1>
-
         <!-- ハンバーガー -->
       <button class="header__drawer hamburger js-hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
-
         <!-- ドロワー左側 -->
       <div class="header__sp-nav sp-nav js-drawer-menu">
         <nav class="sp-nav__scroll-container">
@@ -81,7 +79,6 @@
                 </ul>
               </div>
             </div>
-
               <!-- ドロワー右側 -->
             <div class="sp-nav__right">
               <div class="sp-nav__wrap">
@@ -135,28 +132,27 @@
       </nav>
     </div>
   </header>
-
   <main>
-  <!-- mv -->
-  <div class="campaign-mv">
-    <div class="campaign-mv__inner">
-      <picture class="campaign-mv__img">
-        <source srcset="./assets/images/common/campaign-mv-pc.jpg" media="(min-width: 768px)">
-        <img src="./assets/images/common/campaign-mv-sp.jpg" alt="海と黄色い熱帯魚2匹">
+  <!-- voice-mv -->
+  <div class="voice-mv">
+    <div class="voice-mv__inner">
+      <picture class="voice-mv__img">
+        <source srcset="./assets/images/common/voice-mv-pc.jpg" media="(min-width: 768px)">
+        <img src="./assets/images/common/voice-mv-sp.jpg" alt="海に浮かんでいる5人のダイバー">
       </picture>
-      <div class="campaign-mv__header">
-        <h2 class="campaign-mv__title">Campaign</h2>
+      <div class="voice-mv__header">
+        <h2 class="voice-mv__title">Voice</h2>
       </div>
     </div>
   </div>
 
   <!-- パンくず -->
-  <div class="breadcrumb top-breadcrumb inner">TOP > キャンペーン</div>
+  <div class="breadcrumb top-breadcrumb inner">TOP > お客様の声</div>
 
   <!-- タブ -->
-  <section class="campaign-sub top-campaign-sub">
-    <div class="campaign-sub__inner inner">
-      <div class="campaign-sub__tab category-button">
+  <section class="voice-list top-voice-list">
+    <div class="voice-list__inner inner">
+      <div class="voice-list__tab category-button">
         <div class="category-button__list">
           <button class="category-button__list-item js-category-button is-active">ALL</button>
           <button class="category-button__list-item js-category-button">ライセンス講習</button>
@@ -164,109 +160,156 @@
           <button class="category-button__list-item js-category-button">体験ダイビング</button>
         </div>
 
-    <ul class="campaign-sub__items campaign-card__container">
-      <li class="campaign-card__item">
-        <div class="campaign-card__content">
-            <figure class="campaign-card__img">
-              <img src="./assets/images/common/campaign1.jpg" alt="魚が沢山泳いでいる画像">
-            </figure>
-            <div class="campaign-card__body">
-              <p class="campaign-card__category">ライセンス講習</p>
-              <p class="campaign-card__title">ライセンス取得</p>
-              <p class="campaign-card__text">全部コミコミ&lpar;お一人様&rpar;</p>
-              <div class="campaign-card__price">
-                <p class="campaign-card__price-sub">&yen;56&comma;000</p>
-                <p class="campaign-card__price-main">&yen;46&comma;000</p>
-              </div>
-              <div class="campaign-card__text-wrap">
-                <p class="campaign-card__sub-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                <p class="campaign-card__date">2023/6/1-9/30</p>
-                <p class="campaign-card__sub-text2">ご予約・お問い合わせはコチラ</p>
-                <div class="campaign-card__btn contact-common-btn">
-                  <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+  <!-- voice -->
+      <div class="voice-list__items voice-cards">
+        <div class="voice-list__item voice-card">
+          <a href="#" class="voice-card__item">
+            <div class="voice-card__wrapper">
+              <div class="voice-card__top">
+                <div class="voice-card__content">
+                  <div class="voice-card__info">
+                    <p class="voice-card__age">20代&lpar;女性&rpar;</p>
+                    <p class="voice-card__category">ライセンス講習</p>
+                  </div>
+                  <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
                 </div>
+                <picture class="voice-card__img js-colorbox">
+                  <source srcset="./assets/images/common/voice-pc1.jpg">
+                  <img src="./assets/images/common/voice-sp1.jpg" alt="麦わら帽子を被った笑顔の女性">
+                </picture>
               </div>
+              <p class="voice-card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                ここにテキストが入ります。ここにテキストが入ります。
+              </p>
             </div>
+          </a>
         </div>
-      </li>
-      <li class="campaign-card__item">
-           <div class="campaign-card__content">
-            <figure class="campaign-card__img">
-             <img src="./assets/images/common/campaign2.jpg" alt="船と海の画像">
-            </figure>
-            <div class="campaign-card__body">
-              <p class="campaign-card__category">体験ダイビング</p>
-              <p class="campaign-card__title">貸切体験ダイビング</p>
-              <p class="campaign-card__text">全部コミコミ&lpar;お一人様&rpar;</p>
-              <div class="campaign-card__price">
-                <p class="campaign-card__price-sub">&yen;24&comma;000</p>
-                <p class="campaign-card__price-main">&yen;18&comma;000</p>
+        <div class="voice-list__item voice-card">
+          <a href="#" class="voice-card__item">
+            <div class="voice-card__wrapper">
+              <div class="voice-card__top">
+                <div class="voice-card__content">
+                  <div class="voice-card__info">
+                    <p class="voice-card__age">20代&lpar;男性&rpar;</p>
+                    <p class="voice-card__category">ファンダイビング</p>
+                  </div>
+                  <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                </div>
+                <picture class="voice-card__img js-colorbox">
+                  <source srcset="./assets/images/common/voice-pc2.jpg">
+                  <img src="./assets/images/common/voice-sp2.jpg" alt="グッドポーズをしている男性">
+                </picture>
               </div>
-              <div class="campaign-card__text-wrap">
-                <p class="campaign-card__sub-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                <p class="campaign-card__date">2023/6/1-9/30</p>
-                <p class="campaign-card__sub-text2">ご予約・お問い合わせはコチラ</p>
-                <div class="campaign-card__btn contact-common-btn">
-                  <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+              <p class="voice-card__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="voice-list__item voice-card">
+            <a href="#" class="voice-card__item">
+              <div class="voice-card__wrapper">
+                <div class="voice-card__top">
+                  <div class="voice-card__content">
+                    <div class="voice-card__info">
+                      <p class="voice-card__age">30代&lpar;女性&rpar;</p>
+                      <p class="voice-card__category">体験ダイビング</p>
+                    </div>
+                    <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                  </div>
+                  <picture class="voice-card__img js-colorbox">
+                    <source srcset="./assets/images/common/voice-pc3.jpg">
+                    <img src="./assets/images/common/voice-sp3.jpg" alt="笑顔の2人の女性">
+                  </picture>
                 </div>
+                <p class="voice-card__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
               </div>
-            </div>
-           </div>
-       </li>
-       <li class="campaign-card__item">
-         <div class="campaign-card__content">
-           <figure class="campaign-card__img">
-             <img src="./assets/images/common/campaign3.jpg" alt="クラゲが泳いでいる画像">
-           </figure>
-           <div class="campaign-card__body">
-             <p class="campaign-card__category">体験ダイビング</p>
-             <p class="campaign-card__title">ナイトダイビング</p>
-             <p class="campaign-card__text">全部コミコミ&lpar;お一人様&rpar;</p>
-             <div class="campaign-card__price">
-               <p class="campaign-card__price-sub">&yen;10&comma;000</p>
-               <p class="campaign-card__price-main">&yen;8&comma;000</p>
-             </div>
-             <div class="campaign-card__text-wrap">
-                <p class="campaign-card__sub-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                <p class="campaign-card__date">2023/6/1-9/30</p>
-                <p class="campaign-card__sub-text2">ご予約・お問い合わせはコチラ</p>
-                <div class="campaign-card__btn contact-common-btn">
-                  <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+            </a>
+          </div>
+          <div class="voice-list__item voice-card">
+            <a href="#" class="voice-card__item">
+              <div class="voice-card__wrapper">
+                <div class="voice-card__top">
+                  <div class="voice-card__content">
+                    <div class="voice-card__info">
+                      <p class="voice-card__age">20代&lpar;女性&rpar;</p>
+                      <p class="voice-card__category">体験ダイビング</p>
+                    </div>
+                    <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                  </div>
+                  <picture class="voice-card__img js-colorbox">
+                    <source srcset="./assets/images/common/voice-pc4.jpg">
+                    <img src="./assets/images/common/voice-sp4.jpg" alt="笑顔の女性">
+                  </picture>
                 </div>
-            </div>
-           </div>
-         </div>
-       </li>
-       <li class="campaign-card__item">
-         <div class="campaign-card__content">
-           <figure class="campaign-card__img">
-             <img src="./assets/images/common/campaign-sp4.jpg" alt="男性がダイビングをする様子の画像">
-           </figure>
-           <div class="campaign-card__body">
-             <p class="campaign-card__category">ファンダイビング</p>
-             <p class="campaign-card__title">貸切ファンダイビング</p>
-             <p class="campaign-card__text">全部コミコミ&lpar;お一人様&rpar;</p>
-             <div class="campaign-card__price">
-               <p class="campaign-card__price-sub">&yen;20&comma;000</p>
-               <p class="campaign-card__price-main">&yen;16&comma;000</p>
-             </div>
-             <div class="campaign-card__text-wrap">
-                <p class="campaign-card__sub-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
-                <p class="campaign-card__date">2023/6/1-9/30</p>
-                <p class="campaign-card__sub-text2">ご予約・お問い合わせはコチラ</p>
-                <div class="campaign-card__btn contact-common-btn">
-                  <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+                <p class="voice-card__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="voice-list__item voice-card">
+            <a href="#" class="voice-card__item">
+              <div class="voice-card__wrapper">
+                <div class="voice-card__top">
+                  <div class="voice-card__content">
+                    <div class="voice-card__info">
+                      <p class="voice-card__age">30代&lpar;カップル&rpar;</p>
+                      <p class="voice-card__category">ファンダイビング</p>
+                    </div>
+                    <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                  </div>
+                  <picture class="voice-card__img js-colorbox">
+                    <source srcset="./assets/images/common/voice-pc5.jpg">
+                    <img src="./assets/images/common/voice-sp5.jpg" alt="腕を組んでいる男性と女性">
+                  </picture>
                 </div>
-            </div>
-           </div>
-         </div>
-       </li>
-    </ul>
-    <div class="campaign-card__wp-pagenavi wp-pagenavi">
+                <p class="voice-card__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="voice-list__item voice-card">
+            <a href="#" class="voice-card__item">
+              <div class="voice-card__wrapper">
+                <div class="voice-card__top">
+                  <div class="voice-card__content">
+                    <div class="voice-card__info">
+                      <p class="voice-card__age">20代&lpar;女性&rpar;</p>
+                      <p class="voice-card__category">ライセンス講習</p>
+                    </div>
+                    <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                  </div>
+                  <picture class="voice-card__img js-colorbox">
+                    <source srcset="./assets/images/common/voice-pc6.jpg">
+                    <img src="./assets/images/common/voice-sp6.jpg" alt="笑顔で視線を逸らしている女性">
+                  </picture>
+                </div>
+                <p class="voice-card__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。 <br>
+                  ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    
+      <div class="campaign-card__wp-pagenavi wp-pagenavi">
         <!-- <span class="pages">3 / 100</span>
         <a class="first" href="#">« 先頭</a> -->
         <a class="previouspostslink" rel="prev" href="#">＜</a>
@@ -279,11 +322,14 @@
         <a class="nextpostslink" rel="next" href="#">＞</a>
         <!-- <a class="last" href="#">最後 »</a> -->
       </div>
-  </div>
-</div>
-</section>
+    </div>
+  </section>
 
-  <section id="contact" class="contact top-contact-campaign">
+  
+        
+
+  <!-- contact -->
+  <section id="contact" class="contact top-contact">
     <div class="contact__inner inner">
       <div class="contact__container">
         <div class="contact__access">
@@ -306,11 +352,11 @@
       </div>
       <div class="contact__content">
         <div class="contact__title section-header">
-          <div class="section-header__engtitle section-header__engtitle--contact"><span>C</span>ontact</div>
+          <div class="section-header__engtitle section-header__engtitle--contact">Contact</div>
           <h2 class="section-header__jatitle section-header__jatitle--contact">お問い合わせ</h2>
         </div>
-        <p class="contact__text">ご予約・お問い合わせはコチラ</p>
-        <div class="contact__btn">
+        <p class="contact__text ">ご予約・お問い合わせはコチラ</p>
+        <div class="contact__btn contact-common-btn">
           <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
         </div>
       </div>
@@ -318,7 +364,7 @@
     </div>
   </section>
   </main>
-
+  
   <!-- footer -->
   <footer class="footer top-footer">
     <div class="footer__inner inner">

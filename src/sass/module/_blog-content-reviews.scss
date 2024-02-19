@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.blog-contents-reviews__item {
+    margin-top: rem(24);
+}
+
 .blog-content-reviews__img {
     width: 100%;
 }

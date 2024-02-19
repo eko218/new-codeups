@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.blog-contents-campaign__items {
+    margin-top: rem(24);
+}
+
+.blog-content-campaign__card:not(:first-child) {
+    margin-top: rem(40);
+}

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+ .price-list-item__text-body {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.5;
+    color: $darkgreen;
+    border: rem(1) solid $green;
+
+}
+
+.price-list-item__title {
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $third-font-family;
+    line-height: 1.5;
+    color: $white;
+    background-color: $green;
+    padding: rem(8);
+    text-align: center;
+}
+
+.price-list-item__name {
+    padding: rem(7);
+    text-align: center;
+    @include mq("md") {
+        padding: rem(18);
+    }
+}
+
+.price-list-item__price {
+    padding: rem(19);
+}

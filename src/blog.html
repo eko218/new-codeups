@@ -136,7 +136,7 @@
   <div class="blog-mv">
     <div class="blog-mv__inner">
       <picture class="blog-mv__img">
-        <source srcset="./assets/images/common/blog-mv-pc.jpg">
+        <source srcset="./assets/images/common/blog-mv-pc.jpg" media="(min-width: 768px)">
         <img src="./assets/images/common/blog-mv-sp.jpg" alt="海底を泳いている沢山の白い魚">
       </picture>
       <div class="information-mv__header">
@@ -150,7 +150,7 @@
 
 
   <!-- blog -->
-  <section id="blog-list" class="bloglist top-blog-list">
+  <section id="blog-list" class="blog-list top-blog-list">
     <div class="blog-list__inner inner">
       <div class="blog-list__contents blog-list-contents">
         <div class="blog-list-contents__main blog-list-contents-main">
@@ -341,7 +341,7 @@
     <div class="blog-list-contents__side blog-list-contents-side top-blog-list-contents-side">
       <div class="blog-list-contents-side__popular blog-contents-popular">
         <div class="blog-contents-popular__inner">
-          <div class="blog-contents-popular__title">人気記事</div>
+          <div class="blog-contents-popular__title side-title-icon">人気記事</div>
             <div class="blog-contents-popular__items">
               <div class="blog-contents-popular__item blog-content-popular">
                 <a href="#" class="blog-content-popular__link">
@@ -378,11 +378,11 @@
               </div>
             </div>
         </div>
-      </div>
-    
+      
+    </div>
     <div class="blog-list-contents-side__reviews blog-contents-reviews">
       <div class="blog-contents-reviews__inner">
-            <div class="blog-contents-reviews__title">口コミ</div>
+            <div class="blog-contents-reviews__title side-title-icon">口コミ</div>
                 <div class="blog-contents-reviews__item blog-content-reviews">
                   <a href="#" class="blog-content-reviews__link">
                     <div class="blog-content-reviews__img">
@@ -394,19 +394,19 @@
                     </div>
                   </a>
                 </div>
+                
             </div>
             <div class="blog-list__btn">
                 <a href="#" class="common-btn"><span class="common-btn__arrow">View&nbsp;more</span></a>
               </div>
             </div>
-</div>
-</div>
+
 <div class="blog-list-contents-side__campaign blog-contents-campaign">
     <div class="blog-contents-campaign__inner">
-          <div class="blog-contents-campaign__title">キャンペーン</div>
+          <div class="blog-contents-campaign__title side-title-icon">キャンペーン</div>
               <ul class="blog-contents-campaign__items blog-content-campaign">
                 <li class="blog-content-campaign__card campaign-cards__card">
-                    <div class="campaign-card">
+                    <div class="campaign-card__item">
                      <figure class="campaign-card__img">
                        <img src="./assets/images/common/campaign1.jpg" alt="魚が沢山泳いでいる画像">
                      </figure>
@@ -420,9 +420,25 @@
                      </div>
                      </div>
                   </li>
+                  <li class="blog-content-campaign__card campaign-cards__card">
+                    <div class="campaign-card__item">
+                     <figure class="campaign-card__img">
+                      <img src="./assets/images/common/campaign2.jpg" alt="船と海の画像">
+                     </figure>
+                     <div class="campaign-card__body">
+                       <p class="campaign-card__title">貸切体験ダイビング</p>
+                       <p class="campaign-card__text">全部コミコミ&lpar;お一人様&rpar;</p>
+                       <div class="campaign-card__price">
+                         <p class="campaign-card__price-sub">&yen;24&comma;000</p>
+                         <p class="campaign-card__price-main">&yen;18&comma;000</p>
+                       </div>
+                     </div>
+                    </div>
+                </li>
               </ul>
           </div>
-          
+</div>
+</div>
   </section>
 
   <!-- contact -->

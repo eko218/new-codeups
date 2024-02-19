@@ -188,3 +188,32 @@ $(function () {
 });
 });
 
+// faqアコーディオン
+$(function () {
+  $(".js-faq-item:first-child .js-faq-text").css(
+    "display",
+    "block"
+  );
+  $(".js-faq-item:first-child .js-faq-title").addClass(
+    "is-active"
+  );
+  $(".js-faq-title").on("click", function () {
+    $(this).toggleClass("is-active");
+    $(this).next().slideToggle(300);
+  });
+});
+
+// $(function() {
+//   // 最初の質問を表示する
+//   $(".js-faq-item:first-child .js-faq-text").css("display", "block");
+//   $(".js-faq-item:first-child .js-faq-title").addClass("is-active");
+
+//   // 質問タイトルがクリックされたときの動作を定義する
+//   $(".js-faq-title").on("click", function() {
+//     var $faqItem = $(this).closest(".js-faq-item"); // クリックされた質問の親要素を取得
+//     $faqItem.find(".js-faq-text").slideToggle(300); // 隣接する回答をスライドトグルする
+//     $(this).toggleClass("is-active"); // タイトルにアクティブクラスを切り替える
+//     $faqItem.siblings().find(".js-faq-text").slideUp(300); // 他の質問の回答を閉じる
+//     $faqItem.siblings().find(".js-faq-title").removeClass("is-active"); // 他の質問のタイトルからアクティブクラスを削除する
+//   });
+// });
