@@ -46,6 +46,7 @@
 
   .faq-content__title.is-active::after {
     opacity: 0;
+    visibility:hidden
 }
 
 .faq-content__text {

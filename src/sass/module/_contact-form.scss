@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.contact-form__container {
+    @include mq("md") {
+        max-width: rem(700);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

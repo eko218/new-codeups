@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.thanks-main__container {
+    @include mq("md") {
+        max-width: rem(622);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.thanks-main__title {
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.125;
+    color: $darkgreen;
+    text-align: center;
+}
+
+.thanks-main__text {
+    text-align: center;
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.4375;
+    color: $darkgreen;
+    margin-top: rem(40);
+}
