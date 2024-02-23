@@ -27,41 +27,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 });
 
       $(function () {
-      //   // ハンバーガーメニュー
-      //  $(".js-hamburger,.js-drawer-menu").on('click', function () {
-      //    if ($(".js-hamburger").hasClass("is-active")) {
-      //       // $(".js-drawer-menu").fadeOut();
-      //      $("body, html").css("overflow", "auto");
-      //      $(".js-drawer-menu").removeClass("is-active");
-      //      $(this).removeClass("is-active");
-      //   } else {
-      //       //  $(".js-drawer-menu").fadeIn();
-      //      $("body, html").css("overflow", "hidden");
-      //      $(".js-drawer-menu").addClass("is-active");
-      //       $(this).addClass("is-active");
-      //   }
-      //   });
-      // });
-
-    //   $(".js-hamburger,.js-drawer-menu").click(function () {
-    //     $(this).toggleClass('is-active');
-    //       $(".js-drawer-menu").toggleClass('is-active');
-    //   });
-      
-    //   $(".js-drawer-menu").click(function () {
-    //       $(".js-hamburger").removeClass('is-active');
-    //       $(".js-drawer-menu").removeClass('is-active');
-    //   });
-    // });
-
-  //   $(".js-hamburger,.js-drawer-menu").click(function () {
-  //     $(".js-hamburger").toggleClass("is-active");
-  //     $(".js-drawer-menu").fadeToggle();
-  //     // $(".js-drawer-menu").toggleClass("is-active");
-  //   });
-  // });
-
-
     $(".js-hamburger").click(function () {
       $(".js-hamburger").toggleClass("is-active");
       $(".js-drawer-menu").toggleClass("is-active"); // ドロワーメニューにis-activeクラスを追加
@@ -188,6 +153,68 @@ $(function () {
 });
 });
 
+
+// campaignタブ
+$(function(){
+  // 初期状態ではすべてのcampaign-card__itemを表示する
+  $(".campaign-card__item").show();
+
+  // js-category-buttonがクリックされたときの処理
+  $(".js-category-button").on("click", function(){
+    // クリックされたボタンのテキストを取得
+    var category = $(this).text().trim();
+    
+    // すべてのcampaign-card__itemを一度非表示にする
+    $(".campaign-card__item").hide();
+    
+    // クリックされたカテゴリーに対応するcampaign-card__itemを表示する
+    if(category === "ALL") {
+      $(".campaign-card__item").show();
+    } else {
+      $(".campaign-card__item").each(function() {
+        if($(this).find(".campaign-card__category").text().trim() === category) {
+          $(this).show();
+        }
+      });
+    }
+  
+    // js-category-buttonのクラスを調整して、現在の選択状態を示す
+    $(".js-category-button").removeClass("is-active");
+    $(this).addClass("is-active");
+  });
+});
+
+
+// $(function(){
+//   $(document).on('touchend','.js-category-button',function(){
+//     $(".campaign-card__item").show();
+
+//   // js-category-buttonがクリックされたときの処理
+//   $(".js-category-button").on("click", function(){
+//     // クリックされたボタンのテキストを取得
+//     var category = $(this).text().trim();
+    
+//     // すべてのcampaign-card__itemを一度非表示にする
+//     $(".campaign-card__item").hide();
+    
+//     // クリックされたカテゴリーに対応するcampaign-card__itemを表示する
+//     if(category === "ALL") {
+//       $(".campaign-card__item").show();
+//     } else {
+//       $(".campaign-card__item").each(function() {
+//         if($(this).find(".campaign-card__category").text().trim() === category) {
+//           $(this).show();
+//         }
+//       });
+//     }
+  
+//     // js-category-buttonのクラスを調整して、現在の選択状態を示す
+//     $(".js-category-button").removeClass("is-active");
+//     $(this).addClass("is-active");
+//   });
+//   });
+// });
+
 // faqアコーディオン
 $(function () {
   $(".js-faq-item:first-child .js-faq-text").css(
@@ -203,17 +230,4 @@ $(function () {
   });
 });
 
-// $(function() {
-//   // 最初の質問を表示する
-//   $(".js-faq-item:first-child .js-faq-text").css("display", "block");
-//   $(".js-faq-item:first-child .js-faq-title").addClass("is-active");
 
-//   // 質問タイトルがクリックされたときの動作を定義する
-//   $(".js-faq-title").on("click", function() {
-//     var $faqItem = $(this).closest(".js-faq-item"); // クリックされた質問の親要素を取得
-//     $faqItem.find(".js-faq-text").slideToggle(300); // 隣接する回答をスライドトグルする
-//     $(this).toggleClass("is-active"); // タイトルにアクティブクラスを切り替える
-//     $faqItem.siblings().find(".js-faq-text").slideUp(300); // 他の質問の回答を閉じる
-//     $faqItem.siblings().find(".js-faq-title").removeClass("is-active"); // 他の質問のタイトルからアクティブクラスを削除する
-//   });
-// });

@@ -82,12 +82,17 @@
 .common-btn:hover::after {
     width: 100%;
 }
-  
-  .common-btn:hover .btn__arrow::after {
-    background-color: $green; 
+
+.common-btn:hover .btn__arrow::after {
+    background-color: $green;
   }
 
-  .common-btn:hover .btn__arrow::before {
-    background-color: $green; 
+.common-btn:hover .btn__arrow::before {
+    background-color: $green;
   }
 
+.common-btn--reverse {
+    background-color: $white;
+    color: $green;
+
+}
