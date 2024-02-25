@@ -32,11 +32,12 @@
         // transform: translateY(-100%);
         // transition: ease 0.3s;
         opacity: 0;
+        visibility: hidden;
         transition: transform 0.3s;
         padding-top: rem(78);
         padding-bottom: rem(15);
-        padding-left: rem(15);
-        padding-right: rem(15);
+        padding-left: rem(-17);
+        // padding-right: rem(15);
         @include mq("md") {
             display: none;
         }
@@ -54,6 +55,7 @@
 .sp-nav.is-active {
     transform: translateY(0);
     opacity: 1;
+    visibility: visible;
     transition: transform 0.3s;
 }
 
@@ -73,7 +75,7 @@
 }
 
 .sp-nav__item.sp-nav__item--title a:before {
-    content: url(/assets/images/common/hitode.svg);
+    content: url(../images/common/hitode.svg);
     width: rem(18);
     height: rem(18);
     margin-right: rem(4);

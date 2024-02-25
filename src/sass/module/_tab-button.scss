@@ -1,33 +1,28 @@
 @use "global" as *;
 
 .tab-button {
-    display: inline-block;
-    font-size: rem(14);
-    font-weight: $regular;
-    font-weight: $third-font-family;
-    line-height: 1.42857;
-    color: $green;
-    background-color: $lightblue;
-    padding: rem(10);
-    text-align: center;
-    width: 100%;
     position: relative;
-    cursor: pointer;
-    @include mq("md") {
-        font-size: rem(24);
-        line-height: 1.4583;
-        padding: rem(13);
-    }
 }
 
 .tab-button::before {
-    content: '';
+    @include mq("md") {
+    position: absolute;
+    content: "";
     width: rem(64);
     height: rem(64);
-    background-color: $green;
-    background-image: url(./assets/images/common/tab-btn2.png);
+    background-image: url(../images/common/tab-btn2.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50%;
     background-size: contain;
+    top: rem(11);
+    left: rem(24);
     transition: 0.3s background-color;
+    }
+}
+
+.tab-button.is-active::before {
+    @include mq("md") {
+        background-image: url(../images/common/tab-btn1.png);
+        color: $white;
+    }
 }

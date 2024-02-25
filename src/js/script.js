@@ -32,10 +32,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-drawer-menu").toggleClass("is-active"); // ドロワーメニューにis-activeクラスを追加
       if ($(".js-drawer-menu").hasClass("is-active")) {
         $("body, html").css("overflow", "hidden");
-        $(".js-drawer-menu").fadeIn(); // ドロワーメニューをフェードイン
+        // $(".js-drawer-menu").fadeIn(); // ドロワーメニューをフェードイン
       } else {
         $("body, html").css("overflow", "auto");
-        $(".js-drawer-menu").fadeOut(); // ドロワーメニューをフェードアウト
+        // $(".js-drawer-menu").fadeOut(); // ドロワーメニューをフェードアウト
       }
     });
   });
@@ -214,6 +214,145 @@ $(function(){
 //   });
 //   });
 // });
+
+// aboutusモーダル
+$(".aboutus-gallery__img-item img").click(function () {
+  // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
+  $("#grayDisplay").html($(this).prop("outerHTML"));
+  // body要素にoverflow: hidden;を設定してスクロールを禁止する
+  $("body").css("overflow", "hidden");
+  //そして、fadeInで表示する。
+  $("#grayDisplay").fadeIn(200);
+  return false;
+});
+
+// コース画像モーダル非表示イベント
+// モーダル画像背景 または 拡大画像そのものをクリックで発火
+$("#grayDisplay").click(function () {
+  // 非表示にする
+  $("#grayDisplay").fadeOut(200);
+  // body要素のoverflowを元の状態に戻す
+  $("body").css("overflow", "auto");
+  return false;
+});
+
+
+
+
+
+// informationタブ
+// $(document).ready(function(){
+//   $(".js-information-sub-btn").click(function(){
+//     // すべてのjs-information-subからis-activeクラスを削除
+//     $(".js-information-sub").removeClass("is-active");
+    
+//     // クリックされたjs-information-sub-btnのインデックスを取得
+//     var index = $(this).index();
+    
+//     // クリックされたjs-information-sub-btnに対応するjs-information-subを表示
+//     $(".js-information-sub").eq(index).addClass("is-active");
+//   });
+// });
+
+// $(document).ready(function(){
+//   $(".js-information-sub-btn").click(function(){
+//     // クリックされたボタンのインデックスを取得
+//     var index = $(this).index();
+    
+//     // すべてのjs-information-subを非表示にする
+//     $(".js-information-sub").removeClass("is-active");
+    
+//     // クリックされたボタンに対応するjs-information-subを表示する
+//     $(".js-information-sub").eq(index).addClass("is-active");
+//   });
+// });
+
+
+// $(document).ready(function(){
+//   $(".js-information-sub-btn").click(function(){
+//     // クリックされたボタンのインデックスを取得
+//     var index = $(this).index();
+    
+//     // すべてのjs-information-subを非表示にする
+//     $(".js-information-sub").removeClass("is-active");
+    
+//     // クリックされたボタンに対応するjs-information-subを表示する
+//     $(".js-information-sub").eq(index).addClass("is-active");
+//   });
+// });
+
+
+$(document).ready(function () {
+  $(window).on("hashchange", function () {
+    activateTabFromHash();
+  });
+  // ハッシュの値に応じてタブをアクティブにする関数
+  function activateTabFromHash() {
+    var hash = window.location.hash; // 現在のハッシュを取得
+    var index = getIndexFromHash(hash);
+
+    // すべてのタブとコンテンツのアクティブ状態を初期化
+    $(".js-information-sub-btn").removeClass("is-active");
+    // すべてのタブとコンテンツのアクティブ状態を初期化
+    $(".js-information-sub-btn").removeClass("is-active");
+    // ハッシュが存在する場合、該当するタブとコンテンツをアクティブにする
+    if (hash) {
+      // ハッシュの値に応じてタブをアクティブにする
+      $("#tab-" + hash.replace("#", "")).addClass("is-active");
+      $(hash).addClass("is-active");
+      // 該当のjs-information-card　にis-activeをつけるため
+      // ハッシュの値が"tab-"で始まる場合、"tab-"を除去してコンテンツのIDを生成
+      var contentId = hash.replace("#tab-", "#");
+      // 対応するコンテンツをアクティブにする
+      $(contentId).addClass("is-active");
+      var index = getIndexFromHash(hash);
+      if (index !== null) {
+        // scrollToSection(index);
+      }
+    } else {
+      // ハッシュが存在しない場合、1件目のタブとコンテンツをアクティブにする
+      $(".js-information-sub-btn:first").addClass("is-active");
+      $(".js-information-sub-btn:first").addClass("is-active");
+    }
+  }
+  // 別ページから遷移した際の処理
+  $(window).on("load", function () {
+    var hash = window.location.hash;
+    var index = getIndexFromHash(hash);
+    if (index !== null) {
+      // scrollToSection(index);
+    }
+  });
+  // 最初のタブをデフォルトで表示
+  $(".js-information-sub:first-of-type").css("display", "block");
+  var hash = window.location.hash;
+  // hashからインデックスを取得
+  var index = getIndexFromHash(hash);
+  showCategory(index);
+  $(".js-information-sub-btn").on("click", function () {
+    var index = $(this).index();
+    showCategory(index);
+  });
+  function showCategory(index) {
+    $(".js-information-sub-btn").removeClass("is-active");
+    $(".js-information-sub-btn").eq(index).addClass("is-active");
+    $(".js-information-sub").hide().eq(index).fadeIn(300);
+  }
+  function getIndexFromHash(hash) {
+    // デフォルトのインデックス
+    var defaultIndex = 0;
+    if (!hash.startsWith("#info")) {
+      return defaultIndex;
+    }
+    var index = parseInt(hash.replace("#info", ""), 10) - 1; // 0-based index
+    if (isNaN(index) || index < 0 || index >= $(".js-information-sub-btn").length) {
+      return defaultIndex;
+    }
+    return index;
+  }
+});
+
+
 
 // faqアコーディオン
 $(function () {

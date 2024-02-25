@@ -11,24 +11,22 @@
 }
 
 .page-404__inner {
-    // position: relative;
-    // width: 100%;
-    // z-index: 1;
-}
-
-.page-404__inner {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    padding: rem(49) rem(40);
+    @include mq("md") {
+        padding: rem(120) rem(40);
+    }
 }
+
 .page-404__inner::after {
     position: absolute;
     content: "";
     color: $lightblue;
-    background-image: url(/assets/images/common/404-whale-sp.png);
+    background-image: url(../images/common/404-whale-sp.png);
     background-repeat: no-repeat;
     background-size: contain;
     top: rem(-25);
@@ -47,7 +45,30 @@
     font-family: $second-font-family;
     line-height: 1.2;
     color: $white;
+    letter-spacing: 0.5em;
+    text-align: center;
+    text-indent: 0.5em;
     @include mq("md") {
         font-size: rem(160);
     }
 }
+
+.page-404__text {
+    text-align: center;
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: $regular;
+    font-family: $second-font-family;
+    @include mq("md") {
+        margin-top: rem(22);
+    }
+}
+
+.page-404__btn {
+    text-align: center;
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
