@@ -1,23 +1,9 @@
 @use "global" as *;
 
-.blog-list-contents {
-    @include mq("md") {
-        display: flex;
-        gap: rem(80);
-    }
-}
 
-.blog-list-contents__main {
-    margin-left: rem(6);
-    margin-right: rem(6);
-}
 
-.blog-list-contents-main {
-    @include mq("md") {
-        width: 72.777%;
-        max-width: rem(706);
-    }
-}
+
+
 
 .blog-list-contents-side {
     @include mq("md") {

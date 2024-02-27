@@ -1,18 +1,11 @@
 @use "global" as *;
 
-
-.blog-list-contents-main__cards {
-    margin-top: rem(52);
-    @include mq("md") {
-        margin-top: rem(150);
-    }
-}
-
 .blog-list__btn {
     margin-top: rem(40);
     text-align: center;
 }
 
-.blog-list-contents-main__wp-pagenavi {
-    margin-top: rem(80);
+.blog-list__inner.common-fish::before {
+    top: -0.3%;
+    left: calc(50% - min(45vw, 38.75rem));
 }

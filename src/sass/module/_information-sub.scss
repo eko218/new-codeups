@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.information-sub__inner.common-fish::before {
+   top: -15.5%;
+}
+
 .information-sub__tab {
     margin-top: rem(121);
     @include mq("md") {
@@ -84,7 +88,7 @@
     line-height: 1;
     color: $darkgreen;
     border-bottom: rem(1) solid $green;
-    padding-bottom: rem(8);
+    padding-bottom: rem(6);
 }
 
 .information-sub__tab-text {

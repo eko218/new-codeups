@@ -153,68 +153,71 @@
 <section class="contact-form top-contact-form">
   <div class="contact-form__inner inner">
     <div class="contact-form__container form">
-      <form action="" method="post" id="" >
-        <dl class="form__item">
+      <form action="" method="post" id="contact-form">
+        <dl class="form-item__name">
           <dt>
-           お名前<span class="form__item-required">必須</span>
+           お名前<span class="form-item__required">必須</span>
           </dt>
           <dd>
-            <input type="text" class="form__item-input" name="name" placeholder="沖縄 太郎">
+            <input type="text" class="form-item__name-input" name="name" value="" placeholder="沖縄　太郎">
           </dd>
         </dl>
-        <dl class="form__item">
+        <dl class="form-item__email">
           <dt>
-           メールアドレス<span class="form__item-required">必須</span>
+           メールアドレス<span class="form-item__required">必須</span>
           </dt>
           <dd>
-            <input type="text" class="form__item-input" name="email" placeholder="aaa000@ggmail.com">
+            <input type="email" class="form-item__email-input" name="email" value="" placeholder="aaa000@ggmail.com">
           </dd>
         </dl>
-        <dl class="form__item">
+        <dl class="form-item__tel">
           <dt>
-           電話番号<span class="form__item-required">必須</span>
+           電話番号<span class="form-item__required">必須</span>
           </dt>
           <dd>
-            <input type="text" class="form__item-input" name="phone" placeholder="000-0000-0000">
+            <input type="text" class="form-item__tel-input" name="tel" value="" placeholder="000-0000-0000">
           </dd>
         </dl>
-        <dl class="form__checkbox">
-          <dt>
-           お問合せ項目<span class="form__item-required">必須</span>
+        <dl class="form-item__checkbox1">
+          <dt class="form-item__checkbox1-lavel">
+           お問合せ項目<span class="form-item__required">必須</span>
           </dt>
-          <dd>
-            <label><input type="checkbox" name="" value="チェックボックス" checked><span>ダイビング講習について</span></label>
-            <label><input type="checkbox" name="" value="チェックボックス" checked><span>ファンデイビングについて</span></label>
-            <label><input type="checkbox" name="" value="チェックボックス" checked><span>体験ダイビングについて</span></label>
+          <dd class="form-item__checkbox1-date">
+            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス" checked><span>ダイビング講習について</span></label>
+            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス"><span>ファンデイビングについて</span></label>
+            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス"><span>体験ダイビングについて</span></label>
           </dd>
         </dl>
-        <dl class="form__item">
+        <dl class="form-item__select">
           <dt>
            キャンペーン
           </dt>
-          <dd>
-            <select name="">
+          <dd class="form-item__select-date">
+            <select name="form-item__select" class="form-item__select-date-input">
               <option value="">キャンペーン内容を選択</option>
-              <option value="option_1">オプション1</option>
-              <option value="option_2">オプション2</option>
+              <option value="select1">オプション1</option>
+              <option value="select2">オプション2</option>
             </select>
           </dd>
         </dl>
-        <dl class="form__item">
+        <dl class="form-item__textarea">
           <dt>
-          お問合せ内容<span class="form__item-required">必須</span>
+          お問合せ内容<span class="form-item__required">必須</span>
         </dt>
         <dd>
-          <textarea name="message" class="form__item-textarea"></textarea>
+          <textarea name="message" class="form-item__textarea-input"></textarea>
         </dd>
       </dl>
   </div>
-  <div class="contact-form__check-box">
-    <input type="checkbox2" name="" id="">
-    <label for="">個人情報の取り扱いについて同意のうえ送信します。</label>
-  </div>
-  <div class="form__button">
-    <input class="form-button" type="submit" value="send">
+  <dl class="form-item__check-box2">
+    <dt class="form-item__checkbox2-lavel"></dt>
+    <dd class="form-item__checkbox2-date">
+    <lavel><input type="checkbox2" name="checkbox2" id="" class="form-item__checkbox2-input" value="">
+    個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</label>
+    </dd>
+  </dl>
+  <div class="form-item__button">
+    <a href="#" class="">Send</a>
   </div>
 </div>
 </form>

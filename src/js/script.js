@@ -352,6 +352,35 @@ $(document).ready(function () {
   }
 });
 
+// voiceタブ
+$(function(){
+  // 初期状態ではすべてのcampaign-card__itemを表示する
+  $(".voice-card__item").show();
+
+  // js-category-buttonがクリックされたときの処理
+  $(".js-category-button").on("click", function(){
+    // クリックされたボタンのテキストを取得
+    var category = $(this).text().trim();
+    
+    // すべてのcampaign-card__itemを一度非表示にする
+    $(".voice-card__item").hide();
+    
+    // クリックされたカテゴリーに対応するcampaign-card__itemを表示する
+    if(category === "ALL") {
+      $(".voice-card__item").show();
+    } else {
+      $(".voice-card__item").each(function() {
+        if($(this).find(".voice-card__category").text().trim() === category) {
+          $(this).show();
+        }
+      });
+    }
+  
+    // js-category-buttonのクラスを調整して、現在の選択状態を示す
+    $(".js-category-button").removeClass("is-active");
+    $(this).addClass("is-active");
+  });
+});
 
 
 // faqアコーディオン

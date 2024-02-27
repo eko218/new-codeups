@@ -1,6 +1,18 @@
 @use "global" as *;
 
+.blog-list-contents {
+    @include mq("md") {
+        display: flex;
+        gap: rem(80);
+    }
+}
+
 .blog-list-contents__side {
     margin-left: rem(25);
     margin-right: rem(25);
+}
+
+.blog-list-contents__main {
+    margin-left: rem(6);
+    margin-right: rem(6);
 }

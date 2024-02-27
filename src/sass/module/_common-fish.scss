@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.common-fish {
+    position: relative;
+}
+
+.common-fish::before {
+    position: absolute;
+        content: "";
+        background-image: url(../images/common/common-fish.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: rem(120);
+        height: rem(55);
+        left: calc(50% - min(46vw, 38.75rem));
+        top: -6%;
+        @include mq("md") {
+            width: rem(301);
+            height: rem(138);
+            top: -11%;
+        }
+}

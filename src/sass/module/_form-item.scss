@@ -1,0 +1,233 @@
+@use "global" as *;
+
+.form-item__name,
+.form-item__email,
+.form-item__tel,
+.form-item__checkbox1,
+.form-item__select,
+.form-item__textarea,
+.form-item__check-box1 {
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+    border-bottom: rem(1) dashed $green;
+    @include mq("md") {
+        padding-top: rem(40);
+        padding-bottom: rem(40);
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.form-item__name dt,
+.form-item__email dt,
+.form-item__tel dt,
+.form-item__checkbox1 dt,
+.form-item__select dt,
+.form-item__textarea dt,
+.form-item__check-box2 dt {
+    font-weight: $bold;
+}
+
+.form-item__name dd,
+.form-item__email dd,
+.form-item__tel dd,
+.form-item__checkbox1 dd,
+.form-item__select dd,
+.form-item__textarea dd,
+.form-item__check-box2 dd {
+    width: calc(100% - rem(220));
+}
+
+
+.form-item__required {
+    font-size: rem(12);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    color: $white;
+    background-color: $orange;
+    padding: rem(2) rem(16);
+    margin-left: rem(8);
+    letter-spacing: 0.4em;
+    display: inline-block;
+}
+
+.form-item dd {
+    width: 100%;
+    @include mq("md") {
+        width: 68.571%;
+    }
+}
+
+.form-item__name dd,
+.form-item__email dd,
+.form-item__tel dd,
+.form-item__select dd {
+    padding: rem(5) rem(16);
+    border: rem(1) solid $green;
+    margin-top: rem(16);
+}
+
+.form__item dt,
+.form__checkbox dt {
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $third-font-family;
+    line-height: 1.4375;
+    color: $darkgreen;
+    @include mq("md") {
+        width: 31.429%;
+    }
+}
+
+.form__item dd {
+    color: $lightblue;
+    width: 100%;
+    @include mq("md") {
+        width: 68.571%;
+
+    }
+}
+
+.form__item-input {
+    margin-top: rem(16);
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.4375;
+    color: $lightblue;
+    padding: rem(8) rem(16);
+    border: rem(1) solid $green;
+    width: 100%;
+    @include mq("md") {
+        margin-top: rem(0);
+    }
+}
+
+.form-item__checkbox1-lavel {
+    margin-bottom: auto;
+    margin-top: rem(10);
+}
+
+.form-item__checkbox1-date {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(16);
+    margin-left: rem(23);
+}
+
+// .form-checkbox1__input span:not(:first-child) {
+//     margin-top: rem(10);
+// }
+
+
+
+
+.form-item__name-input::placeholder,
+.form-item__email-input::placeholder,
+.form-item__tel-input::placeholder {
+  color: $green;
+  opacity: 0.3;
+}
+
+.form-item__select-date-input {
+    font-size: rem(12);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    color: $darkgreen;
+    line-height: 1.4166;
+    position: relative;
+}
+
+.form-item__select-date-input::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/select-arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: rem(12);
+    height: rem(12);
+    top: 10%;
+    left: 10%;
+}
+
+
+/* デフォのcheckboxを消す */
+input[type="checkbox1"] {
+    display: none;
+  }
+
+  /* チェックボックス checked=false */
+  .form-checkbox1__input {
+    height: rem(14);
+    width: rem(14);
+    background: $white;
+    border: rem(1) solid $green;
+  }
+
+  /* チェックボックス checked=true */
+  .form-checkbox1__input:checked + .form-checkbox1 {
+     background: $green;
+  }
+
+  /* チェックマーク checked=false */
+  .form-checkbox1__input::before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 8px;
+    top: 4px;
+    width: rem(9);
+    height: rem(5);
+    border: rem(2) solid $orange;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0; /* ここ変えたよ！ */
+  }
+  
+  /* チェックマーク checked=true */
+  .form-checkbox1__input::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 8px;
+    top: -6px;
+    width: 3px;
+    height: 8px;
+    border: rem(2) solid $orange;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0; /* ここ変えたよ！ */
+  }
+  
+  /* チェックマークを表示させる */
+  .form-checkbox1__input:checked + .form-checkbox1__input::after {
+    opacity: 1;
+  }
+  /* チェックマークを表示させる checked=false */
+  .form-checkbox1__input:not(:checked) + .form-checkbox1__input::before {
+    opacity: 1;
+  }
+  
+  
+//   .control-group {
+//     display: flex;
+//     position: relative;
+//     padding: 5px;
+//     box-sizing: border-box;
+//     align-items: center;
+//   }
+  
+//   /* textのスタイル */
+//   .text-name {
+//     padding-left: 8px;
+//   }
+
+.form-item__textarea-input {
+    height: rem(200);
+    padding: rem(8) rem(16);
+    border: rem(1) solid $green;
+    width: 100%;
+    margin-top: rem(16);
+}
