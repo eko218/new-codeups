@@ -14,11 +14,12 @@
 .side-title-icon::before {
     position: absolute;
     content: '';
-    background-image: url(../assets/images/common/side-title-icon.png);
+    background-image: url(../images/common/side-title-icon.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: rem(50);
     height: rem(50);
-    color: $darkgreen;
+    left: 6%;
+    top: -26%;
 }

@@ -27,6 +27,12 @@
     }
 }
 
+// .footer-nav__left--sitemap {
+//     @include mq("md") {
+//         width: calc(50% - rem(14));
+//     }
+// }
+
 .footer-nav__right {
     margin-left: rem(28);
     @include mq("md") {
@@ -87,4 +93,8 @@
     @include mq("md") {
         display: none;
     }
+}
+
+.footer-nav__item--sitemap {
+    margin-left: rem(30);
 }

@@ -1,7 +1,11 @@
 @use "global" as *;
 
+.blog-detail__inner.common-fish::before {
+    top: -0.6%;
+}
+
 .blog-detail__contents {
-    margin-top: rem(52);
+    margin-top: rem(48);
 }
 
 .blog-detail__main {

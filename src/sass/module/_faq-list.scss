@@ -6,6 +6,13 @@
     }
 }
 
+.faq-list__inner.common-fish::before {
+    top: -1.2%;
+    @include mq("md") {
+        top: -3.3%;
+    }
+}
+
 .faq-list__accordion-container {
     margin-top: rem(52);
     @include mq("md") {

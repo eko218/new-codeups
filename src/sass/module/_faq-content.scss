@@ -19,8 +19,8 @@
 .faq-content__title::before,
 .faq-content__title::after {
     position: absolute;
-    top: 50%;
-    right: 12px;
+    top: 46%;
+    right: rem(15);
     width: rem(28);
     // display: block;
     height: rem(1);
@@ -31,7 +31,8 @@
     transition: 0.3s transform, 0.3s opacity;
     @include mq("md") {
         width: rem(32);
-        right: 21px;
+        right: rem(40);
+        top: 50%;
     }
 }
 
@@ -56,9 +57,11 @@
     font-weight: $regular;
     line-height: 1.4375;
     color: $darkgreen;
-    border: rem(1) solid $green;
-    margin-top: rem(16);
+    // border: rem(1) solid $green;
+    // margin-top: rem(16);
     @include mq("md") {
-        padding: rem(40);
+        padding: rem(38);
+        margin-top: rem(18);
+        border: rem(1) solid $green;
     }
   }

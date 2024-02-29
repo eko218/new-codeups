@@ -1,5 +1,18 @@
 @use "global" as *;
 
+.privacypolicy-main__inner {
+    @include mq("md") {
+        max-width: rem(850);
+    }
+}
+
+.privacypolicy-main__inner.common-fish::before {
+    top: -1.3%;
+    @include mq("md") {
+        top: -7%;
+    }
+}
+
 .privacypolicy-main__container {
     margin-top: rem(52);
     @include mq("md") {
@@ -42,7 +55,13 @@
 }
 
 .privacypolicy-main__text ul {
-    margin-top: rem(33);
-    list-style-type: disc;
-    padding-left: 1em;
+    margin-top: rem(32);
+    // list-style-type: disc;
+    // padding-left: 1em;
 }
+
+// .privacypolicy-main__text ul li::before {
+//     display: inline-block;
+//     width: 0.5em;
+//     margin-left: -1em;
+// }

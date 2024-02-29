@@ -1,5 +1,16 @@
 @use "global" as *;
 
+.faq-item__content {
+    border: rem(1) solid $green;
+    @include mq("md") {
+        border: none;
+    }
+}
+
 .faq-item__content:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(38);
+    @include mq("md") {
+        margin-top: rem(41);
+    }
+
 }

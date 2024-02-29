@@ -28,6 +28,7 @@
     color: $darkgreen;
     padding-bottom: rem(4);
     border-bottom: rem(1) solid $green;
+    margin-top: rem(4);
     @include mq("md") {
         font-size: rem(32);
         line-height: 1.4375;
@@ -35,14 +36,14 @@
 }
 
 .blog-list-contents-main__text {
-    margin-top: rem(24);
+    margin-top: rem(27);
     @include mq("md") {
         margin-top: rem(40);
     }
 }
 
 .blog-list-contents-main__lists {
-    margin-top: rem(24);
+    margin-top: rem(20);
     @include mq("md") {
         margin-top: rem(40);
     }
@@ -56,14 +57,18 @@
     line-height: 1.5;
     font-family: $third-font-family;
     color: $darkgreen;
-    margin-left: rem(9);
+    margin-left: rem(28);
+}
+
+.blog-list-contents-main__list a {
+    position: relative;
 }
 
 .blog-list-contents-main__list:not(:first-child) {
     margin-top: rem(4);
 }
 
-.blog-list-contents-main__list a:before {
+.blog-list-contents-main__list a::before {
     content: url(../images/common/hitode.svg);
     width: rem(18);
     height: rem(18);
@@ -71,10 +76,11 @@
     position: absolute;
     left: 0;
     top: rem(12);
+    color: $lightblue;
 }
 
 .blog-list-contents-main__img {
-    margin-top: rem(24);
+    margin-top: rem(23);
     aspect-ratio: 345 / 231;
     width: 100%;
     @include mq("md") {
@@ -92,5 +98,5 @@
 }
 
 .blog-list-contents-main__wp-pagenavi {
-    margin-top: rem(80);
+    margin-top: rem(45);
 }

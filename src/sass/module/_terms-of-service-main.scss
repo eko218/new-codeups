@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.terms-of-service-main__inner.common-fish::before {
+    top: -1.4%;
+    @include mq("md") {
+        top: -7%;
+    }
+}
+
 .terms-of-service-main__container {
     @include mq("md") {
         max-width: rem(800);

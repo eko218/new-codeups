@@ -8,8 +8,8 @@
 .wp-pagenavi a, .wp-pagenavi span {
 	color: $green;
 	background-color: $white;
-	padding: 8px 15px;
-	margin: 0 2px;
+	padding: rem(5) rem(10);
+	margin: 0 rem(39);
 	white-space: nowrap;
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
