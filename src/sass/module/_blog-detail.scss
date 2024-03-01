@@ -2,6 +2,9 @@
 
 .blog-detail__inner.common-fish::before {
     top: -0.6%;
+    @include mq("md") {
+        top: 1.3%;
+    }
 }
 
 .blog-detail__contents {
@@ -10,7 +13,7 @@
 
 .blog-detail__main {
     @include mq("md") {
-        margin-top: rem(150);
+        margin-top: rem(100);
         // display: flex;
         flex-direction: column;
     }

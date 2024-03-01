@@ -3,13 +3,17 @@
 .blog-list-contents {
     @include mq("md") {
         display: flex;
-        gap: rem(80);
+        gap: rem(85);
     }
 }
 
 .blog-list-contents__side {
     margin-left: rem(25);
     margin-right: rem(25);
+    @include mq("md") {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .blog-list-contents__main {

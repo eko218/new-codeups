@@ -94,15 +94,16 @@
 
 
 
-.common-btn--reverse {
+.common-btn.common-btn--reverse {
     background-color: $white;
     color: $green;
+    border: rem(1) solid $white;
 }
 
-.common-btn--reverse::before {
+.common-btn.common-btn--reverse::before {
     position: absolute;
     content: '';
-    border: rem(1) solid $green;
+    border: rem(1) solid $white;
     width: 100%;
     max-width: rem(202);
     height: rem(54);
@@ -111,7 +112,7 @@
     z-index: -1;
 }
 
-.common-btn__arrow--reverse::before {
+.common-btn__arrow.common-btn__arrow--reverse::before {
     content: '';
     /*絶対配置で下線の位置を決める*/
     position: absolute;
@@ -125,7 +126,7 @@
     // transition: all .3s;
 }
 
-.common-btn__arrow--reverse::after {
+.common-btn__arrow.common-btn__arrow--reverse::after {
     content: '';
     /*絶対配置で矢印の位置を決める*/
     position: absolute;
@@ -140,7 +141,7 @@
     // transition: all .3s;
 }
 
-.common-btn--reverse::after {
+.common-btn.common-btn--reverse::after {
     position: absolute;
     content: '';
     top: 0;
@@ -153,18 +154,18 @@
     transition: 0.2s;
 }
 
-.common-btn--reverse:hover {
+.common-btn.common-btn--reverse:hover {
     color: $white;
 }
 
-.common-btn--reverse:hover::after {
+.common-btn.common-btn--reverse:hover::after {
     width: 100%;
 }
 
-.common-btn--reverse:hover .btn__arrow::after {
+.common-btn.common-btn--reverse:hover .common-btn__arrow::after {
     background-color: $white;
   }
 
-.common-btn--reverse:hover .btn__arrow::before {
+.common-btn--reverse:hover .common-btn__arrow::before {
     background-color: $white;
   }

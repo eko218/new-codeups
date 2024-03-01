@@ -7,8 +7,8 @@
 
 .blog-list-contents-side {
     @include mq("md") {
-        width: 27.222%;
-        max-width: rem(294);
+        width: 100%;
+        max-width: 27.222%;
     }
 }
 

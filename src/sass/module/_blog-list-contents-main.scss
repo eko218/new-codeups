@@ -9,10 +9,11 @@
 
 .blog-list-contents-main {
     @include mq("md") {
-        width: 72.777%;
-        max-width: rem(706);
+        width: 100%;
+        max-width: 64.8%;
     }
 }
+
 .blog-list-contents-main__cards {
     margin-top: rem(52);
     @include mq("md") {
@@ -26,7 +27,7 @@
     font-family: $third-font-family;
     line-height: 1.4583;
     color: $darkgreen;
-    padding-bottom: rem(4);
+    padding-bottom: rem(-12);
     border-bottom: rem(1) solid $green;
     margin-top: rem(4);
     @include mq("md") {
@@ -38,7 +39,7 @@
 .blog-list-contents-main__text {
     margin-top: rem(27);
     @include mq("md") {
-        margin-top: rem(40);
+        margin-top: rem(43);
     }
 }
 
@@ -60,7 +61,7 @@
     margin-left: rem(28);
 }
 
-.blog-list-contents-main__list a {
+.blog-list-contents-main__lists {
     position: relative;
 }
 
@@ -68,14 +69,14 @@
     margin-top: rem(4);
 }
 
-.blog-list-contents-main__list a::before {
-    content: url(../images/common/hitode.svg);
+.blog-list-contents-main__list a:before {
+    content: url(../images/common/hitode-green.svg);
     width: rem(18);
     height: rem(18);
     margin-right: rem(4);
     position: absolute;
-    left: 0;
-    top: rem(12);
+    left: rem(-28);
+    top: rem(2);
     color: $lightblue;
 }
 
@@ -98,5 +99,5 @@
 }
 
 .blog-list-contents-main__wp-pagenavi {
-    margin-top: rem(45);
+    margin-top: rem(85);
 }

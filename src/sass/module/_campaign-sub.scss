@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.campaign-sub__inner.common-fish::before {
+    top: -1.1%;
+}
+
 .campaign-sub__items {
     margin-top: rem(40);
     margin-left: rem(33);

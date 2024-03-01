@@ -2,6 +2,8 @@
 
 .wp-pagenavi {
 	clear: both;
+	display: flex;
+	justify-content: center;
 	text-align:center;
 }
 
@@ -9,7 +11,7 @@
 	color: $green;
 	background-color: $white;
 	padding: rem(5) rem(10);
-	margin: 0 rem(39);
+	margin: 0 rem(6);
 	white-space: nowrap;
 	-webkit-transition: 0.2s ease-in-out;
 	-moz-transition: 0.2s ease-in-out;
@@ -25,10 +27,10 @@
 	background-color: $green;
 }
 
-.wp-pagenavi span.current{
-	color: $white;
-	background-color: $green;
-}
+// .wp-pagenavi span.current{
+// 	color: $white;
+// 	background-color: $green;
+// }
 
 .wp-pagenavi.wp-pagenavi--detail {
     gap: rem(82);
