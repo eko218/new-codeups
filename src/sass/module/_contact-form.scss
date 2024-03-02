@@ -1,9 +1,14 @@
 @use "global" as *;
 
-.contact-form__container {
+.contact-form__inner.common-fish::before {
+    top: -2.4%;
     @include mq("md") {
-        max-width: rem(700);
-        margin-left: auto;
-        margin-right: auto;
+        top: -4.8%;
+    }
+}
+
+.contact-form__inner.inner {
+    @include mq("md") {
+        max-width: rem(750);
     }
 }

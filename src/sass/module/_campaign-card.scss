@@ -134,6 +134,12 @@
     flex-grow: 1;
  }
 
+.campaign-card__title.campaign-card__title--sub {
+    @include mq("md") {
+        font-size: rem(24);
+    }
+}
+
  .campaign-card__title.campaign-card__title--center {
     text-align: center;
     padding-bottom: 0;

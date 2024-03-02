@@ -150,8 +150,8 @@
 <div class="breadcrumb top-breadcrumb inner">TOP > お問い合わせ</div>
 
 <!-- コンタクトフォーム -->
-<section class="contact-form top-contact-form">
-  <div class="contact-form__inner inner">
+<!-- <section class="contact-form top-contact-form">
+  <div class="contact-form__inner inner common-fish">
     <div class="contact-form__container form">
       <form action="" method="post" id="contact-form">
         <dl class="form-item__name">
@@ -223,47 +223,73 @@
 </form>
 </div>
 </div>
-</section>
+</section> -->
 
-  <!-- contact -->
-  <section id="contact" class="contact top-contact">
-    <div class="contact__inner inner">
-      <div class="contact__container">
-        <div class="contact__access">
-          <div class="contact__logo">
-            <a href="" class="contact-logo">
-             <img src="./assets/images/common/contact-logo.svg" alt="コンタクトロゴ">
-            </a>
-          </div>
-          <div class="contact__info">
-            <div class="contact__address">
-             <p class="contact__address-text">沖縄県那覇市1-1</p>
-             <p class="contact__address-text"><a href="tel:0120-000-0000">TEL:0120-000-0000</a></p>
-             <p class="contact__address-text">営業時間:8:30-19:00</p>
-             <p class="contact__address-text">定休日:毎週火曜日</p>
-            </div>
-            <div class="contact__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29742.2409384461!2d-157.85334081501577!3d21.280169682241162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2z44Ki44Oh44Oq44Kr5ZCI6KGG5Zu9IOOAkjk2ODE1IOODj-ODr-OCpOW3niDjg5vjg47jg6vjg6sg44Ov44Kk44Kt44Kt!5e0!3m2!1sja!2sjp!4v1700851904771!5m2!1sja!2sjp" width="295" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-      </div>
-      <div class="contact__content">
-        <div class="contact__title section-header">
-          <div class="section-header__engtitle section-header__engtitle--contact">Contact</div>
-          <h2 class="section-header__jatitle section-header__jatitle--contact">お問い合わせ</h2>
+<section class="contact-form top-contact-form">
+  <div class="contact-form__inner inner common-fish">
+    <form id="contactForm" class="contact__form form">
+      <dl class="form__items">
+        <div class="form__item">
+          <dt class="form__label">お名前<span>必須</span></dt>
+          <dd class="form__input">
+            <input id="name" type="text" placeholder="沖縄&emsp;太郎">
+          </dd>
         </div>
-        <p class="contact__text ">ご予約・お問い合わせはコチラ</p>
-        <div class="contact__btn contact-common-btn">
-          <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+        <div class="form__item">
+          <dt class="form__label">メールアドレス<span>必須</span></dt>
+          <dd class="form__input">
+            <input id="email" type="email" placeholder="aaa000@ggmail.com">
+          </dd>
         </div>
+        <div class="form__item">
+          <dt class="form__label">電話番号<span>必須</span></dt>
+          <dd class="form__input">
+            <input id="phone" type="tel" placeholder="000-0000-0000">
+          </dd>
+        </div>
+        <div class="form__item">
+          <dt class="form__label">お問い合わせ項目<span>必須</span></dt>
+          <dd class="form__check">
+            <label><input type="checkbox" name="inquiryType"
+                value="diving01"><span>ダイビング講習について</span></input></label>
+            <label><input type="checkbox" name="inquiryType" value="diving02"><span>ファンダイビングについて</span></input></label>
+            <label><input type="checkbox" name="inquiryType" value="diving03"><span>体験ダイビングについて</span></input></label>
+          </dd>
+        </div>
+        <div class="form__item">
+          <dt class="form__label">キャンペーン</dt>
+          <dd class="form__select">
+            <select>
+              <option hidden>キャンペーン内容を選択</option>
+              <option value="campaign01">キャンペーン01</option>
+              <option value="campaign02">キャンペーン02</option>
+              <option value="campaign03">キャンペーン03</option>
+              <option value="campaign04">キャンペーン04</option>
+              <option value="campaign05">キャンペーン05</option>
+            </select>
+          </dd>
+        </div>
+        <div class="form__item">
+          <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
+          <dd class="form__textarea">
+            <textarea id="message" name="message"></textarea>
+          </dd>
+        </div>
+      </dl>
+      <div class="form__privacy">
+        <label><input id="consent" type="checkbox" name="consent"
+            value="privacy"><span>個人情報の取り扱いについて同意のうえ送信します。</span></input></label>
       </div>
-     </div>
-    </div>
-  </section>
+      <div class="form__btn">
+        <a href="#" class="common-btn"><span class="common-btn__arrow">Send</span></a>
+      </div>
+    </form>
+  </div>
+</section>
   </main>
   
   <!-- footer -->
-  <footer class="footer top-footer">
+  <footer class="footer top-footer--contact">
     <div class="footer__inner inner">
       <div class="footer__content">
         <div class="footer__top">

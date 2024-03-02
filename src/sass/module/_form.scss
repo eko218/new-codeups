@@ -1,0 +1,487 @@
+@use "global" as *;
+
+// .form-item__name,
+// .form-item__email,
+// .form-item__tel,
+// .form-item__checkbox1,
+// .form-item__select,
+// .form-item__textarea,
+// .form-item__check-box1 {
+//     // padding-top: rem(24);
+//     padding-bottom: rem(24);
+//     border-bottom: rem(1) dashed $green;
+//      @include mq("md") {
+//         // padding-top: rem(40);
+//         padding-bottom: rem(40);
+//         display: flex;
+//         // align-items: center;
+//         justify-content: space-between;
+//     }
+// }
+
+// .form-item__name,
+// .form-item__email,
+// .form-item__tel,
+// .form-item__checkbox1,
+// .form-item__select,
+// .form-item__textarea,
+// .form-item__check-box1:not(:first-child) {
+//     margin-top: rem(24);
+//     @include mq("md") {
+//         margin-top: rem(40);
+//     }
+// }
+
+// .form-item__name dt,
+// .form-item__email dt,
+// .form-item__tel dt,
+// .form-item__checkbox1 dt,
+// .form-item__select dt,
+// .form-item__textarea dt,
+// .form-item__check-box2 dt {
+//     font-weight: $bold;
+//     font-family: $third-font-family;
+//     @include mq("md") {
+//         font-size: rem(16);
+//     }
+
+// }
+
+// .form-item__name dd,
+// .form-item__email dd,
+// .form-item__tel dd,
+// .form-item__checkbox1 dd,
+// .form-item__select dd,
+// .form-item__check-box2 dd {
+//     width: calc(100% - rem(220));
+// }
+
+// .form-item__textarea dd {
+//     width: 100%;
+// }
+
+// .form-item__required {
+//     font-size: rem(12);
+//     font-weight: $regular;
+//     font-family: $third-font-family;
+//     color: $white;
+//     background-color: $orange;
+//     padding: rem(2) rem(16);
+//     margin-left: rem(8);
+//     letter-spacing: 0.4em;
+//     display: inline-block;
+// }
+
+// .form-item dd {
+//     width: 100%;
+//     @include mq("md") {
+//         width: 68.571%;
+//     }
+// }
+
+// .form-item__name dd,
+// .form-item__email dd,
+// .form-item__tel dd,
+// .form-item__select dd {
+//     padding: rem(5) rem(16);
+//     border: rem(1) solid $green;
+//     margin-top: rem(16);
+//     width: 100%;
+//     @include mq("md") {
+//         width: 68.5714%;
+//     }
+// }
+
+// .form__item dt,
+// .form__checkbox dt {
+//     font-size: rem(16);
+//     font-weight: $bold;
+//     font-family: $third-font-family;
+//     line-height: 1.4375;
+//     color: $darkgreen;
+//     @include mq("md") {
+//         width: 31.429%;
+//     }
+// }
+
+// .form__item dd {
+//     color: $lightblue;
+//     width: 100%;
+//     @include mq("md") {
+//         width: 68.571%;
+
+//     }
+// }
+
+// .form__item-input {
+//     margin-top: rem(16);
+//     font-size: rem(16);
+//     font-weight: $regular;
+//     font-family: $third-font-family;
+//     line-height: 1.4375;
+//     color: $lightblue;
+//     padding: rem(8) rem(16);
+//     border: rem(1) solid $green;
+//     width: 100%;
+//     @include mq("md") {
+//         margin-top: rem(0);
+//     }
+// }
+
+// .form-item__checkbox1-lavel {
+//     margin-bottom: auto;
+//     margin-top: rem(10);
+// }
+
+// .form-item__checkbox1-date {
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: rem(16);
+//     margin-left: rem(23);
+// }
+
+// // .form-checkbox1__input span:not(:first-child) {
+// //     margin-top: rem(10);
+// // }
+
+
+
+// .form-item__name-input::placeholder,
+// .form-item__email-input::placeholder,
+// .form-item__tel-input::placeholder {
+//   color: $green;
+//   opacity: 0.3;
+// }
+
+// .form-item__select-date-input {
+//     font-size: rem(12);
+//     font-weight: $regular;
+//     font-family: $third-font-family;
+//     color: $darkgreen;
+//     line-height: 1.4166;
+//     position: relative;
+// }
+
+// .form-item__select-date-input::before {
+//     position: absolute;
+//     content: '';
+//     background-image: url(../images/common/select-arrow.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     width: rem(12);
+//     height: rem(12);
+//     top: 10%;
+//     left: 10%;
+// }
+
+.form__item {
+    padding-bottom: rem(22);
+    margin-top: rem(24);
+    border-bottom: 1px dashed $green;
+    @include mq("md") {
+      margin-top: rem(39);
+      padding-bottom: rem(39);
+      display: flex;
+      align-items: start;
+    }
+  }
+  
+  .form__item:first-child {
+    margin-top: 0;
+  }
+  
+  .form__label {
+    display: flex;
+    align-items: center;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(23 / 16);
+    @include mq("md") {
+      flex: 1;
+    }
+  }
+  
+  .form__label span {
+    margin-left: rem(8);
+    padding: rem(4.5) rem(16);
+    color: $white;
+    font-size: rem(12);
+    font-weight: $regular;
+    line-height: 1;
+    background-color: #c94800;
+  }
+  
+  .form__label span::first-letter {
+    letter-spacing: 0.4em;
+  }
+  
+  .form__input,
+  .form__check,
+  .form__select,
+  .form__textarea {
+    margin-top: rem(16);
+    @include mq("md") {
+      margin-top: 0;
+      flex: 0 0 rem(480);
+    }
+  }
+  
+  // INPUT
+  .form__input input {
+    padding: rem(5.5) rem(15);
+    width: 100%;
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: 1;
+    border: 1px solid $green;
+    background-color: $white;
+  }
+  
+  .form__input input::placeholder {
+    color: $lightblue;
+  }
+  
+  // CHECKBOX
+  .form__check label {
+    display: block;
+  }
+  
+  .form__check label:not(:first-of-type) {
+    margin-top: rem(4);
+  }
+  
+  .form__check input {
+    display: none;
+  }
+  
+  .form__check input + span {
+    padding-left: rem(22);
+    display: inline-block;
+    position: relative;
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(23 / 16);
+    cursor: pointer;
+  }
+  
+  .form__check input + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(14);
+    height: rem(14);
+    background-color: $white;
+    border: 1px solid $green;
+  }
+  
+  .form__check input + span::after {
+    margin: rem(-1) 0 0 rem(2);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(-40deg);
+    width: rem(10);
+    height: rem(5);
+    border-bottom: 2px solid #c94800;
+    border-left: 2px solid #c94800;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .form__check input:checked + span::after {
+    opacity: 1;
+  }
+  
+  // SELECT
+  .form__select select {
+    padding: rem(13) rem(7);
+    width: 100%;
+    font-size: rem(12);
+    line-height: 1;
+    border: 1px solid $green;
+    background-image: url(../images/common/icon-form-select.svg);
+    background-repeat: no-repeat;
+    background-size: rem(10);
+    background-position: top rem(12) right rem(9);
+  }
+  
+  // TEXTAREA
+  .form__textarea textarea {
+    padding: rem(7.5) rem(15);
+    width: 100%;
+    height: rem(200);
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(23 / 16);
+    border: 1px solid $green;
+    background-color: $white;
+  }
+  
+  // PRIVACY CHECK
+  .form__privacy {
+    margin: rem(39.5) auto 0;
+    width: max(calc(282 / 345 * 100%), rem(282));
+    @include mq("md") {
+      margin: rem(79.5) auto 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .form__privacy input {
+    display: none;
+  }
+  
+  .form__privacy input + span {
+    padding-left: rem(30);
+    display: inline-block;
+    position: relative;
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: calc(22 / 14);
+    cursor: pointer;
+  }
+  
+  .form__privacy input + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(22);
+    height: rem(22);
+    background-color: $white;
+    border: 1px solid $green;
+  }
+  
+  .form__privacy input + span::after {
+    margin: rem(-2) 0 0 rem(3);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26%;
+    left: 0;
+    transform: translateY(-50%) rotate(-40deg);
+    width: rem(16);
+    height: rem(9);
+    border-bottom: 2px solid #c94800;
+    border-left: 2px solid #c94800;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .form__privacy input:checked + span::after {
+    opacity: 1;
+  }
+
+  .form__btn {
+    margin-top: rem(24);
+    text-align: center;
+    @include mq("md") {
+      margin-top: rem(40);
+    }
+  }
+  
+  // SUBMIT BUTTON
+  // .form__submit {
+  //   margin-top: rem(24);
+  //   text-align: center;
+  //   @include mq("md") {
+  //     margin-top: rem(40);
+  //   }
+  // }
+  
+  // .form_submit label {
+  //   display: inline-block;
+  // }
+  
+  // .form__submit input {
+  //   padding: 0;
+  //   position: absolute;
+  // }
+  
+  // .form__submit-button {
+  //   padding: rem(20) rem(4) rem(24) 0;
+  //   display: inline-flex;
+  //   justify-content: center;
+  //   position: relative;
+  //   width: rem(206);
+  //   color: $white;
+  //   font-family: $second-font-family;
+  //   font-size: rem(14);
+  //   line-height: 1;
+  //   z-index: 10;
+  // }
+  
+  // .form__submit input:hover ~ .form__submit-button {
+  //   @include mq("md") {
+  //     color: $green;
+  //   }
+  // }
+  
+  // .form__submit-button::after {
+  //   margin: rem(1) 0 0 rem(7);
+  //   content: "";
+  //   width: rem(42);
+  //   height: rem(8);
+  //   mask-image: url(../images/common/icon-button.svg);
+  //   mask-repeat: no-repeat;
+  //   mask-size: contain;
+  //   mask-position: center;
+  //   background-color: $white;
+  // }
+  
+  // .form__submit input:hover ~ .form__submit-button::after {
+  //   @include mq("md") {
+  //     background-color: $green;
+  //   }
+  // }
+  
+  // .form__submit-button span {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: calc(100% - rem(4));
+  //   height: calc(100% - rem(4));
+  //   background-color: $green;
+  //   border: 1px solid $green;
+  //   z-index: -1;
+  // }
+  
+  // .form__submit-button span::before {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: rem(4);
+  //   left: rem(4);
+  //   width: 100%;
+  //   height: 100%;
+  //   border: 1px solid $green;
+  // }
+  
+  // .form__submit-button span::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: $white;
+  //   transform: scaleX(0);
+  //   transform-origin: left;
+  //   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  // }
+  
+  // .form__submit input:hover ~ .form__submit-button span::after {
+  //   @include mq("md") {
+  //     transform: scaleX(1);
+  //   }
+  // }

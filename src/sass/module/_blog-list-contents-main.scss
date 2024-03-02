@@ -1,16 +1,16 @@
 @use "global" as *;
 
-.blog-list-contents-main {
-    @include mq("md") {
-        max-width: rem(750);
-        width: 100%;
-    }
-}
+// .blog-list-contents-main {
+//     @include mq("md") {
+//         max-width: rem(750);
+//         width: 100%;
+//     }
+// }
 
 .blog-list-contents-main {
     @include mq("md") {
-        width: 100%;
-        max-width: 64.8%;
+        width: 65.37037%;
+        // max-width: 64.8%;
     }
 }
 
