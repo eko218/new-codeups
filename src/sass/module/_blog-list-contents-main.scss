@@ -38,6 +38,7 @@
 
 .blog-list-contents-main__text {
     margin-top: rem(27);
+    font-family: $third-font-family;
     @include mq("md") {
         margin-top: rem(43);
     }
@@ -63,6 +64,12 @@
 
 .blog-list-contents-main__lists {
     position: relative;
+}
+
+.blog-list-contents-main__date {
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
 }
 
 .blog-list-contents-main__list:not(:first-child) {
