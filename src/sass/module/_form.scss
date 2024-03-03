@@ -51,8 +51,7 @@
       flex: 0 0 rem(480);
     }
   }
-  
-  // INPUT
+
   .form__input input {
     padding: rem(5.5) rem(15);
     width: 100%;
@@ -66,8 +65,7 @@
   .form__input input::placeholder {
     color: $lightblue;
   }
-  
-  // CHECKBOX
+
   .form__check label {
     display: block;
   }
@@ -123,7 +121,7 @@
     opacity: 1;
   }
   
-  // SELECT
+
   .form__select select {
     padding: rem(13) rem(7);
     width: 100%;
@@ -136,7 +134,6 @@
     background-position: top rem(12) right rem(9);
   }
   
-  // TEXTAREA
   .form__textarea textarea {
     padding: rem(7.5) rem(15);
     width: 100%;
@@ -148,7 +145,6 @@
     background-color: $white;
   }
   
-  // PRIVACY CHECK
   .form__privacy {
     margin: rem(39.5) auto 0;
     width: max(calc(282 / 345 * 100%), rem(282));
