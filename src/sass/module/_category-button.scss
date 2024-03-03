@@ -25,3 +25,14 @@
     padding-top: rem(5);
     padding-bottom: rem(6);
 }
+
+.category-button__list-item.current {
+    color: $white;
+    background-color: $green;
+}
+
+.category-button__list-item:hover {
+    color: $white;
+    background-color: $green;
+    cursor: pointer;
+}

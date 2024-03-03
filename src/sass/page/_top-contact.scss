@@ -22,9 +22,3 @@
     }
 }
 
-.top-contact--campaign {
-    margin-top: rem(107);
-    @include mq("md") {
-        margin-top: rem(150);
-    }
-}

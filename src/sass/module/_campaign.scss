@@ -51,7 +51,7 @@
 
 .campaign__button-prev::after {
     @include mq("md") {
-        background-image: url(/assets/images/common/campaign-button-prev.png);
+        background-image: url(../images/common/campaign-button-prev.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -73,7 +73,7 @@
 
 .campaign__button-next::after {
     @include mq("md") {
-        background-image: url(/assets/images/common/campaign-button-next.png);
+        background-image: url(../images/common/campaign-button-next.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

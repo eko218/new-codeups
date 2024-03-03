@@ -99,5 +99,8 @@
 }
 
 .blog-list-contents-main__wp-pagenavi {
-    margin-top: rem(85);
+    margin-top: rem(37);
+    @include mq("md") {
+        margin-top: rem(85);
+    }
 }

@@ -149,85 +149,18 @@
 <!-- パンくず -->
 <div class="breadcrumb top-breadcrumb inner">TOP > お問い合わせ</div>
 
-<!-- コンタクトフォーム -->
-<!-- <section class="contact-form top-contact-form">
-  <div class="contact-form__inner inner common-fish">
-    <div class="contact-form__container form">
-      <form action="" method="post" id="contact-form">
-        <dl class="form-item__name">
-          <dt>
-           お名前<span class="form-item__required">必須</span>
-          </dt>
-          <dd>
-            <input type="text" class="form-item__name-input" name="name" value="" placeholder="沖縄　太郎">
-          </dd>
-        </dl>
-        <dl class="form-item__email">
-          <dt>
-           メールアドレス<span class="form-item__required">必須</span>
-          </dt>
-          <dd>
-            <input type="email" class="form-item__email-input" name="email" value="" placeholder="aaa000@ggmail.com">
-          </dd>
-        </dl>
-        <dl class="form-item__tel">
-          <dt>
-           電話番号<span class="form-item__required">必須</span>
-          </dt>
-          <dd>
-            <input type="text" class="form-item__tel-input" name="tel" value="" placeholder="000-0000-0000">
-          </dd>
-        </dl>
-        <dl class="form-item__checkbox1">
-          <dt class="form-item__checkbox1-lavel">
-           お問合せ項目<span class="form-item__required">必須</span>
-          </dt>
-          <dd class="form-item__checkbox1-date">
-            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス" checked><span>ダイビング講習について</span></label>
-            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス"><span>ファンデイビングについて</span></label>
-            <label><input type="checkbox" name="checkbox1" class="form-checkbox1__input" value="チェックボックス"><span>体験ダイビングについて</span></label>
-          </dd>
-        </dl>
-        <dl class="form-item__select">
-          <dt>
-           キャンペーン
-          </dt>
-          <dd class="form-item__select-date">
-            <select name="form-item__select" class="form-item__select-date-input">
-              <option value="">キャンペーン内容を選択</option>
-              <option value="select1">オプション1</option>
-              <option value="select2">オプション2</option>
-            </select>
-          </dd>
-        </dl>
-        <dl class="form-item__textarea">
-          <dt>
-          お問合せ内容<span class="form-item__required">必須</span>
-        </dt>
-        <dd>
-          <textarea name="message" class="form-item__textarea-input"></textarea>
-        </dd>
-      </dl>
-  </div>
-  <dl class="form-item__check-box2">
-    <dt class="form-item__checkbox2-lavel"></dt>
-    <dd class="form-item__checkbox2-date">
-    <lavel><input type="checkbox2" name="checkbox2" id="" class="form-item__checkbox2-input" value="">
-    個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</label>
-    </dd>
-  </dl>
-  <div class="form-item__button">
-    <a href="#" class="">Send</a>
-  </div>
-</div>
-</form>
-</div>
-</div>
-</section> -->
 
 <section class="contact-form top-contact-form">
   <div class="contact-form__inner inner common-fish">
-    <form id="contactForm" class="contact__form form">
+    <div class="contact-form form">
+      <!-- error message -->
+      <span class="form__error js-form-error">
+        ※必須項目が入力されていません。
+        <br class="u-mobile">
+        <span class="u-mobile">&emsp;</span>
+        入力してください。
+      </span>
+    <form id="contactForm" class="form__content">
       <dl class="form__items">
         <div class="form__item">
           <dt class="form__label">お名前<span>必須</span></dt>
@@ -260,12 +193,9 @@
           <dt class="form__label">キャンペーン</dt>
           <dd class="form__select">
             <select>
-              <option hidden>キャンペーン内容を選択</option>
-              <option value="campaign01">キャンペーン01</option>
-              <option value="campaign02">キャンペーン02</option>
-              <option value="campaign03">キャンペーン03</option>
-              <option value="campaign04">キャンペーン04</option>
-              <option value="campaign05">キャンペーン05</option>
+              <option value="">キャンペーン内容を選択</option>
+              <option value="select01">キャンペーン01</option>
+              <option value="select02">キャンペーン02</option>
             </select>
           </dd>
         </div>

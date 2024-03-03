@@ -119,11 +119,3 @@
 }
 
 
-.contact__form {
-    @include mq("md") {
-        max-width: rem(750);
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}

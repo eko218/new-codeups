@@ -9,14 +9,14 @@
     margin-top: rem(29);
 }
 
-.blog-contents-archive__inner {
-    margin-left: rem(25);
-    margin-right: rem(25);
-    @include mq("md") {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
+// .blog-contents-archive__inner {
+//     margin-left: rem(25);
+//     margin-right: rem(25);
+//     @include mq("md") {
+//         margin-left: 0;
+//         margin-right: 0;
+//     }
+// }
 
 .blog-contents-archive__month li {
     margin-top: rem(4);
