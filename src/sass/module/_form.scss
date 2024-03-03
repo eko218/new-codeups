@@ -21,7 +21,8 @@
     align-items: center;
     font-size: rem(16);
     font-weight: $bold;
-    line-height: calc(23 / 16);
+    line-height: 1.4375;
+    font-family: $third-font-family;
     @include mq("md") {
       flex: 1;
     }
@@ -35,6 +36,7 @@
     font-weight: $regular;
     line-height: 1;
     background-color: #c94800;
+    font-family: $third-font-family;
   }
   
   .form__label span::first-letter {
@@ -64,6 +66,7 @@
   
   .form__input input::placeholder {
     color: $lightblue;
+    font-family: $third-font-family;
   }
 
   .form__check label {
