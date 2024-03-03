@@ -56,7 +56,9 @@
     font-weight: $regular;
     white-space: nowrap;
     text-align: center;
+    line-height: 1.2;
     @include mq("md") {
         font-size: rem(80);
+        line-height: 1.25;
     }
 }
