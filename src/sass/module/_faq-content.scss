@@ -9,6 +9,7 @@
     cursor: pointer;
     color: $white;
     background-color: $green;
+    font-family: $third-font-family;
     @include mq("md") {
         font-size: rem(20);
         line-height: 1.45;
@@ -57,6 +58,7 @@
     font-weight: $regular;
     line-height: 1.4375;
     color: $darkgreen;
+    font-family: $third-font-family;
     // border: rem(1) solid $green;
     // margin-top: rem(16);
     @include mq("md") {

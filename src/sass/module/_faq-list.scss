@@ -7,9 +7,9 @@
 }
 
 .faq-list__inner.common-fish::before {
-    top: -1.2%;
+    top: -1.5%;
     @include mq("md") {
-        top: -3.3%;
+        top: -3.2%;
     }
 }
 
