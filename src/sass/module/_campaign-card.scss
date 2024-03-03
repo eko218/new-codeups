@@ -163,6 +163,8 @@
 .campaign-card__text.campaign-card__text--side {
     @include mq("md") {
         margin-top: rem(8);
+        font-size: rem(14);
+        line-height: 1.71428;
     }
 }
 
