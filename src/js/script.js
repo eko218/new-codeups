@@ -382,6 +382,79 @@ $(function(){
   });
 });
 
+// $(document).ready(function () {
+//   $(window).on("hashchange", function () {
+//     activateTabFromHash();
+//   });
+//   // ハッシュの値に応じてタブをアクティブにする関数
+//   function activateTabFromHash() {
+//     var hash = window.location.hash; // 現在のハッシュを取得
+//     var index = getIndexFromHash(hash);
+
+//     // すべてのタブとコンテンツのアクティブ状態を初期化
+//     $(".js-category-button").removeClass("is-active");
+//     // すべてのタブとコンテンツのアクティブ状態を初期化
+//     $(".js-category-button").removeClass("is-active");
+//     // ハッシュが存在する場合、該当するタブとコンテンツをアクティブにする
+//     if (hash) {
+//       // ハッシュの値に応じてタブをアクティブにする
+//       $("#tab-" + hash.replace("#", "")).addClass("is-active");
+//       $(hash).addClass("is-active");
+//       // 該当のjs-information-card　にis-activeをつけるため
+//       // ハッシュの値が"tab-"で始まる場合、"tab-"を除去してコンテンツのIDを生成
+//       var contentId = hash.replace("#tab-", "#");
+//       // 対応するコンテンツをアクティブにする
+//       $(contentId).addClass("is-active");
+//       var index = getIndexFromHash(hash);
+//       if (index !== null) {
+//         // scrollToSection(index);
+//       }
+//     } else {
+//       // ハッシュが存在しない場合、1件目のタブとコンテンツをアクティブにする
+//       $(".js-category-button:first").addClass("is-active");
+//       $(".js-category-button:first").addClass("is-active");
+//     }
+//   }
+//   // 別ページから遷移した際の処理
+//   $(window).on("load", function () {
+//     var hash = window.location.hash;
+//     var index = getIndexFromHash(hash);
+//     if (index !== null) {
+//       // scrollToSection(index);
+//     }
+//   });
+//   // 最初のタブをデフォルトで表示
+//   $(".js-category-button:first-of-type").css("display", "block");
+//   var hash = window.location.hash;
+//   // hashからインデックスを取得
+//   var index = getIndexFromHash(hash);
+//   showCategory(index);
+//   $(".js-category-button").on("click", function () {
+//     var index = $(this).index();
+//     showCategory(index);
+//   });
+//   function showCategory(index) {
+//     $(".js-category-button").removeClass("is-active");
+//     $(".js-category-button").eq(index).addClass("is-active");
+//     $(".js-category-button").hide().eq(index).fadeIn(300);
+//   }
+//   function getIndexFromHash(hash) {
+//     // デフォルトのインデックス
+//     var defaultIndex = 0;
+//     if (!hash.startsWith("#info")) {
+//       return defaultIndex;
+//     }
+//     var index = parseInt(hash.replace("#info", ""), 10) - 1; // 0-based index
+//     if (isNaN(index) || index < 0 || index >= $(".js-category-button").length) {
+//       return defaultIndex;
+//     }
+//     return index;
+//   }
+// });
+
+
+
+
 
 // faqアコーディオン
 $(function () {

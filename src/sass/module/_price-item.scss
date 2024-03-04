@@ -16,14 +16,21 @@
     font-weight: $regular;
     font-family: $third-font-family;
     color: $darkgreen;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
     margin-top: rem(8);
-    gap: rem(24);
+    gap: rem(5);
     @include mq("md") {
         font-size: rem(16);
         line-height: 1.5;
         letter-spacing: 0.05;
     }
+}
+
+.price-item__text-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: rem(4);
 }
