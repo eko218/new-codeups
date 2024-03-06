@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.top-privacy-footer {
+.sub-contact-privacy {
     margin-top: rem(100);
     @include mq("md") {
-        margin-top: rem(165);
+        margin-top: rem(136);
     }
 }

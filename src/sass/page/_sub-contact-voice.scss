@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.sub-contact-detail {
+    margin-top: rem(103);
+    @include mq("md") {
+        margin-top: rem(138);
+    }
+}
+

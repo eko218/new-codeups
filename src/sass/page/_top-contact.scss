@@ -6,11 +6,3 @@
         margin-top: rem(140);
     }
 }
-
-.top-contact--voice {
-    margin-top: rem(107);
-    @include mq("md") {
-        margin-top: rem(100);
-    }
-}
-

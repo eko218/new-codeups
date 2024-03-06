@@ -1,7 +1,7 @@
 @use "global" as *;
 
-.top-price-list {
-    margin-top: rem(52);
+.sub-contact-form {
+    margin-top: rem(53);
     @include mq("md") {
         margin-top: rem(150);
     }
