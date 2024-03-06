@@ -1,11 +1,11 @@
 @use "global" as *;
 
-.sub-breadcrumb {
+.breadcrumb {
     padding-top: rem(8);
     padding-left: rem(15);
 }
 
-.top-breadcrumb.top-breadcrumb--404 {
+.breadcrumb.breadcrumb--404 {
     background-color: $green;
     color: $white;
     margin-top: rem(80);

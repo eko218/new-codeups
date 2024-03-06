@@ -4,13 +4,6 @@
    top: -15.5%;
 }
 
-.information-sub__tab {
-    margin-top: rem(121);
-    @include mq("md") {
-        margin-top: rem(150);
-    }
-}
-
 .information-sub__tab-list {
     margin-left: auto;
     margin-right: auto;

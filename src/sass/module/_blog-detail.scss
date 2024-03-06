@@ -7,13 +7,13 @@
     }
 }
 
-.blog-detail__contents {
-    margin-top: rem(48);
-}
+// .blog-detail__contents {
+//     margin-top: rem(48);
+// }
 
 .blog-detail__main {
     @include mq("md") {
-        margin-top: rem(100);
+        // margin-top: rem(100);
         // display: flex;
         flex-direction: column;
     }

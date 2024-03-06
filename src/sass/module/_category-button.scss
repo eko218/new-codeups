@@ -25,9 +25,10 @@
     width: rem(162);
     padding-top: rem(5);
     padding-bottom: rem(6);
+    transition: 0.3s transform, 0.3s opacity;
 }
 
-.category-button__list-item.current {
+.category-button__list-item.is-active {
     color: $white;
     background-color: $green;
 }

@@ -133,20 +133,24 @@
   </header>
   <main>
   <!-- aboutus-mv -->
-  <div class="aboutus-mv">
-    <div class="aboutus-mv__inner">
-      <picture class="aboutus-mv__img">
+  <div class="aboutus-mv sub-mv">
+    <div class="sub-mv__inner">
+      <picture class="sub-mv__img">
         <source srcset="./assets/images/common/aboutus-mv-pc.jpg" media="(min-width: 768px)">
         <img src="./assets/images/common/aboutus-mv-sp.jpg" alt="空とシーサーの画像">
       </picture>
-      <div class="aboutus-mv__header">
-        <h2 class="aboutus-mv__title">About&nbsp;us</h2>
+      <div class="sub-mv__header">
+        <h2 class="sub-mv__title">About&nbsp;us</h2>
       </div>
     </div>
   </div>
 
   <!-- パンくず -->
-  <div class="breadcrumb sub-breadcrumb inner">TOP > 私たちについて</div>
+  <div class="breadcrumb">
+    <div class="breadcrumb__inner inner">
+      <div class="breadcrumb__contaiter">TOP > 私たちについて</div>
+    </div>
+  </div>
 
   <!-- aboutus -->
   <section id="aboutus-sub" class="aboutus-sub sub-aboutus-sub">
@@ -184,7 +188,7 @@
         </div>
         <div class="aboutus-gallery__container">
           <ul class="aboutus-gallery__img-items">
-            <li class="aboutus-gallery__img-item">
+            <li class="aboutus-gallery__img-item js-modal">
               <img src="./assets/images/common/aboutus-gallery1.jpg" alt="赤い魚たちと
                 珊瑚礁">
             </li>
