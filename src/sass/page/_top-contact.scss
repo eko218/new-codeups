@@ -7,14 +7,6 @@
     }
 }
 
-.top-contact--detail {
-    margin-top: rem(103);
-    @include mq("md") {
-        margin-top: rem(138);
-    }
-}
-
-
 .top-contact--voice {
     margin-top: rem(107);
     @include mq("md") {
