@@ -43,6 +43,11 @@
     color: $white;
 }
 
+.information-sub__tab-btn:hover {
+    background-color: $green;
+    color: $white;
+}
+
 .information-sub__tab-btn:not(:first-child) {
     margin-left: rem(20);
     @include mq("md") {

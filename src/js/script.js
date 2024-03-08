@@ -282,6 +282,7 @@ $("#grayDisplay").click(function () {
 // });
 
 
+
 $(document).ready(function () {
   $(window).on("hashchange", function () {
     activateTabFromHash();
@@ -351,6 +352,9 @@ $(document).ready(function () {
     return index;
   }
 });
+
+
+
 
 // voiceタブ
 // $(function(){
@@ -452,6 +456,19 @@ $(document).ready(function () {
 //   }
 // });
 
+// * アーカイブ年をクリックしたときにアコーディオンする
+  // 初期表示
+  const archiveButton = $(".js-archive-button");
+  archiveButton.eq(0).addClass("is-active");
+  // 初期表示　is-activeの次の要素を表示する
+  const archiveButtonActive = $(".js-archive-button.is-active");
+  archiveButtonActive.next().css({ display: "block" });
+  // ボタンをクリックしたらアコーディオンする
+  archiveButton.on("click", function () {
+    $(this).toggleClass("is-active");
+    $(this).next().slideToggle(300);
+  });
+
 
 
 
@@ -468,6 +485,50 @@ $(function () {
   $(".js-faq-title").on("click", function () {
     $(this).toggleClass("is-active");
     $(this).next().slideToggle(300);
+  });
+});
+
+
+// $(function () {
+//   var hash = location.hash;
+//   if(hash) {
+//     var target = $('[data-id="'+hash+'"]');//offset()を使うためjQueryオブジェクト化
+//     if(!target.length) return;/* targetがなかったときはそれ以降の処理をしない */
+//     // 移動先を数値で取得
+//     $(window).on('load',function(){
+//       history.replaceState('','','./');/* 再読み込みしたときにスムーススクロールしないようにhashを取り除く */
+
+//       //loadの中に書くことで、画像を読み込んだ後に実行されるようになる
+//       //loadの中に書かないと画像が読み込まれる前にoffset().topしてしまうため、正しい位置にならない
+//       var position = target.offset().top;
+//       //headerの高さ
+//       var headerHeight = $('.header').innerHeight();
+
+
+//       position = position - headerHeight;
+
+//       // スムーススクロール
+//       $('body,html').animate({scrollTop:position}, 300, 'swing');
+
+//     });
+//   }
+// });
+
+$(function() {
+  // footerのリンクがクリックされた時の処理
+  $('.footer-nav__item a').on('click', function(e) {
+    e.preventDefault(); // デフォルトのリンクの動作を無効化
+    var targetId = $(this).attr('href'); // クリックされたリンクのhref属性を取得
+    var $target = $(targetId); // 対応するタブの要素を取得
+
+    // タブが存在する場合
+    if ($target.length) {
+      $('.js-information-sub').removeClass('is-active'); // すべてのタブを非表示にする
+      $(targetId).addClass('is-active'); // クリックされたタブを表示する
+      $('body,html').animate({
+        scrollTop: $('.js-information-sub').offset().top // タブの位置までスクロール
+      }, 300);
+    }
   });
 });
 

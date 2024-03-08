@@ -36,14 +36,6 @@
     }
 }
 
-// .blog-list-contents-main__text {
-//     // margin-top: rem(27);
-//     // font-family: $third-font-family;
-//     // @include mq("md") {
-//     //     margin-top: rem(43);
-//     // }
-// }
-
 .blog-list-contents-main__body p {
     margin-top: rem(27);
     font-family: $third-font-family;
@@ -59,16 +51,14 @@
     }
 }
 
-.blog-list-contents-main__list {
-    list-style: none;
-    position: relative;
-    font-size: rem(16);
-    font-weight: $regular;
-    line-height: 1.5;
+.blog-list-contents-main__lists p {
+    margin-top: rem(27);
     font-family: $third-font-family;
-    color: $darkgreen;
-    margin-left: rem(28);
-}
+    @include mq("md") {
+        margin-top: rem(43);
+    }
+} 
+
 
 .blog-list-contents-main__lists {
     position: relative;
@@ -80,20 +70,20 @@
     font-family: $base-font-family;
 }
 
-.blog-list-contents-main__list:not(:first-child) {
-    margin-top: rem(4);
-}
+// .blog-list-contents-main__list:not(:first-child) {
+//     margin-top: rem(4);
+// }
 
-.blog-list-contents-main__list a:before {
-    content: url(../images/common/hitode-green.svg);
-    width: rem(18);
-    height: rem(18);
-    margin-right: rem(4);
-    position: absolute;
-    left: rem(-28);
-    top: rem(2);
-    color: $lightblue;
-}
+// .blog-list-contents-main__list a:before {
+//     content: url(../images/common/hitode-green.svg);
+//     width: rem(18);
+//     height: rem(18);
+//     margin-right: rem(4);
+//     position: absolute;
+//     left: rem(-28);
+//     top: rem(2);
+//     color: $lightblue;
+// }
 
 // .blog-list-contents-main__img {
 //     margin-top: rem(23);
@@ -134,6 +124,6 @@
 .blog-list-contents-main__wp-pagenavi {
     margin-top: rem(37);
     @include mq("md") {
-        margin-top: rem(85);
+        margin-top: rem(77);
     }
 }

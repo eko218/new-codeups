@@ -29,6 +29,10 @@
     font-family: $third-font-family;
     color: $darkgreen;
     // margin-top: rem(18);
+    @include mq("md") {
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .voice-card__category {
@@ -111,3 +115,18 @@
         margin-top: rem(40);
     }
 }
+
+.voice-card__wp-pagenavi {
+    margin-top: rem(80);
+    @include mq("md") {
+        margin-top: rem(72);
+    }
+}
+
+.voice-card__wp-pagenavi .larger:nth-child(n + 5) {
+    display: none;
+    @include mq("md") {
+        display: block;
+    }
+ }
+ 

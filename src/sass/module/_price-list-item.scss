@@ -54,7 +54,7 @@
     justify-content: center;
     min-height: initial;
     @include mq(md) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       grid-row: 1/8; /* 結合 */
       grid-column: 1; /* 1列目に配置 */
     }

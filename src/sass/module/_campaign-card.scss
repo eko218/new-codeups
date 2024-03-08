@@ -9,7 +9,7 @@
     box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
 }
 
-.campaign-card__container {
+.campaign-content {
     display: grid;
     row-gap: rem(40);
     @include mq("md") {
@@ -257,7 +257,10 @@
 }
 
 .campaign-card__wp-pagenavi {
-    margin-top: rem(80);
+    margin-top: rem(77);
+    @include mq("md") {
+        margin-top: rem(88);
+    }
 }
 
 

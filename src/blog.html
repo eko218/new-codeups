@@ -330,14 +330,14 @@
       <div class="blog-list-contents-main__wp-pagenavi wp-pagenavi">
         <!-- <span class="pages">3 / 100</span>
         <a class="first" href="#">« 先頭</a> -->
-        <a class="previouspostslink" rel="prev" href="#">＜</a>
+        <a class="wp-pagenavi__previouspostslink" rel="prev" href="#">＜</a>
         <span class="current">1</span>
         <a class="page smaller" href="#">2</a>
         <a class="page smaller" href="#">3</a>
         <a class="page larger" href="#">4</a>
         <a class="page larger" href="#">5</a>
         <a class="page larger" href="#">6</a>
-        <a class="nextpostslink" rel="next" href="#">＞</a>
+        <a class="wp-pagenavi__nextpostslink" rel="next" href="#">＞</a>
         <!-- <a class="last" href="#">最後 »</a> -->
       </div>
     </div>
@@ -441,28 +441,30 @@
             </div>
           </div>
       </div>
-          <div class="blog-list-contents-side__archive blog-contents-archive">
-            <div class="blog-contents-archive__inner">
-              <div class="blog-contents-archive__title side-title-icon">アーカイブ</div>
-                <div class="blog-contents-archive__link">
-                  <details class="blog-contents-archive__year">
-                    <summary>2023</summary>
-                    <ul class="blog-contents-archive__month">
-                      <li><a href="#">▶︎3月</a></li>
-                      <li><a href="#">▶︎2月</a></li>
-                      <li><a href="#">▶︎1月</a></li>
-                    </ul>
-                  </details>
-                  <details class="blog-contents-archive__year">
-                    <summary>2022</summary>
-                    <ul class="blog-contents-archive__month">
-                      <li><a href="#">▶︎3月</a></li>
-                      <li><a href="#">▶︎2月</a></li>
-                      <li><a href="#">▶︎1月</a></li>
-                    </ul>
-                  </details>
-                </div>
-              </div>
+      <div class="blog-list-contents-side__archive blog-contents-archive">
+        <div class="blog-contents-archive__inner">
+          <div class="blog-contents-archive__title side-title-icon">アーカイブ</div>
+            <ul class="blog-contents-archive__lists">
+              <li class="blog-contents-archive__list">
+                <span class="blog-contents-archive__year js-archive-button is-active">2023</span>
+                  <ul class="blog-contents-archive__months">
+                    <li class="blog-contents-archive__month"><a href="#">3月</a></li>
+                    <li class="blog-contents-archive__month"><a href="#">2月</a></li>
+                    <li class="blog-contents-archive__month"><a href="#">1月</a></li>
+                  </ul>
+              </li>
+              <li class="blog-contents-archive__list">
+                <span class="blog-contents-archive__year js-archive-button">2022</span>
+                  <ul class="blog-contents-archive__months">
+                    <li class="blog-contents-archive__month"><a href="#">3月</a></li>
+                    <li class="blog-contents-archive__month"><a href="#">2月</a></li>
+                    <li class="blog-contents-archive__month"><a href="#">1月</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
             </div>
           </div>
         </div>

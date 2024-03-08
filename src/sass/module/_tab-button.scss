@@ -27,3 +27,20 @@
     }
 }
 
+.tab-button:hover::before {
+    @include mq("md") {
+        background-image: url(../images/common/tab-btn1.png);
+        color: $white;
+        position: absolute;
+        content: "";
+        width: rem(64);
+        height: rem(64);
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+        top: rem(11);
+        left: rem(24);
+        transition: 0.3s background-color;
+    }
+}
+
