@@ -6,10 +6,10 @@
     height: 100%;
     width: 100%;
     background-color: $white;
-    box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
+    // box-shadow: rem(0) rem(4) rem(4) 0 rgba(0,0,0,0.25);
 }
 
-.campaign-content {
+.campaign-card--sub {
     display: grid;
     row-gap: rem(40);
     @include mq("md") {

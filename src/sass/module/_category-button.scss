@@ -8,8 +8,7 @@
     // max-width: rem(345);
     display: flex;
     flex-wrap: wrap;
-    gap: rem(16) rem(21);
-    margin: auto;
+    gap: rem(16) min(6.0869565217%, rem(21));
     @include mq("md") {
         justify-content: flex-start;
         // max-width: rem(744);
@@ -23,20 +22,17 @@
     font-size: rem(14);
     font-weight: $regular;
     font-family: $third-font-family;
-    line-height: 1.57142;
+    line-height: 1;
     color: $green;
     border: rem(1) solid $green;
-    flex-basis: rem(158);
-    max-width: rem(300);
-    min-width: rem(100);
-    width: fit-content;
-    padding-top: rem(4.5);
-    padding-bottom: rem(4.5);
+    width: min(46.9565217391%, rem(162));
+    padding-top: rem(9);
+    padding-bottom: rem(9);
     transition: 0.3s transform, 0.3s opacity;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     cursor: pointer;
 }
 

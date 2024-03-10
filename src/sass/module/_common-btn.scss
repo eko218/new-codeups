@@ -83,11 +83,11 @@
     width: 100%;
 }
 
-.common-btn:hover .btn__arrow::after {
+.common-btn:hover .common-btn__arrow::after {
     background-color: $green;
   }
 
-.common-btn:hover .btn__arrow::before {
+.common-btn:hover .common-btn__arrow::before {
     background-color: $green;
   }
 

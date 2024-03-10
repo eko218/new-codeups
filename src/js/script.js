@@ -489,47 +489,94 @@ $(function () {
 });
 
 
-// $(function () {
-//   var hash = location.hash;
-//   if(hash) {
-//     var target = $('[data-id="'+hash+'"]');//offset()を使うためjQueryオブジェクト化
-//     if(!target.length) return;/* targetがなかったときはそれ以降の処理をしない */
-//     // 移動先を数値で取得
-//     $(window).on('load',function(){
-//       history.replaceState('','','./');/* 再読み込みしたときにスムーススクロールしないようにhashを取り除く */
-
-//       //loadの中に書くことで、画像を読み込んだ後に実行されるようになる
-//       //loadの中に書かないと画像が読み込まれる前にoffset().topしてしまうため、正しい位置にならない
-//       var position = target.offset().top;
-//       //headerの高さ
-//       var headerHeight = $('.header').innerHeight();
 
 
-//       position = position - headerHeight;
 
-//       // スムーススクロール
-//       $('body,html').animate({scrollTop:position}, 300, 'swing');
+// document.addEventListener("DOMContentLoaded", function() {
+//   const tabButtons = document.querySelectorAll('.footer-nav__item');
+//   const tabContents = document.querySelectorAll('.js-information-sub-btn');
 
+//   // 関数を定義して、クリック時の処理を再利用可能にする
+//   function activateTab(tabIndex) {
+//     // Remove 'current' class from all tab buttons and contents
+//     tabButtons.forEach(function(btn) {
+//       btn.classList.remove('current');
 //     });
+//     tabContents.forEach(function(content) {
+//       content.classList.remove('current');
+//     });
+
+//     // Add 'current' class to the clicked tab button and content
+//     tabButtons[tabIndex].classList.add('current');
+//     tabContents[tabIndex].parentNode.classList.add('current'); // 対応する親要素にもクリックされた状態を追加
+//     tabContents[tabIndex].classList.add('current'); // タブの番号が取得されていないため、直接クリックする
+//   }
+
+//   // URLのクエリパラメータからタブ番号を取得
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const tabParam = urlParams.get('tab');
+//   if (tabParam !== null) {
+//     // タブ番号が存在する場合、そのタブをアクティブにする
+//     const tabIndex = parseInt(tabParam) - 1; // インデックスに変換して渡すために-1する
+//     if (tabIndex >= 0 && tabIndex < tabButtons.length) {
+//       activateTab(tabIndex);
+//     }
 //   }
 // });
 
-$(function() {
-  // footerのリンクがクリックされた時の処理
-  $('.footer-nav__item a').on('click', function(e) {
-    e.preventDefault(); // デフォルトのリンクの動作を無効化
-    var targetId = $(this).attr('href'); // クリックされたリンクのhref属性を取得
-    var $target = $(targetId); // 対応するタブの要素を取得
+// タブ
+// $(document).ready(function() {
+//   // URLから 'tab' パラメータを取得
+//   const tab = new URL(window.location.href).searchParams.get('tab');
 
-    // タブが存在する場合
-    if ($target.length) {
-      $('.js-information-sub').removeClass('is-active'); // すべてのタブを非表示にする
-      $(targetId).addClass('is-active'); // クリックされたタブを表示する
-      $('body,html').animate({
-        scrollTop: $('.js-information-sub').offset().top // タブの位置までスクロール
-      }, 300);
+//   // タブメニューのクリックイベント
+//   $('.js-information-sub-btn').on('click', function () {
+//     const number = $(this).data('number');
+
+//     // アクティブクラスの切り替え
+//     $('.js-information-sub-btn').removeClass('is-active');
+//     $(this).addClass('is-active');
+//     $('.js-information-sub').removeClass('is-active');
+//     if (number) {
+//       $('#' + number).addClass('is-active');
+//     }
+//   });
+
+//   // 初期状態またはURLパラメータに基づくタブのアクティブ化
+//   if (tab) {
+//     // URLパラメータが存在する場合、該当するタブをアクティブにする
+//     $('.js-information-sub-btn[data-number="' + tab + '"]').click();
+//   } else {
+//     // URLパラメータがない場合、最初のタブをアクティブにする
+//     $('.js-information-sub-btn:first').click();
+//   }
+// });
+
+$(document).ready(function() {
+  // URLから 'tab' パラメータを取得
+  const tab = new URL(window.location.href).searchParams.get('tab');
+
+  // タブメニューのクリックイベント
+  $('.js-information-sub-btn').on('click', function () {
+    const number = $(this).attr('date-number'); // data-number属性を取得するよう修正
+
+    // アクティブクラスの切り替え
+    $('.js-information-sub-btn').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('.js-information-sub').removeClass('is-active');
+    if (number) {
+      $('#' + number).addClass('is-active');
     }
   });
+
+  // 初期状態またはURLパラメータに基づくタブのアクティブ化
+  if (tab) {
+    // URLパラメータが存在する場合、該当するタブをアクティブにする
+    $('.js-information-sub-btn[date-number="' + tab + '"]').click(); // data-number属性を正しく指定するよう修正
+  } else {
+    // URLパラメータがない場合、最初のタブをアクティブにする
+    $('.js-information-sub-btn:first').click();
+  }
 });
 
 
