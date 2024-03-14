@@ -216,7 +216,7 @@ $(function () {
 // });
 
 // aboutusモーダル
-$(".aboutus-gallery__img-item img").click(function () {
+$(".page-aboutus-gallery__img-item img").click(function () {
   // まず、クリックした画像の HTML(<img>タグ全体)を#frayDisplay内にコピー
   $("#grayDisplay").html($(this).prop("outerHTML"));
   // body要素にoverflow: hidden;を設定してスクロールを禁止する
@@ -293,9 +293,9 @@ $(document).ready(function () {
     var index = getIndexFromHash(hash);
 
     // すべてのタブとコンテンツのアクティブ状態を初期化
-    $(".js-information-sub-btn").removeClass("is-active");
+    $(".js-page-information-btn").removeClass("is-active");
     // すべてのタブとコンテンツのアクティブ状態を初期化
-    $(".js-information-sub-btn").removeClass("is-active");
+    $(".js-page-information-btn").removeClass("is-active");
     // ハッシュが存在する場合、該当するタブとコンテンツをアクティブにする
     if (hash) {
       // ハッシュの値に応じてタブをアクティブにする
@@ -312,8 +312,8 @@ $(document).ready(function () {
       }
     } else {
       // ハッシュが存在しない場合、1件目のタブとコンテンツをアクティブにする
-      $(".js-information-sub-btn:first").addClass("is-active");
-      $(".js-information-sub-btn:first").addClass("is-active");
+      $(".js-page-information-btn:first").addClass("is-active");
+      $(".js-page-information-btn:first").addClass("is-active");
     }
   }
   // 別ページから遷移した際の処理
@@ -325,19 +325,19 @@ $(document).ready(function () {
     }
   });
   // 最初のタブをデフォルトで表示
-  $(".js-information-sub:first-of-type").css("display", "block");
+  $(".js-page-information:first-of-type").css("display", "block");
   var hash = window.location.hash;
   // hashからインデックスを取得
   var index = getIndexFromHash(hash);
   showCategory(index);
-  $(".js-information-sub-btn").on("click", function () {
+  $(".js-page-information-btn").on("click", function () {
     var index = $(this).index();
     showCategory(index);
   });
   function showCategory(index) {
-    $(".js-information-sub-btn").removeClass("is-active");
-    $(".js-information-sub-btn").eq(index).addClass("is-active");
-    $(".js-information-sub").hide().eq(index).fadeIn(300);
+    $(".js-page-information-btn").removeClass("is-active");
+    $(".js-page-information-btn").eq(index).addClass("is-active");
+    $(".js-page-information-btn").hide().eq(index).fadeIn(300);
   }
   function getIndexFromHash(hash) {
     // デフォルトのインデックス
@@ -346,7 +346,7 @@ $(document).ready(function () {
       return defaultIndex;
     }
     var index = parseInt(hash.replace("#info", ""), 10) - 1; // 0-based index
-    if (isNaN(index) || index < 0 || index >= $(".js-information-sub-btn").length) {
+    if (isNaN(index) || index < 0 || index >= $(".js-page-information-btn").length) {
       return defaultIndex;
     }
     return index;

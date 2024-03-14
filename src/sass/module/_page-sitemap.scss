@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.page-sitemap__inner.common-fish::before {
+    top: 8%;
+    @include mq("md") {
+        display: none;
+    }
+}

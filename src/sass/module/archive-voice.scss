@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.archive-voice__inner.common-fish::before {
+    top: -0.8%;
+    @include mq("md") {
+        top: -5%;
+    }
+}
+
+.archive-voice__tab {
+    margin-top: rem(52);
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.archive-voice__items {
+    margin-top: rem(38);
+}

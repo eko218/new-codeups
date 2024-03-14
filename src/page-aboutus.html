@@ -33,7 +33,6 @@
 </head>
 
 <body>
-
   <header class="header js-header">
     <div class="header__inner">
       <h1 class="header__logo">
@@ -106,7 +105,7 @@
               </div>
               <div class="sp-nav__wrap">
                 <ul class="sp-nav__items">
-                  <li class="sp-nav__item sp-nav__item--title"><a href="terms-of-service.html">利用規約</a></li>
+                  <li class="sp-nav__item sp-nav__item--title"><a href="terms-of-seivice.html">利用規約</a></li>
                 </ul>
               </div>
               <div class="sp-nav__wrap">
@@ -133,47 +132,124 @@
     </div>
   </header>
   <main>
-  <!-- thanks-mv -->
+  <!-- sub-mv -->
   <div class="sub-mv">
     <div class="sub-mv__inner">
       <picture class="sub-mv__img">
-        <source srcset="./assets/images/common/thanks-mv-pc.jpg" media="(min-width: 768px)">
-        <img src="./assets/images/common/thanks-mv-sp.jpg" alt="浜辺と海と空">
+        <source srcset="./assets/images/common/aboutus-mv-pc.jpg" media="(min-width: 768px)">
+        <img src="./assets/images/common/aboutus-mv-sp.jpg" alt="空とシーサーの画像">
       </picture>
       <div class="sub-mv__header">
-        <h2 class="sub-mv__title">Contact</h2>
+        <h2 class="sub-mv__title">About&nbsp;us</h2>
       </div>
     </div>
   </div>
 
-<!-- パンくず -->
-<div class="breadcrumb">
-  <div class="breadcrumb__inner inner">
-    <div class="breadcrumb__contaiter">TOP > お問い合わせ > 送信完了</div>
-  </div>
-</div>
-
-<!-- thanks-main -->
-<div class="thanks-main sub-thanks-main">
-  <div class="thanks-main__inner inner common-fish">
-    <div class="thanks-main__container">
-      <div class="thanks-main__title">
-        お問い合わせ内容を送信完了しました。
-      </div>
-      <div class="thanks-main__text">
-        このたびは、お問い合わせ頂き<br class="u-mobile">
-        誠にありがとうございます。<br>
-        お送り頂きました内容を確認の上、<br class="u-mobile">
-        3営業日以内に折り返しご連絡させて頂きます。<br>
-        また、ご記入頂いたメールアドレスへ、<br class="u-mobile">
-        自動返信の確認メールをお送りしております。
-      </div>
+  <!-- パンくず -->
+  <div class="breadcrumb">
+    <div class="breadcrumb__inner inner">
+      <div class="breadcrumb__contaiter">TOP > 私たちについて</div>
     </div>
   </div>
-</div>
-</main>
+
+  <!-- page-aboutus -->
+  <section id="page-aboutus" class="page-aboutus sub-page-aboutus">
+    <div class="page-aboutus__inner inner common-fish">
+      <div class="page-aboutus__img">
+        <picture class="page-aboutus__img-left">
+          <source srcset="./assets/images/common/aboutus-left-pc.jpg">
+          <img src="./assets/images/common/aboutus-left-sp.jpg" alt="オレンジ色の屋根に乗っているシーサー">
+        </picture>
+        <picture class="page-aboutus__img-right">
+          <source srcset="./assets/images/common/aboutus-right-pc.jpg">
+          <img src="./assets/images/common/aboutus-right-sp.jpg" alt="海と黄色い熱帯魚2匹">
+        </picture>
+      </div>
+      <div class="page-aboutus__content">
+      <div class="page-aboutus__title">
+        <h3 class="page-aboutus__title-main">Dive&nbsp;into&nbsp;<br>the&nbsp;Ocean</h3>
+      </div>
+      <div class="page-aboutus__text">
+        <p class="page-aboutus__text-sub">
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+        </p>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- page-aboutus-gallery -->
+  <section class="page-aboutus-gallery sub-page-aboutus-gallery">
+    <div class="page-aboutus-gallery__inner inner">
+      <div class="page-aboutus-gallery__title section-header">
+        <div class="section-header__engtitle">Gallery</div>
+          <h2 class="section-header__jatitle">フォト</h2>
+        </div>
+        <div class="page-aboutus-gallery__container">
+          <ul class="page-aboutus-gallery__img-items">
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery1.jpg" alt="赤い魚たちと
+                珊瑚礁">
+            </li>
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery2.jpg" alt="海と小型船">
+             </li>
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery3.jpg" alt="2匹の黄色い魚">
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery4.jpg" alt="一匹の鮮やかな黄色い魚">
+            </li>
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery5.jpg" alt="白い魚たちと珊瑚礁">
+            </li>
+            <li class="page-aboutus-gallery__img-item js-modal">
+              <img src="./assets/images/common/aboutus-gallery6.jpg" alt="黄色い魚たちと珊瑚礁">
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div id="grayDisplay" class="page-aboutus-gallery__modal grayDisplay"></div>
+  </section>
+  <!-- contact -->
+  <section id="contact" class="contact sub-contact-page-aboutus">
+    <div class="contact__inner inner">
+      <div class="contact__container">
+        <div class="contact__access">
+          <div class="contact__logo">
+            <a href="" class="contact-logo">
+             <img src="./assets/images/common/contact-logo.svg" alt="コンタクトロゴ">
+            </a>
+          </div>
+          <div class="contact__info">
+            <div class="contact__address">
+             <p class="contact__address-text">沖縄県那覇市1-1</p>
+             <p class="contact__address-text"><a href="tel:0120-000-0000">TEL:0120-000-0000</a></p>
+             <p class="contact__address-text">営業時間:8:30-19:00</p>
+             <p class="contact__address-text">定休日:毎週火曜日</p>
+            </div>
+            <div class="contact__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29742.2409384461!2d-157.85334081501577!3d21.280169682241162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df4e5c129af%3A0x4633ddc52a688878!2z44Ki44Oh44Oq44Kr5ZCI6KGG5Zu9IOOAkjk2ODE1IOODj-ODr-OCpOW3niDjg5vjg47jg6vjg6sg44Ov44Kk44Kt44Kt!5e0!3m2!1sja!2sjp!4v1700851904771!5m2!1sja!2sjp" width="295" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+      </div>
+      <div class="contact__content">
+        <div class="contact__title section-header">
+          <div class="section-header__engtitle section-header__engtitle--contact">Contact</div>
+          <h2 class="section-header__jatitle section-header__jatitle--contact">お問い合わせ</h2>
+        </div>
+        <p class="contact__text ">ご予約・お問い合わせはコチラ</p>
+        <div class="contact__btn contact-common-btn">
+          <a href="#" class="common-btn"><span class="common-btn__arrow">Contact&nbsp;us</span></a>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+  </main>
+  
   <!-- footer -->
-  <footer class="footer thanks-footer sub-thanks-footer">
+  <footer class="footer top-footer">
     <div class="footer__inner inner">
       <div class="footer__content">
         <div class="footer__top">

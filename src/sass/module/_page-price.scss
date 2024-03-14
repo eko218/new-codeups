@@ -1,0 +1,42 @@
+@use "global" as *;
+
+// .price-list__items {
+//     margin-top: rem(52);
+//     @include mq("md") {
+//         margin-top: rem(150);
+//     }
+// }
+
+.page-price__inner {
+    @include mq("md") {
+        max-width: rem(750);
+        width: 100%;
+    }
+}
+
+.page-price__inner.common-fish::before {
+     top: -2.5%;
+     @include mq("md") {
+         top: -6.5%;
+     }
+}
+
+.page-price__item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    @include mq("md") {
+        grid-template-columns: calc((200 / 700) * 100%) calc((340 / 700) * 100%) calc((162 / 700) * 100%);
+        grid-template-rows: repeat(3, auto);
+        margin: auto;
+    }
+}
+
+.page-price__item:not(:first-child) {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+

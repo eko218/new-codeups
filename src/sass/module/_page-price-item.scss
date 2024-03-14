@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.page-price-item__content {
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $third-font-family;
+    line-height: 1.5;
+    display: flex;
+    gap: rem(8);
+    min-height: rem(60);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    padding: rem(6) rem(16);
+    border-bottom: rem(1) solid $green;
+    border-right: rem(1) solid $green;
+    @include mq("md") {
+        padding: rem(16);
+    }
+}
+
+.page-price-item__content.page-price-item__content--left {
+    min-width: rem(240);
+    @include mq("md") {
+        justify-content: flex-start;
+    }
+}
+
+.page-price-item__content.page-price-item__content--right {
+    justify-content: flex-end;
+    min-width: rem(106);
+}
+
+.page-price-item__content img {
+    width: rem(24);
+    height: rem(24);
+    @include mq("md") {
+        width: rem(64);
+        height: rem(64);
+    }
+}
+
+.page-price-item__header {
+    border-top: rem(1) solid $green;
+    border-left: rem(1) solid $green;
+    grid-column: span 2; /* 2行に結合 */
+    grid-row: 1; /* 1列目に配置 */
+    display: flex;
+    align-items: center;
+    background-color: $green;
+    color: $white;
+    text-align: center;
+    justify-content: center;
+    min-height: initial;
+    @include mq(md) {
+      flex-direction: column-reverse;
+      grid-row: 1/8; /* 結合 */
+      grid-column: 1; /* 1列目に配置 */
+    }
+  }
+
+.page-price-item__content {
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.5;
+    color: $darkgreen;
+    text-align: center;
+}
+
+.page-price-item__content.page-price-item__content--left {
+    border-left: rem(1) solid $green;
+}
+
+.page-price-item__content:nth-child(2),
+.page-price-item__content:nth-child(3) {
+    border-top: rem(1) solid $green;
+}
+
+.page-price-item__content:not(:first-child) {
+    @include mq("md") {
+        text-align: left;
+    }
+}
+
+.page-price-item__title {
+    font-weight: $bold;
+    color: $white;
+    font-size: rem(16);
+    font-family: $third-font-family;
+}
+

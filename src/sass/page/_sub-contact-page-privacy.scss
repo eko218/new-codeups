@@ -1,9 +1,8 @@
 @use "global" as *;
 
-.sub-page-sitemap-footer {
+.sub-contact-page-privacy {
     margin-top: rem(100);
     @include mq("md") {
-        margin-top: rem(163);
+        margin-top: rem(136);
     }
 }
-

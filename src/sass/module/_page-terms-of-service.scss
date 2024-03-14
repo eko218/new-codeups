@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.page-terms-of-service__inner.common-fish::before {
+    top: -1.4%;
+    @include mq("md") {
+        top: -7%;
+    }
+}
+
+.page-terms-of-service__container {
+    @include mq("md") {
+        max-width: rem(800);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.page-terms-of-service__title {
+    font-size: rem(24);
+    font-weight: $medium;
+    font-family: $third-font-family;
+    line-height: 1.4583;
+    color: $darkgreen;
+    @include mq("md") {
+        font-size: rem(32);
+        line-height: 1.4375;
+    }
+}
+
+.page-terms-of-service__text {
+    margin-top: rem(40);
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 2;
+    color: $darkgreen;
+}
+
+.page-terms-of-service__text ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+}
+
+.page-terms-of-service__text ol:not(:first-child) {
+    margin-top: rem(31);
+}
+
+.page-terms-of-service__text p:not(:first-child) {
+    margin-top: rem(33);
+}
+
