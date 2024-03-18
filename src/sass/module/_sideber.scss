@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.sideber {
+    @include mq("md") {
+        width: 100%;
+        max-width: 27.222%;
+    }
+}
+
+.sideber__campaign__items {
+    margin-top: rem(29);
+}
+
+.sideber__campaign__card:not(:first-child) {
+    margin-top: rem(30);
+}

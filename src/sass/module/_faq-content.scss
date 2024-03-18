@@ -37,22 +37,22 @@
     }
 }
 
-.faq-content__title::before {
+.faq-content__title::after {
+    transform: rotate(0deg);
+}
+
+.faq-content__title.is-active::after {
+    // top: 45%;
     transform: rotate(90deg);
 }
 
-.faq-content__title.is-active::before {
-    // top: 45%;
-    transform: rotate(180deg);
-  }
-
-  .faq-content__title.is-active::after {
-    opacity: 0;
-    visibility:hidden
-}
+// .faq-content__title.is-active::after {
+//     opacity: 0;
+//     visibility:hidden
+// }
 
 .faq-content__text {
-    display: none;
+    // display: none;
     padding: rem(24) rem(16);
     font-size: rem(16);
     font-weight: $regular;

@@ -2,7 +2,7 @@
 
 .form__item {
     padding-bottom: rem(22);
-    margin-top: rem(24);
+    margin-top: rem(25);
     border-bottom: 1px dashed $green;
     @include mq("md") {
       margin-top: rem(39);
@@ -149,10 +149,10 @@
   }
   
   .form__privacy {
-    margin: rem(37.5) auto 0;
+    margin: rem(39.5) auto 0;
     width: max(calc(282 / 345 * 100%), rem(282));
     @include mq("md") {
-      margin: rem(79.5) auto 0;
+      margin: rem(77.5) auto 0;
       width: 100%;
       text-align: center;
     }
@@ -170,7 +170,7 @@
     line-height: calc(22 / 14);
     cursor: pointer;
     @include mq("md") {
-        padding-left: rem(35);
+        padding-left: rem(32);
     }
   }
 
@@ -187,7 +187,7 @@
     border: 1px solid $green;
     @include mq("md") {
         left: rem(-4);
-        top: 25%;
+        top: 43%;
     }
   }
   

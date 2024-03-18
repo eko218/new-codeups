@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.two-colums__inner.common-fish::before {
+    top: -0.6%;
+    @include mq("md") {
+        top: 1.3%;
+    }
+}
+
+.two-colums__contents {
+    @include mq("md") {
+        display: flex;
+        gap: rem(85);
+    }
+}
+
+.two-colums__wp-pagenavi {
+    margin-top: rem(37);
+    @include mq("md") {
+        margin-top: rem(77);
+    }
+}

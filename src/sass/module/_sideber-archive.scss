@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.sideber-archive__lists {
+    margin-top: rem(28);
+    color: $green;
+    font-size: rem(24);
+    font-family: $third-font-family;
+}
+
+.sideber-archive__list {
+    margin-top: rem(3);
+}
+
+.sideber-archive__year {
+    cursor: pointer;
+}
+
+.sideber-archive__year,
+.sideber-archive__month {
+    position: relative;
+    padding-left: rem(32);
+}
+
+.sideber-archive__months {
+    padding-left: rem(24);
+    display: none;
+}
+
+.sideber-archive__month {
+    margin-top: rem(3);
+}
+
+.sideber-archive__year::before,
+.sideber-archive__month::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: rem(3);
+    top: 15%;
+    width: rem(24);
+    height: rem(24);
+    background-image: url("../images/common/archive-polygon.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+
+.sideber-archive__year.is-active::before {
+    transform: rotate(90deg);
+}

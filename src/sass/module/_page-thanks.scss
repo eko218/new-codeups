@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.thanks-main__inner.common-fish::before {
+.page-thanks__inner.common-fish::before {
     top: -13%;
     @include mq("md") {
         top: -54%;
     }
 }
 
-.thanks-main__container {
+.page-thanks__container {
     @include mq("md") {
         max-width: rem(672);
         margin-left: auto;
@@ -15,7 +15,7 @@
     }
 }
 
-.thanks-main__title {
+.page-thanks__title {
     font-size: rem(16);
     font-weight: $regular;
     font-family: $third-font-family;
@@ -24,7 +24,7 @@
     text-align: center;
 }
 
-.thanks-main__text {
+.page-thanks__text {
     text-align: center;
     font-size: rem(16);
     font-weight: $regular;

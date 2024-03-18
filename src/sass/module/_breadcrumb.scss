@@ -1,8 +1,10 @@
 @use "global" as *;
 
 .breadcrumb {
-    padding-top: rem(8);
-    padding-left: rem(15);
+    // padding-top: rem(8);
+    // padding-left: rem(15);
+    // margin-top: rem(8);
+    margin-left: rem(15);
 }
 
 .breadcrumb.breadcrumb--404 {

@@ -474,21 +474,26 @@ $(document).ready(function () {
 
 
 // faqアコーディオン
-$(function () {
-  $(".js-faq-item,.js-faq-text").css(
-    "display",
-    "block"
-  );
-  $(".js-faq-item:first-child,.js-faq-title").addClass(
-    "is-active"
-  );
-  $(".js-faq-title").on("click", function () {
-    $(this).toggleClass("is-active");
-    $(this).next().slideToggle(300);
+// $(function () {
+//   $(".js-faq-item,.js-faq-text").css(
+//     "display",
+//     "block"
+//   );
+//   $(".js-faq-item:first-child,.js-faq-title").addClass(
+//     "is-active"
+//   );
+//   $(".js-faq-title").on("click", function () {
+//     $(this).toggleClass("is-active");
+//     $(this).next().slideToggle(300);
+//   });
+// });
+
+jQuery(function ($) {
+  $('.js-faq-title').on('click', function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass('is-active');
   });
 });
-
-
 
 
 

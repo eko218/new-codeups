@@ -5,10 +5,10 @@
     text-align: center;
 }
 
-.blog-list__inner.common-fish::before {
+.page-blog__inner.common-fish::before {
     top: -0.3%;
     left: calc(50% - min(45vw, 38.75rem));
     @include mq("md") {
-        top: -2.5%;
+        top: -3.0%;
     }
 }
