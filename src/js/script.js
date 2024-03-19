@@ -155,65 +155,9 @@ $(function () {
 
 
 // campaignタブ
-// $(function(){
-//   // 初期状態ではすべてのcampaign-card__itemを表示する
-//   $(".campaign-card__item").show();
-
-//   // js-category-buttonがクリックされたときの処理
-//   $(".js-category-button").on("click", function(){
-//     // クリックされたボタンのテキストを取得
-//     var category = $(this).text().trim();
-    
-//     // すべてのcampaign-card__itemを一度非表示にする
-//     $(".campaign-card__item").hide();
-    
-//     // クリックされたカテゴリーに対応するcampaign-card__itemを表示する
-//     if(category === "ALL") {
-//       $(".campaign-card__item").show();
-//     } else {
-//       $(".campaign-card__item").each(function() {
-//         if($(this).find(".campaign-card__category").text().trim() === category) {
-//           $(this).show();
-//         }
-//       });
-//     }
-  
-//     // js-category-buttonのクラスを調整して、現在の選択状態を示す
-//     $(".js-category-button").removeClass("is-active");
-//     $(this).addClass("is-active");
-//   });
-// });
 
 
-// $(function(){
-//   $(document).on('touchend','.js-category-button',function(){
-//     $(".campaign-card__item").show();
 
-//   // js-category-buttonがクリックされたときの処理
-//   $(".js-category-button").on("click", function(){
-//     // クリックされたボタンのテキストを取得
-//     var category = $(this).text().trim();
-    
-//     // すべてのcampaign-card__itemを一度非表示にする
-//     $(".campaign-card__item").hide();
-    
-//     // クリックされたカテゴリーに対応するcampaign-card__itemを表示する
-//     if(category === "ALL") {
-//       $(".campaign-card__item").show();
-//     } else {
-//       $(".campaign-card__item").each(function() {
-//         if($(this).find(".campaign-card__category").text().trim() === category) {
-//           $(this).show();
-//         }
-//       });
-//     }
-  
-//     // js-category-buttonのクラスを調整して、現在の選択状態を示す
-//     $(".js-category-button").removeClass("is-active");
-//     $(this).addClass("is-active");
-//   });
-//   });
-// });
 
 // aboutusモーダル
 $(".page-aboutus-gallery__img-item img").click(function () {
@@ -241,47 +185,76 @@ $("#grayDisplay").click(function () {
 
 
 // informationタブ
-// $(document).ready(function(){
-//   $(".js-information-sub-btn").click(function(){
-//     // すべてのjs-information-subからis-activeクラスを削除
-//     $(".js-information-sub").removeClass("is-active");
-    
-//     // クリックされたjs-information-sub-btnのインデックスを取得
-//     var index = $(this).index();
-    
-//     // クリックされたjs-information-sub-btnに対応するjs-information-subを表示
-//     $(".js-information-sub").eq(index).addClass("is-active");
+
+// $(document).ready(function () {
+//   $(window).on("hashchange", function () {
+//     activateTabFromHash();
 //   });
-// });
+//   // ハッシュの値に応じてタブをアクティブにする関数
+//   function activateTabFromHash() {
+//     var hash = window.location.hash; // 現在のハッシュを取得
+//     var index = getIndexFromHash(hash);
 
-// $(document).ready(function(){
-//   $(".js-information-sub-btn").click(function(){
-//     // クリックされたボタンのインデックスを取得
-//     var index = $(this).index();
-    
-//     // すべてのjs-information-subを非表示にする
-//     $(".js-information-sub").removeClass("is-active");
-    
-//     // クリックされたボタンに対応するjs-information-subを表示する
-//     $(".js-information-sub").eq(index).addClass("is-active");
+//     // すべてのタブとコンテンツのアクティブ状態を初期化
+//     $(".js-tab-list").removeClass("is-active");
+//     // すべてのタブとコンテンツのアクティブ状態を初期化
+//     $(".js-tab-list").removeClass("is-active");
+//     // ハッシュが存在する場合、該当するタブとコンテンツをアクティブにする
+//     if (hash) {
+//       // ハッシュの値に応じてタブをアクティブにする
+//       $("#tab-" + hash.replace("#", "")).addClass("is-active");
+//       $(hash).addClass("is-active");
+//       // 該当のjs-information-card　にis-activeをつけるため
+//       // ハッシュの値が"tab-"で始まる場合、"tab-"を除去してコンテンツのIDを生成
+//       var contentId = hash.replace("#tab-", "#");
+//       // 対応するコンテンツをアクティブにする
+//       $(contentId).addClass("is-active");
+//       var index = getIndexFromHash(hash);
+//       if (index !== null) {
+//         // scrollToSection(index);
+//       }
+//     } else {
+//       // ハッシュが存在しない場合、1件目のタブとコンテンツをアクティブにする
+//       $(".js-tab-list:first").addClass("is-active");
+//       $(".js-tab-list:first").addClass("is-active");
+//     }
+//   }
+//   // 別ページから遷移した際の処理
+//   $(window).on("load", function () {
+//     var hash = window.location.hash;
+//     var index = getIndexFromHash(hash);
+//     if (index !== null) {
+//       // scrollToSection(index);
+//     }
 //   });
-// });
-
-
-// $(document).ready(function(){
-//   $(".js-information-sub-btn").click(function(){
-//     // クリックされたボタンのインデックスを取得
+//   // 最初のタブをデフォルトで表示
+//   $(".js-tab-content:first-of-type").css("display", "block");
+//   var hash = window.location.hash;
+//   // hashからインデックスを取得
+//   var index = getIndexFromHash(hash);
+//   showCategory(index);
+//   $(".js-tab-list").on("click", function () {
 //     var index = $(this).index();
-    
-//     // すべてのjs-information-subを非表示にする
-//     $(".js-information-sub").removeClass("is-active");
-    
-//     // クリックされたボタンに対応するjs-information-subを表示する
-//     $(".js-information-sub").eq(index).addClass("is-active");
+//     showCategory(index);
 //   });
+//   function showCategory(index) {
+//     $(".js-tab-list").removeClass("is-active");
+//     $(".js-tab-list").eq(index).addClass("is-active");
+//     $(".js-tab-list").hide().eq(index).fadeIn(300);
+//   }
+//   function getIndexFromHash(hash) {
+//     // デフォルトのインデックス
+//     var defaultIndex = 0;
+//     if (!hash.startsWith("#info")) {
+//       return defaultIndex;
+//     }
+//     var index = parseInt(hash.replace("#info", ""), 10) - 1; // 0-based index
+//     if (isNaN(index) || index < 0 || index >= $(".js-tab-list").length) {
+//       return defaultIndex;
+//     }
+//     return index;
+//   }
 // });
-
-
 
 $(document).ready(function () {
   $(window).on("hashchange", function () {
@@ -293,9 +266,9 @@ $(document).ready(function () {
     var index = getIndexFromHash(hash);
 
     // すべてのタブとコンテンツのアクティブ状態を初期化
-    $(".js-page-information-btn").removeClass("is-active");
+    $(".js-tab-list").removeClass("is-active");
     // すべてのタブとコンテンツのアクティブ状態を初期化
-    $(".js-page-information-btn").removeClass("is-active");
+    $(".js-tab-list").removeClass("is-active");
     // ハッシュが存在する場合、該当するタブとコンテンツをアクティブにする
     if (hash) {
       // ハッシュの値に応じてタブをアクティブにする
@@ -312,8 +285,8 @@ $(document).ready(function () {
       }
     } else {
       // ハッシュが存在しない場合、1件目のタブとコンテンツをアクティブにする
-      $(".js-page-information-btn:first").addClass("is-active");
-      $(".js-page-information-btn:first").addClass("is-active");
+      $(".js-tab-list:first").addClass("is-active");
+      $(".js-tab-list:first").addClass("is-active");
     }
   }
   // 別ページから遷移した際の処理
@@ -325,19 +298,19 @@ $(document).ready(function () {
     }
   });
   // 最初のタブをデフォルトで表示
-  $(".js-page-information:first-of-type").css("display", "block");
+  $(".js-tab-content:first-of-type").css("display", "block");
   var hash = window.location.hash;
   // hashからインデックスを取得
   var index = getIndexFromHash(hash);
   showCategory(index);
-  $(".js-page-information-btn").on("click", function () {
+  $(".js-tab-list").on("click", function () {
     var index = $(this).index();
     showCategory(index);
   });
   function showCategory(index) {
-    $(".js-page-information-btn").removeClass("is-active");
-    $(".js-page-information-btn").eq(index).addClass("is-active");
-    $(".js-page-information-btn").hide().eq(index).fadeIn(300);
+    $(".js-tab-list").removeClass("is-active");
+    $(".js-tab-list").eq(index).addClass("is-active");
+    $(".js-tab-content").hide().eq(index).fadeIn(300);
   }
   function getIndexFromHash(hash) {
     // デフォルトのインデックス
@@ -346,14 +319,12 @@ $(document).ready(function () {
       return defaultIndex;
     }
     var index = parseInt(hash.replace("#info", ""), 10) - 1; // 0-based index
-    if (isNaN(index) || index < 0 || index >= $(".js-page-information-btn").length) {
+    if (isNaN(index) || index < 0 || index >= $(".js-tab-content").length) {
       return defaultIndex;
     }
     return index;
   }
 });
-
-
 
 
 // voiceタブ
@@ -530,45 +501,18 @@ jQuery(function ($) {
 // });
 
 // タブ
-// $(document).ready(function() {
-//   // URLから 'tab' パラメータを取得
-//   const tab = new URL(window.location.href).searchParams.get('tab');
-
-//   // タブメニューのクリックイベント
-//   $('.js-information-sub-btn').on('click', function () {
-//     const number = $(this).data('number');
-
-//     // アクティブクラスの切り替え
-//     $('.js-information-sub-btn').removeClass('is-active');
-//     $(this).addClass('is-active');
-//     $('.js-information-sub').removeClass('is-active');
-//     if (number) {
-//       $('#' + number).addClass('is-active');
-//     }
-//   });
-
-//   // 初期状態またはURLパラメータに基づくタブのアクティブ化
-//   if (tab) {
-//     // URLパラメータが存在する場合、該当するタブをアクティブにする
-//     $('.js-information-sub-btn[data-number="' + tab + '"]').click();
-//   } else {
-//     // URLパラメータがない場合、最初のタブをアクティブにする
-//     $('.js-information-sub-btn:first').click();
-//   }
-// });
-
 $(document).ready(function() {
   // URLから 'tab' パラメータを取得
   const tab = new URL(window.location.href).searchParams.get('tab');
 
   // タブメニューのクリックイベント
-  $('.js-information-sub-btn').on('click', function () {
+  $('.js-tab-list').on('click', function () {
     const number = $(this).attr('date-number'); // data-number属性を取得するよう修正
 
     // アクティブクラスの切り替え
-    $('.js-information-sub-btn').removeClass('is-active');
+    $('.js-tab-list').removeClass('is-active');
     $(this).addClass('is-active');
-    $('.js-information-sub').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
     if (number) {
       $('#' + number).addClass('is-active');
     }
@@ -577,11 +521,12 @@ $(document).ready(function() {
   // 初期状態またはURLパラメータに基づくタブのアクティブ化
   if (tab) {
     // URLパラメータが存在する場合、該当するタブをアクティブにする
-    $('.js-information-sub-btn[date-number="' + tab + '"]').click(); // data-number属性を正しく指定するよう修正
+    $('.js-tab-list[date-number="' + tab + '"]').click(); // data-number属性を正しく指定するよう修正
   } else {
     // URLパラメータがない場合、最初のタブをアクティブにする
-    $('.js-information-sub-btn:first').click();
+    $('.js-tab-list:first').click();
   }
 });
+
 
 

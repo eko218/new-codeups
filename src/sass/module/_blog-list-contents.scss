@@ -1,19 +1,4 @@
 @use "global" as *;
 
-.blog-list-contents__side {
-    margin-left: rem(25);
-    margin-right: rem(25);
-    @include mq("md") {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
 
-.blog-list-contents__main {
-    margin-left: rem(6);
-    margin-right: rem(6);
-    @include mq("md") {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
+

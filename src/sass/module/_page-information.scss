@@ -4,14 +4,14 @@
    top: -15.5%;
 }
 
-.page-information__tab-list {
+.tab-list {
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
 }
 
-.page-information__tab-btn {
+.tab-list__item {
     box-shadow: 0 rem(4) rem(4) 0 rgba(0,0,0,0.25);
     display: inline-block;
     font-size: rem(14);
@@ -38,24 +38,24 @@
     }
 }
 
-.page-information__tab-btn.is-active {
+.tab-list__item.is-active {
     background-color: $green;
     color: $white;
 }
 
-.page-information__tab-btn:hover {
+.tab-list__item:hover {
     background-color: $green;
     color: $white;
 }
 
-.page-information__tab-btn:not(:first-child) {
+.tab-list__item:not(:first-child) {
     margin-left: rem(20);
     @include mq("md") {
         margin-left: rem(90);
     }
 }
 
-.page-information__tab-content {
+.tab-content__item {
     margin-top: rem(16);
     padding: rem(24);
     border: rem(1) solid $green;
@@ -64,7 +64,7 @@
     }
 }
 
-.page-information__tab-box {
+.tab-content__box {
     @include mq("md") {
         display: flex;
         align-items: center;
@@ -72,7 +72,7 @@
     }
 }
 
-.page-information__tab-body {
+.tab-content__body {
     @include mq("md") {
         max-width: rem(492);
         width: 47.5%;
@@ -80,7 +80,7 @@
     }
 }
 
-.page-information__tab-title {
+.tab-content__title {
     font-size: rem(24);
     font-weight: $bold;
     font-family: $third-font-family;
@@ -90,7 +90,7 @@
     padding-bottom: rem(6);
 }
 
-.page-information__tab-text {
+.tab-content__text {
     margin-top: rem(8);
     font-size: rem(16);
     font-weight: $regular;
@@ -99,7 +99,7 @@
     color: $darkgreen;
 }
 
-.page-information__tab-img {
+.tab-content__img {
     margin-top: rem(8);
     width: 100%;
     height: 100%;
@@ -110,7 +110,7 @@
     }
 }
 
-.page-information__tab-img img {
+.tab-content__img img {
     aspect-ratio:  297 / 189;
     object-fit: cover;
     @include mq("md") {

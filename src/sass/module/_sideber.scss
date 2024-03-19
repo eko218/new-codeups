@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .sideber {
+    margin-left: rem(25);
+    margin-right: rem(25);
     @include mq("md") {
         width: 100%;
         max-width: 27.222%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

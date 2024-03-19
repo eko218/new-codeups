@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.sideber-campaign__items {
+    margin-top: rem(27);
+}
+
+.sideber-campaign__card:not(:first-child) {
+     margin-top: rem(40);
+}
+
+.sideber-campaign__btn {
+    margin-top: rem(40);
+    text-align: center;
+}

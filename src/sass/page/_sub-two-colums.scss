@@ -3,6 +3,6 @@
 .sub-two-colums {
     margin-top: rem(52);
     @include mq("md") {
-        margin-top: rem(148);
+        margin-top: rem(145);
     }
 }
