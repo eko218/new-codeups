@@ -54,13 +54,13 @@
 // 	background-color: $green;
 // }
 
-.wp-pagenavi .larger:nth-child(n + 5) {
+.wp-pagenavi .larger:nth-child(n + 4) {
    display: none;
    @include mq("md") {
 	   display: block;
    }
 }
 
-.wp-pagenavi.wp-pagenavi--detail {
-    gap: rem(14);
+.wp-pagenavi.wp-pagenavi--single {
+	column-gap: rem(14);
 }

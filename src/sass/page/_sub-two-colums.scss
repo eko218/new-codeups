@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .sub-two-colums {
-    margin-top: rem(52);
+    margin-top: rem(48);
     @include mq("md") {
-        margin-top: rem(145);
+        margin-top: rem(150);
     }
 }

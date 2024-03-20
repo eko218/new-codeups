@@ -4,9 +4,10 @@
     background-color: $green;
     color: $white;
     width: 100%;
+    padding-top: rem(80);
     padding-bottom: rem(40);
     @include mq("md") {
-        padding-bottom: rem(150);
+        padding-bottom: rem(40);
     }
 }
 
@@ -16,7 +17,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: rem(49) rem(40);
+    padding-top: rem(52);
+    padding-right: rem(40);
+    padding-left: rem(40);
     @include mq("md") {
         padding: rem(120) rem(40);
     }
@@ -47,7 +50,7 @@
     color: $white;
     letter-spacing: 0.5em;
     text-align: center;
-    text-indent: 0.3em;
+    text-indent: 0.5em;
     @include mq("md") {
         font-size: rem(160);
     }
@@ -59,7 +62,7 @@
     line-height: 1.5;
     font-weight: $regular;
     font-family: $second-font-family;
-    text-indent: 0.3em;
+    // text-indent: 0.3em;
     @include mq("md") {
         margin-top: rem(22);
     }

@@ -4,14 +4,19 @@
     // padding-top: rem(8);
     // padding-left: rem(15);
     // margin-top: rem(8);
-    margin-left: rem(15);
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $third-font-family;
+    line-height: 1.4285;
+    color: $darkgreen;
+    // margin-left: rem(15);
 }
 
 .breadcrumb.breadcrumb--404 {
     background-color: $green;
     color: $white;
-    margin-top: rem(80);
+    margin-top: rem(6);
     @include mq("md") {
-        margin-top: rem(90);
+        margin-top: rem(18);
     }
 }

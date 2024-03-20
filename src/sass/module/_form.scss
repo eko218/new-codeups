@@ -149,7 +149,7 @@
   }
   
   .form__privacy {
-    margin: rem(39.5) auto 0;
+    margin: rem(43.5) auto 0;
     width: max(calc(282 / 345 * 100%), rem(282));
     @include mq("md") {
       margin: rem(77.5) auto 0;
@@ -196,8 +196,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: 30%;
-    left: rem(-4);
+    top: 23%;
+    left: 0;
     transform: translateY(-50%) rotate(-40deg);
     width: rem(16);
     height: rem(9);
@@ -205,6 +205,10 @@
     border-left: 2px solid #c94800;
     opacity: 0;
     transition: opacity 0.2s;
+    @include mq("md") {
+        left: rem(-4);
+        top: 40%;
+    }
   }
   
   .form__privacy input:checked + span::after {

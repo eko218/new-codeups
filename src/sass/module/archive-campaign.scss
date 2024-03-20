@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.archive-campaign__inner {
-    max-width: rem(345);
-}
-
 .archive-campaign__inner.common-fish::before {
     top: -1.1%;
     z-index: -1;

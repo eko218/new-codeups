@@ -1,9 +1,10 @@
 @use "global" as *;
 
 .two-colums__inner.common-fish::before {
-    top: -0.6%;
+    // top: -0.3%;
+    top: -0.5%;
     @include mq("md") {
-        top: -3.0%;
+        top: -2.8%;
     }
 }
 

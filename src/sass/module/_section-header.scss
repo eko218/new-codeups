@@ -32,7 +32,7 @@
     }
 }
 
-.section-header__engtitle.section-header__engtitle--blog::first-letter {
+.section-header__engtitle.section-header__engtitle--blog {
     @include mq("md") {
         color: $white;
     }
