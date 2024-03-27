@@ -10,6 +10,7 @@
 
 .wp-pagenavi__page {
     display: flex;
+	font-family: $second-font-family;
 	@include mq("md") {
         justify-content: center;
 	}

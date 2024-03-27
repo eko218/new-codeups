@@ -66,7 +66,8 @@
     line-height: 1.7;
     font-family: $third-font-family;
     color: $darkgreen;
-    margin-left: rem(28);
+    // margin-left: rem(28);
+    padding-left: rem(28);
 }
 
 .single-main__bottom li::before {
@@ -75,7 +76,8 @@
     height: rem(18);
     margin-right: rem(4);
     position: absolute;
-    left: rem(-28);
+    // left: rem(-28);
+    left: 0;
     top: rem(2);
     color: $lightblue;
 }
